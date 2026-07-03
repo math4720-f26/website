@@ -5,9 +5,9 @@ website:
   page-navigation: true
   title: "MATH 4720 (MSSC 5720) - Spring 2026"
   description: "Homepage for MATH 4720 (MSSC 5720) - Statistical Methods at Marquette University, Spring 2026."
-  site-url: "https://math4720-s26.github.io/website/"
+  site-url: "https://math4720-f26.github.io/website/"
 
-  repo-url: https://github.com/math4720-s26/website
+  repo-url: https://github.com/math4720-f26/website
   repo-actions: [edit, issue]
 
   open-graph: true
@@ -28,7 +28,7 @@ website:
     align: center
     tools:
       - icon: github
-        href: https://github.com/math4720-s26/website
+        href: https://github.com/math4720-f26/website
         text: "GitHub organization"
       # - icon: code-square
       #   href: https://cmgr.oit.duke.edu/containers
