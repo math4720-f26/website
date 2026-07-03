@@ -85,9 +85,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-subtitle','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-subtitle','listing-description',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-title","listing-author"],
+      searchColumns: [],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -426,156 +426,15 @@ window.Quarto = {
 
 
 <div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<table class="quarto-listing-table table">
+<table class="quarto-listing-table table caption-top">
 <thead>
-<tr>
-
-<th>
-No.
-</th>
-
-<th>
-Title
-</th>
-
-<th>
-Due date
-</th>
-
+<tr class="header">
+<th data-quarto-table-cell-role="th">No.</th>
+<th data-quarto-table-cell-role="th">Title</th>
+<th data-quarto-table-cell-role="th">Due date</th>
 </tr>
 </thead>
 <tbody class="list">
-
-<tr data-index="0" data-categories="SG9tZXdvcms=" data-listing-file-modified-sort="1783090693478" data-listing-reading-time-sort="1" data-listing-word-count-sort="56" data-listing-title-sort="Extra credit opportunity I" data-listing-filename-sort="hw03-extra.qmd">
-<td>
-<a href="./hw/hw03-extra.html" class="title listing-title">Extra credit opportunity I</a>
-</td>
-<td>
-<span class="listing-subtitle">Happy Valentine’s Day!🩷💖</span>
-</td>
-<td>
-<span class="listing-description"><span class="red">Due <strong>Friday, Feb 13, 11:59 PM</strong></span></span>
-</td>
-
-</tr>
-
-<tr data-index="1" data-listing-file-modified-sort="1783090693478" data-listing-reading-time-sort="1" data-listing-word-count-sort="54" data-listing-title-sort="Extra credit opportunity II" data-listing-filename-sort="hw06-extra.qmd">
-<td>
-<a href="./hw/hw06-extra.html" class="title listing-title">Extra credit opportunity II</a>
-</td>
-<td>
-<span class="listing-subtitle">Happy Easter!🐣🐰🥚</span>
-</td>
-<td>
-<span class="listing-description"><span class="red">Due <strong>Friday, Apr 3, 11:59 PM</strong></span></span>
-</td>
-
-</tr>
-
-<tr data-index="2" data-categories="SG9tZXdvcms=" data-listing-file-modified-sort="1783090693477" data-listing-reading-time-sort="6" data-listing-word-count-sort="1011" data-listing-title-sort="Homework 1" data-listing-filename-sort="hw01.qmd">
-<td>
-<a href="./hw/hw01.html" class="title listing-title">Homework 1</a>
-</td>
-<td>
-<span class="listing-subtitle">Data Collection and Data Type</span>
-</td>
-<td>
-<span class="listing-description"><span class="red">Due <strong>Friday, Jan 23, 11:59 PM</strong></span></span>
-</td>
-
-</tr>
-
-<tr data-index="3" data-categories="SG9tZXdvcms=" data-listing-file-modified-sort="1783090693478" data-listing-reading-time-sort="8" data-listing-word-count-sort="1517" data-listing-title-sort="Homework 2" data-listing-filename-sort="hw02.qmd">
-<td>
-<a href="./hw/hw02.html" class="title listing-title">Homework 2</a>
-</td>
-<td>
-<span class="listing-subtitle">Basic R, Data Description and Graphics</span>
-</td>
-<td>
-<span class="listing-description"><span class="red">Due <strong>Friday, Feb 6, 11:59 PM</strong></span></span>
-</td>
-
-</tr>
-
-<tr data-index="4" data-categories="SG9tZXdvcms=" data-listing-file-modified-sort="1783090693478" data-listing-reading-time-sort="7" data-listing-word-count-sort="1380" data-listing-title-sort="Homework 3" data-listing-filename-sort="hw03.qmd">
-<td>
-<a href="./hw/hw03.html" class="title listing-title">Homework 3</a>
-</td>
-<td>
-<span class="listing-subtitle">Probability Fundamentals</span>
-</td>
-<td>
-<span class="listing-description"><span class="red">Due <strong>Friday, Feb 13, 11:59 PM</strong></span></span>
-</td>
-
-</tr>
-
-<tr data-index="5" data-categories="SG9tZXdvcms=" data-listing-file-modified-sort="1783090693478" data-listing-reading-time-sort="5" data-listing-word-count-sort="952" data-listing-title-sort="Homework 4" data-listing-filename-sort="hw04.qmd">
-<td>
-<a href="./hw/hw04.html" class="title listing-title">Homework 4</a>
-</td>
-<td>
-<span class="listing-subtitle">Probability Distributions</span>
-</td>
-<td>
-<span class="listing-description"><span class="red">Due <strong>Friday, Feb 27, 11:59 PM</strong></span></span>
-</td>
-
-</tr>
-
-<tr data-index="6" data-categories="SG9tZXdvcms=" data-listing-file-modified-sort="1783090693478" data-listing-reading-time-sort="5" data-listing-word-count-sort="828" data-listing-title-sort="Homework 5" data-listing-filename-sort="hw05.qmd">
-<td>
-<a href="./hw/hw05.html" class="title listing-title">Homework 5</a>
-</td>
-<td>
-<span class="listing-subtitle">Inferences about population means</span>
-</td>
-<td>
-<span class="listing-description"><span class="red">Due <strong>Friday, Mar 27, 11:59 PM</strong></span></span>
-</td>
-
-</tr>
-
-<tr data-index="7" data-categories="SG9tZXdvcms=" data-listing-file-modified-sort="1783090693478" data-listing-reading-time-sort="8" data-listing-word-count-sort="1440" data-listing-title-sort="Homework 6" data-listing-filename-sort="hw06.qmd">
-<td>
-<a href="./hw/hw06.html" class="title listing-title">Homework 6</a>
-</td>
-<td>
-<span class="listing-subtitle">Comparing Two Population Means</span>
-</td>
-<td>
-<span class="listing-description"><span class="red">Due <strong>Friday, Apr 10, 11:59 PM</strong></span></span>
-</td>
-
-</tr>
-
-<tr data-index="8" data-categories="SG9tZXdvcms=" data-listing-file-modified-sort="1783090693478" data-listing-reading-time-sort="6" data-listing-word-count-sort="1199" data-listing-title-sort="Homework 7" data-listing-filename-sort="hw07.qmd">
-<td>
-<a href="./hw/hw07.html" class="title listing-title">Homework 7</a>
-</td>
-<td>
-<span class="listing-subtitle">Inference about Variances</span>
-</td>
-<td>
-<span class="listing-description"><span class="red">Due <strong>Friday, Apr 17, 11:59 PM</strong></span></span>
-</td>
-
-</tr>
-
-<tr data-index="9" data-categories="SG9tZXdvcms=" data-listing-file-modified-sort="1783090693478" data-listing-reading-time-sort="5" data-listing-word-count-sort="890" data-listing-title-sort="Homework 8" data-listing-filename-sort="hw08.qmd">
-<td>
-<a href="./hw/hw08.html" class="title listing-title">Homework 8</a>
-</td>
-<td>
-<span class="listing-subtitle">Correlation and Linear Regression</span>
-</td>
-<td>
-<span class="listing-description"><span class="red">Due <strong>Friday, May 1, 11:59 PM</strong></span></span>
-</td>
-
-</tr>
-
 </tbody>
 </table>
 <div class="listing-no-matching d-none">No matching items</div>

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.19">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Activity: How Much Do Students Sleep? – MATH 4720 (MSSC 5720) - Fall 2026</title>
+<title>Homework 4 – MATH 4720 (MSSC 5720) - Fall 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -16,6 +16,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -39,9 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-1da5838089477fe5b285348978043904.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark-311c866fdd058187a59d486837a94991.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-1da5838089477fe5b285348978043904.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
-<script src="../site_libs/quarto-contrib/countdown-0.5.0/countdown.js"></script>
-<link href="../site_libs/quarto-contrib/countdown-0.5.0/countdown.css" rel="stylesheet"><script id="quarto-search-options" type="application/json">{
+<link href="../site_libs/bootstrap/bootstrap-1da5838089477fe5b285348978043904.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -93,12 +126,12 @@ window.Quarto = {
   typesetMath
 };
 </script>
-<meta property="og:title" content="Activity: How Much Do Students Sleep? – MATH 4720 (MSSC 5720) - Fall 2026">
-<meta property="og:description" content="Homepage for MATH 4720 (MSSC 5720) - Statistical Methods at Marquette University, Fall 2026.">
-<meta property="og:image" content="https://math4720-f26.github.io/website/images/QRCode_ci.png">
+<meta property="og:title" content="Homework 4 – MATH 4720 (MSSC 5720) - Fall 2026">
+<meta property="og:description" content="Probability Distributions">
+<meta property="og:image" content="https://math4720-f26.github.io/website/hw_new/hw04_files/figure-html/unnamed-chunk-6-1.png">
 <meta property="og:site_name" content="MATH 4720 (MSSC 5720) - Fall 2026">
-<meta property="og:image:height" content="1890">
-<meta property="og:image:width" content="1890">
+<meta property="og:image:height" content="960">
+<meta property="og:image:width" content="1344">
 </head>
 <body class="nav-sidebar docked quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
@@ -269,7 +302,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Activity: How Much Do Students Sleep?</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Homework 4</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -349,15 +382,17 @@ window.Quarto = {
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
    
   <ul>
-<li><a href="#objective" id="toc-objective" class="nav-link active" data-scroll-target="#objective"><strong>Objective</strong></a></li>
-  <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions">Instructions</a></li>
-  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
-  </ul><div class="toc-actions"><ul><li><a href="https://github.com/math4720-f26/website/edit/main/activity/act_ci.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/math4720-f26/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<li><a href="#homework-questions" id="toc-homework-questions" class="nav-link active" data-scroll-target="#homework-questions">Homework Questions</a></li>
+  </ul><div class="toc-actions"><ul><li><a href="https://github.com/math4720-f26/website/edit/main/hw_new/hw04.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/math4720-f26/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title">Activity: How Much Do Students Sleep?</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">Homework 4</h1>
+<p class="subtitle lead">Probability Distributions</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Homework</div>
+  </div>
+  </div>
 
 
 
@@ -370,114 +405,159 @@ window.Quarto = {
   
 
 
-</header><section id="objective" class="level2"><h2 class="anchored" data-anchor-id="objective"><strong>Objective</strong></h2>
-<p>You will create your own confidence interval for estimating on average how much college students sleep.</p>
-</section><section id="instructions" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="instructions">Instructions</h2>
-<ol type="1">
-<li><p>Form a group of <strong>four</strong> or <strong>five</strong>. (This is your sample size!)</p></li>
-<li><p>Record how many hours of sleep each one of you got last night. No need to be integers. Sleeping 7.6 hours totally works! So please use decimal hours as your data. Don’t know decimal hours for 7 hours 20 minutes? Use the app below for the answer!</p></li>
+</header><div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="red">Due <strong>Friday, Feb 27, 11:59 PM</strong></span></p>
+</div>
+</div>
+<ul>
+<li><p>Homework 4 covers Week 5 and 6.</p></li>
+<li><p>Please submit your work in <em>one</em> <strong>PDF</strong> file to <strong>D2L &gt; Assessments &gt; Dropbox</strong>. Multiple files or a file that is not in pdf format is not allowed.</p></li>
+</ul>
+<!-- - In your homework, please number questions **in order**.  --><!-- - Your homework could be handwritten or typewritten. If it is handwritten, make sure you scan your work well, and put everything in one single pdf. --><!-- - If you type your answers, make sure there are no typos. We grade your work based on *what you show, not what you want to show*. If you choose to handwrite your answers, write them neatly. If I can’t read your sloppy handwriting, your answer is judged as wrong. --><ul>
+<li><p><strong>Handwritten tables and figures receive no credits</strong>.</p></li>
+<li><p>You do not need to attach your code of any language you use in the homework. However, if you fail to complete your calculations or produce your table or figure, you receive partial credits if your code is attached.</p></li>
+<li><p>Questions started with <strong>(MSSC)</strong> are required for MSSC 5720 students, and optional for MATH 4720 students.</p></li>
+</ul>
+<section id="homework-questions" class="level1"><h1>Homework Questions</h1>
+<ol class="example" type="1">
+<li>What percent of a standard normal distribution <span class="math inline">\(N(\mu=0, \sigma=1)\)</span> is found in each region? Draw a normal graph may help.
+<ol type="a">
+<li><span class="math inline">\(-0.4 &lt; Z &lt; 1.5\)</span></li>
+<li><span class="math inline">\(|Z| &gt; 2\)</span></li>
 </ol>
-<iframe src="https://cheyu.shinyapps.io/hours/" width="100%" height="380" frameborder="0">
-</iframe>
-<ol start="3" type="1">
-<li>Construct your 95% confidence interval for mean sleeping hours using the formula</li>
+</li>
 </ol>
-<p><span class="math display">\[ \left[ \bar{x} - t_{0.025, n-1} \frac{s}{\sqrt{n}}, \, \bar{x} + t_{0.025, n-1} \frac{s}{\sqrt{n}} \right]\]</span></p>
-<p>where <span class="math inline">\(\bar{x}\)</span> is the sample mean, <span class="math inline">\(s\)</span> is the sample standard deviation, <span class="math inline">\(n\)</span> is the sample size, and <span class="math inline">\(t_{0.025, n-1}\)</span> is the <span class="math inline">\(t\)</span> critical value such that <span class="math inline">\(P(T &gt; t_{0.025, n-1}) = 2.5\%\)</span>.</p>
-<!-- (4) Let's create a larger sample by considering all of your sleeping hours. Construct its 95\% confidence interval. Note that you need to obtain new $\bar{x}$, $s$, $n$, and $t_{0.025, n-1}$. -->
-<p>Go to <a href="https://forms.office.com/r/XP8gyxNadf" class="uri">https://forms.office.com/r/XP8gyxNadf</a> to fill out your result!</p>
-<div class="cell page-columns page-full">
-<div class="cell-output-display page-columns page-full">
-<div class="page-columns page-full">
-<figure class="figure page-columns page-full"><p class="page-columns page-full"><img src="../images/QRCode_ci.png" class="img-fluid figure-img column-body" style="width:30.0%"></p>
+<!-- ## OpenIntro 4.1 --><div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">pnorm</a></span><span class="op">(</span><span class="fl">1.5</span><span class="op">)</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">pnorm</a></span><span class="op">(</span><span class="op">-</span><span class="fl">0.4</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.5886145</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">2</span><span class="op">*</span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">pnorm</a></span><span class="op">(</span><span class="op">-</span><span class="fl">2</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.04550026</code></pre>
+</div>
+</div>
+<p><br></p>
+<ol start="2" class="example" type="1">
+<li>The average daily high temperature in June in Milwaukee is 77<span class="math inline">\(^{\circ}\)</span> F with a standard deviation of 5<span class="math inline">\(^{\circ}\)</span> F. Suppose that the temperatures in June closely follow a normal distribution.
+<ol type="a">
+<li>What is the probability of observing an 83<span class="math inline">\(^{\circ}\)</span> F temperature or higher in Milwaukee during a randomly chosen day in June?</li>
+<li>How cool are the coldest 10% of the days (days with lowest average high temperature) during June in Milwaukee?</li>
+</ol>
+</li>
+</ol>
+<!-- ## OpenIntro 4.7 --><div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">pnorm</a></span><span class="op">(</span><span class="fl">83</span>, mean <span class="op">=</span> <span class="fl">77</span>, sd <span class="op">=</span> <span class="fl">5</span>, lower.tail <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.1150697</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">qnorm</a></span><span class="op">(</span><span class="fl">0.1</span>, mean <span class="op">=</span> <span class="fl">77</span>, sd <span class="op">=</span> <span class="fl">5</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 70.59224</code></pre>
+</div>
+</div>
+<p><br></p>
+<ol start="3" class="example" type="1">
+<li>Data collected by the Substance Abuse and Mental Health Services Administration (SAMSHA) suggests that 70% of 18-20 year olds consumed alcoholic beverages in any given year.
+<ol type="a">
+<li>Suppose a random sample of ten 18-20 year olds is taken. When does it make sense to use binomial distribution for calculating the probability that exactly six consumed alcoholic beverages? <!-- (b) Calculate the probability that exactly 6 out of 10 randomly sampled 18-20 year olds consumed an alcoholic drink. -->
+</li>
+<li>What is the probability that exactly four out of ten 18-20 year olds have consumed an alcoholic beverage?</li>
+<li>What is the probability that at most 2 out of 5 randomly sampled 18-20 year olds have consumed alcoholic beverages?</li>
+</ol>
+</li>
+</ol>
+<!-- ## OpenIntro 4.17 --><div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">dbinom</a></span><span class="op">(</span><span class="fl">6</span>, size <span class="op">=</span> <span class="fl">10</span>, prob <span class="op">=</span> <span class="fl">0.7</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.2001209</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">pbinom</a></span><span class="op">(</span><span class="fl">2</span>, size <span class="op">=</span> <span class="fl">5</span>, prob <span class="op">=</span> <span class="fl">0.7</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.16308</code></pre>
+</div>
+</div>
+<p><br></p>
+<ol start="4" class="example" type="1">
+<li>A Starbucks in Chicago serves an average of 75 customers per hour during the morning rush.
+<ol type="a">
+<li>Which distribution have we studied that is most appropriate for calculating the probability of a given number of customers arriving within one hour during this time of day?</li>
+<li>Calculate the probability that this Starbucks serves 70 customers in one hour during this time of day.</li>
+</ol>
+</li>
+</ol>
+<!-- ## OpenIntro 4.31 --><div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">dpois</a></span><span class="op">(</span><span class="fl">70</span>, lambda <span class="op">=</span> <span class="fl">75</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.04016033</code></pre>
+</div>
+</div>
+<p><br></p>
+<ol start="5" class="example" type="1">
+<li>
+<strong>(MSSC)</strong> In observing patients administered a new drug product in a properly conducted clinical trial, the number of persons experiencing a particular side effect might be quite small. Suppose <span class="math inline">\(\pi\)</span> (the probability a person experiences a side effect to the drug) is <span class="math inline">\(.001\)</span> and <span class="math inline">\(1,000\)</span> patients in the clinical trial received the drug.
+<ol type="a">
+<li>Use binomial distribution to Compute the probability that none of a random sample of <span class="math inline">\(n = 1,000\)</span> patients administered the drug experiences a particular side effect.</li>
+<li>Use Poisson distribution to Compute the probability that none of a random sample of <span class="math inline">\(n = 1,000\)</span> patients administered the drug experiences a particular side effect. [Hint:] The parameter <span class="math inline">\(\lambda = n\pi\)</span>.</li>
+<li>When <span class="math inline">\(n\)</span> is large and <span class="math inline">\(\pi\)</span> is small, Poisson<span class="math inline">\((\lambda)\)</span> looks pretty similar to binomial<span class="math inline">\((n, \pi)\)</span>. Plot the two distributions for <span class="math inline">\(x = 0, 1, \dots, 8\)</span>. Are they similar?</li>
+</ol>
+</li>
+</ol>
+<!-- ## Ott example 4.13 --><div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">n</span> <span class="op">&lt;-</span> <span class="fl">1000</span></span>
+<span><span class="va">p</span> <span class="op">&lt;-</span> <span class="fl">0.001</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">dbinom</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fl">0</span>, size <span class="op">=</span> <span class="va">n</span>, prob <span class="op">=</span> <span class="va">p</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.3676954</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">dpois</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fl">0</span>, lambda <span class="op">=</span> <span class="va">n</span><span class="op">*</span><span class="va">p</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.3678794</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fl">0</span><span class="op">:</span><span class="fl">8</span>, y <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">dbinom</a></span><span class="op">(</span><span class="fl">0</span><span class="op">:</span><span class="fl">8</span>, size <span class="op">=</span> <span class="va">n</span>, prob <span class="op">=</span> <span class="va">p</span><span class="op">)</span>, type <span class="op">=</span> <span class="st">'h'</span>, xlab <span class="op">=</span> <span class="st">"x"</span>, </span>
+<span>     las <span class="op">=</span> <span class="fl">1</span>, ylab <span class="op">=</span> <span class="st">"P(X = x)"</span>, lwd <span class="op">=</span> <span class="fl">5</span>, main <span class="op">=</span> <span class="st">"Binomial(1000, 0.001)"</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="hw04_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
-</section><section id="discussion" class="level2"><h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
-<ol class="example" type="1">
-<li><p>What does this interval mean in words?</p></li>
-<li><p>Does the CI tell us about individual sleep hours or about the average student’s sleep?</p></li>
-<li><p>If we repeated this process with new samples, would every interval capture the true population mean?</p></li>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="fl">0</span><span class="op">:</span><span class="fl">8</span>, <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">dpois</a></span><span class="op">(</span><span class="fl">0</span><span class="op">:</span><span class="fl">8</span>, lambda <span class="op">=</span> <span class="va">n</span><span class="op">*</span><span class="va">p</span><span class="op">)</span>, type <span class="op">=</span> <span class="st">'h'</span>, lwd <span class="op">=</span> <span class="fl">5</span>, las <span class="op">=</span> <span class="fl">1</span>,</span>
+<span>     ylab <span class="op">=</span> <span class="st">"P(X = x)"</span>, xlab <span class="op">=</span> <span class="st">"x"</span>, main <span class="op">=</span> <span class="st">"Poisson(1)"</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="hw04_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+<ol start="6" class="example" type="1">
+<li>
+<strong>AI Usage Declaration.</strong> Using GenAI is permitted for this course. If you choose to use GenAI to assist with your homework, you must include a brief statement documenting your use. Please provide the following information:
+<ol type="a">
+<li>
+<strong>Why/How I Used AI</strong> Why do you need to use GenAI? Which tool did you use? Describe your prompts or questions. What and how did you ask the AI to help you?</li>
+<li>
+<strong>Generated Output</strong> Include a screenshot or excerpt (copy and paste) of the AI’s response.</li>
+<li>
+<strong>How I Used the Output</strong> Did you revise it? Did you use it directly, or compare it with your answers? What decisions did you make based on the output?</li>
 </ol>
-<div id="timer_fc831f7e2ee6212d3805c5caf0fdde07be17f3a2" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
-  <div class="countdown-controls">
-    <button class="countdown-bump-down">−</button>
-    <button class="countdown-bump-up">+</button>
- </div>
- <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
- </div>
-<!-- | Hours | Minutes | Decimal Hours | -->
-<!-- |:------:|:--------:|:--------------:| -->
-<!-- | 6 | 10 | 6.17 | -->
-<!-- | 6 | 20 | 6.33 | -->
-<!-- | 6 | 30 | 6.50 | -->
-<!-- | 6 | 40 | 6.67 | -->
-<!-- | 6 | 50 | 6.83 | -->
-<!-- | 7 | 10 | 7.17 | -->
-<!-- | 7 | 20 | 7.33 | -->
-<!-- | 7 | 30 | 7.50 | -->
-<!-- | 7 | 40 | 7.67 | -->
-<!-- | 7 | 50 | 7.83 | -->
-<!-- | 8 | 10 | 8.17 | -->
-<!-- | 8 | 20 | 8.33 | -->
-<!-- | 8 | 30 | 8.50 | -->
-<!-- | 8 | 40 | 8.67 | -->
-<!-- | 8 | 50 | 8.83 | -->
-<!-- ## Mini Check for Understanding -->
-<!-- Choose the best fitting distribution for each prompt. You can use the checkboxes and compare with the answer key at the end. -->
-<!-- **A.** Number of free throws made by a player out of 10 attempts.   -->
-<!-- - [ ] Binomial   -->
-<!-- - [ ] Poisson   -->
-<!-- - [ ] Normal   -->
-<!-- **B.** The time between arrivals of buses at a stop.   -->
-<!-- - [ ] Binomial   -->
-<!-- - [ ] Poisson   -->
-<!-- - [ ] Normal   -->
-<!-- **C.** Weights of pumpkins at a county fair.   -->
-<!-- - [ ] Binomial   -->
-<!-- - [ ] Poisson   -->
-<!-- - [ ] Normal   -->
-<!-- ::: callout-note -->
-<!-- **Tip:** If you are counting successes out of a fixed number of trials with the same probability each time, think **Binomial**. If you are counting how many events occur in a fixed interval, think **Poisson**. If you are measuring a continuous trait with a bell shaped distribution, think **Normal**. -->
-<!-- ::: -->
-<!-- ## Debrief Prompts -->
-<!-- - What features in a scenario tell you that the number of trials is fixed and the probability is constant -->
-<!-- - What keywords suggest a count per interval -->
-<!-- - When would a Binomial scenario be approximated by a Normal distribution -->
-<!-- ## Answer Key -->
-<!-- <details> -->
-<!-- <summary>Reveal suggested answers</summary> -->
-<!-- **Scenarios:**   -->
-<!-- 1. **Binomial**. Fixed number of bulbs and each is defective or not with the same probability.   -->
-<!-- 2. **Poisson**. Count of arrivals in a fixed time interval.   -->
-<!-- 3. **Normal**. Heights are often modeled as approximately normal.   -->
-<!-- 4. **Binomial**. Out of 30 students with done or not done as outcomes.   -->
-<!-- 5. **Poisson**. Count of cars per fixed time interval.   -->
-<!-- 6. **Normal**. IQ scores are modeled as normal by design. -->
-<!-- **Mini Check for Understanding:**   -->
-<!-- A. **Binomial**   -->
-<!-- B. Neither Poisson nor Binomial precisely. The time between events is often modeled by the **Exponential** distribution which is related to the Poisson process.   -->
-<!-- C. **Normal**   -->
-<!-- </details> -->
-<!-- ::: {.callout-caution collapse="true"} -->
-<!-- ## For which test data point, the classification result is uncertain or unstable? -->
-<!-- ::: -->
-<!-- ::: {.callout-caution collapse="true"} -->
-<!-- ## Which data point can be labelled as one particular category with 100% certainty, for all different $K$s? -->
-<!-- ::: -->
-<!-- ::: {.callout-caution collapse="true"} -->
-<!-- ## For the blue point, what happened when $K$ increases? Do we change the prediction? What about uncertainty? -->
-<!-- ::: -->
-<!-- ::: {.callout-caution collapse="true"} -->
-<!-- ## If you would like to make a classification rule or set the decision boundary to predict cats or dogs, what would the decision boundary look like? Why? -->
-<!-- ::: -->
-<!-- 1. **Income of households in a country** – Skewed heavily to the right, not symmetric. Better: Lognormal or Pareto.   -->
-<!-- 2. **Time between buses arriving at a stop** – Waiting times are exponential, not Poisson. Better: Exponential distribution.   -->
-<!-- 3. **Grades in a course (A, B, C, D, F)** – Multiple ordered categories, not just two outcomes. Better: Multinomial or ordinal logistic.   -->
-<!-- 4. **Daily stock price changes** – Heavy tails with extreme values. Better: Student’s t or heavy-tailed distributions.   -->
-<!-- 5. **Number of cars a family owns** – Not fixed trials, not symmetric continuous. Better: Geometric or negative binomial.   -->
-<!-- 6. **Survival time of patients after surgery** – Skewed times to event, cannot be negative. Better: Exponential, Weibull, or survival analysis methods. -->
+</li>
+</ol>
 
 
 </section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
@@ -899,7 +979,7 @@ window.Quarto = {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/math4720-f26/website/edit/main/activity/act_ci.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/math4720-f26/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/math4720-f26/website/edit/main/hw_new/hw04.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/math4720-f26/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

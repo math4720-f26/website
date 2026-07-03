@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.19">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Activity: How Much Do Students Sleep? – MATH 4720 (MSSC 5720) - Fall 2026</title>
+<title>Homework 8 – MATH 4720 (MSSC 5720) - Fall 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,9 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-1da5838089477fe5b285348978043904.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark-311c866fdd058187a59d486837a94991.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-1da5838089477fe5b285348978043904.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
-<script src="../site_libs/quarto-contrib/countdown-0.5.0/countdown.js"></script>
-<link href="../site_libs/quarto-contrib/countdown-0.5.0/countdown.css" rel="stylesheet"><script id="quarto-search-options" type="application/json">{
+<link href="../site_libs/bootstrap/bootstrap-1da5838089477fe5b285348978043904.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -93,12 +91,9 @@ window.Quarto = {
   typesetMath
 };
 </script>
-<meta property="og:title" content="Activity: How Much Do Students Sleep? – MATH 4720 (MSSC 5720) - Fall 2026">
-<meta property="og:description" content="Homepage for MATH 4720 (MSSC 5720) - Statistical Methods at Marquette University, Fall 2026.">
-<meta property="og:image" content="https://math4720-f26.github.io/website/images/QRCode_ci.png">
+<meta property="og:title" content="Homework 8 – MATH 4720 (MSSC 5720) - Fall 2026">
+<meta property="og:description" content="Correlation and Linear Regression">
 <meta property="og:site_name" content="MATH 4720 (MSSC 5720) - Fall 2026">
-<meta property="og:image:height" content="1890">
-<meta property="og:image:width" content="1890">
 </head>
 <body class="nav-sidebar docked quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
@@ -269,7 +264,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Activity: How Much Do Students Sleep?</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Homework 8</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -349,15 +344,17 @@ window.Quarto = {
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
    
   <ul>
-<li><a href="#objective" id="toc-objective" class="nav-link active" data-scroll-target="#objective"><strong>Objective</strong></a></li>
-  <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions">Instructions</a></li>
-  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
-  </ul><div class="toc-actions"><ul><li><a href="https://github.com/math4720-f26/website/edit/main/activity/act_ci.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/math4720-f26/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<li><a href="#homework-questions" id="toc-homework-questions" class="nav-link active" data-scroll-target="#homework-questions">Homework Questions</a></li>
+  </ul><div class="toc-actions"><ul><li><a href="https://github.com/math4720-f26/website/edit/main/hw_new/hw08.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/math4720-f26/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title">Activity: How Much Do Students Sleep?</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">Homework 8</h1>
+<p class="subtitle lead">Correlation and Linear Regression</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Homework</div>
+  </div>
+  </div>
 
 
 
@@ -370,114 +367,116 @@ window.Quarto = {
   
 
 
-</header><section id="objective" class="level2"><h2 class="anchored" data-anchor-id="objective"><strong>Objective</strong></h2>
-<p>You will create your own confidence interval for estimating on average how much college students sleep.</p>
-</section><section id="instructions" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="instructions">Instructions</h2>
-<ol type="1">
-<li><p>Form a group of <strong>four</strong> or <strong>five</strong>. (This is your sample size!)</p></li>
-<li><p>Record how many hours of sleep each one of you got last night. No need to be integers. Sleeping 7.6 hours totally works! So please use decimal hours as your data. Don’t know decimal hours for 7 hours 20 minutes? Use the app below for the answer!</p></li>
-</ol>
-<iframe src="https://cheyu.shinyapps.io/hours/" width="100%" height="380" frameborder="0">
-</iframe>
-<ol start="3" type="1">
-<li>Construct your 95% confidence interval for mean sleeping hours using the formula</li>
-</ol>
-<p><span class="math display">\[ \left[ \bar{x} - t_{0.025, n-1} \frac{s}{\sqrt{n}}, \, \bar{x} + t_{0.025, n-1} \frac{s}{\sqrt{n}} \right]\]</span></p>
-<p>where <span class="math inline">\(\bar{x}\)</span> is the sample mean, <span class="math inline">\(s\)</span> is the sample standard deviation, <span class="math inline">\(n\)</span> is the sample size, and <span class="math inline">\(t_{0.025, n-1}\)</span> is the <span class="math inline">\(t\)</span> critical value such that <span class="math inline">\(P(T &gt; t_{0.025, n-1}) = 2.5\%\)</span>.</p>
-<!-- (4) Let's create a larger sample by considering all of your sleeping hours. Construct its 95\% confidence interval. Note that you need to obtain new $\bar{x}$, $s$, $n$, and $t_{0.025, n-1}$. -->
-<p>Go to <a href="https://forms.office.com/r/XP8gyxNadf" class="uri">https://forms.office.com/r/XP8gyxNadf</a> to fill out your result!</p>
-<div class="cell page-columns page-full">
-<div class="cell-output-display page-columns page-full">
-<div class="page-columns page-full">
-<figure class="figure page-columns page-full"><p class="page-columns page-full"><img src="../images/QRCode_ci.png" class="img-fluid figure-img column-body" style="width:30.0%"></p>
-</figure>
+</header><div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<p><span class="red">Due <strong>Friday, May 1, 11:59 PM</strong></span></p>
 </div>
-</section><section id="discussion" class="level2"><h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
+</div>
+<!-- - Homework 8 covers Week 11-14. -->
+<ul>
+<li><p>Please submit your work in <em>one</em> <strong>PDF</strong> file to <strong>D2L &gt; Assessments &gt; Dropbox</strong>. Multiple files or a file that is not in pdf format is not allowed.</p></li>
+<li><p>In your homework, please number questions <strong>in order</strong>.</p></li>
+</ul>
+<!-- - Your homework could be handwritten or typewritten. If it is handwritten, make sure you scan your work well, and put everything in one single pdf. --><!-- - If you type your answers, make sure there are no typos. We grade your work based on *what you show, not what you want to show*. If you choose to handwrite your answers, write them neatly. If I can’t read your sloppy handwriting, your answer is judged as wrong. --><ul>
+<li><p><strong>Handwritten tables and figures receive no credits</strong>.</p></li>
+<li><p>You do not need to attach your code of any language you use in the homework. However, if you fail to complete your calculations or produce your table or figure, you receive partial credits if your code is attached.</p></li>
+<li><p>Questions started with <strong>(MSSC)</strong> are required for MSSC 5720 students, and optional for MATH 4720 students.</p></li>
+</ul>
+<section id="homework-questions" class="level1"><h1>Homework Questions</h1>
 <ol class="example" type="1">
-<li><p>What does this interval mean in words?</p></li>
-<li><p>Does the CI tell us about individual sleep hours or about the average student’s sleep?</p></li>
-<li><p>If we repeated this process with new samples, would every interval capture the true population mean?</p></li>
+<li>Maru and Lulu are both collecting data on number of rainy days in a year and the total rainfall for the year. Maru records rainfall in inches and Lulu in centimeters. How will their correlation coefficients compare?</li>
 </ol>
-<div id="timer_fc831f7e2ee6212d3805c5caf0fdde07be17f3a2" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
-  <div class="countdown-controls">
-    <button class="countdown-bump-down">−</button>
-    <button class="countdown-bump-up">+</button>
- </div>
- <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
- </div>
-<!-- | Hours | Minutes | Decimal Hours | -->
-<!-- |:------:|:--------:|:--------------:| -->
-<!-- | 6 | 10 | 6.17 | -->
-<!-- | 6 | 20 | 6.33 | -->
-<!-- | 6 | 30 | 6.50 | -->
-<!-- | 6 | 40 | 6.67 | -->
-<!-- | 6 | 50 | 6.83 | -->
-<!-- | 7 | 10 | 7.17 | -->
-<!-- | 7 | 20 | 7.33 | -->
-<!-- | 7 | 30 | 7.50 | -->
-<!-- | 7 | 40 | 7.67 | -->
-<!-- | 7 | 50 | 7.83 | -->
-<!-- | 8 | 10 | 8.17 | -->
-<!-- | 8 | 20 | 8.33 | -->
-<!-- | 8 | 30 | 8.50 | -->
-<!-- | 8 | 40 | 8.67 | -->
-<!-- | 8 | 50 | 8.83 | -->
-<!-- ## Mini Check for Understanding -->
-<!-- Choose the best fitting distribution for each prompt. You can use the checkboxes and compare with the answer key at the end. -->
-<!-- **A.** Number of free throws made by a player out of 10 attempts.   -->
-<!-- - [ ] Binomial   -->
-<!-- - [ ] Poisson   -->
-<!-- - [ ] Normal   -->
-<!-- **B.** The time between arrivals of buses at a stop.   -->
-<!-- - [ ] Binomial   -->
-<!-- - [ ] Poisson   -->
-<!-- - [ ] Normal   -->
-<!-- **C.** Weights of pumpkins at a county fair.   -->
-<!-- - [ ] Binomial   -->
-<!-- - [ ] Poisson   -->
-<!-- - [ ] Normal   -->
-<!-- ::: callout-note -->
-<!-- **Tip:** If you are counting successes out of a fixed number of trials with the same probability each time, think **Binomial**. If you are counting how many events occur in a fixed interval, think **Poisson**. If you are measuring a continuous trait with a bell shaped distribution, think **Normal**. -->
-<!-- ::: -->
-<!-- ## Debrief Prompts -->
-<!-- - What features in a scenario tell you that the number of trials is fixed and the probability is constant -->
-<!-- - What keywords suggest a count per interval -->
-<!-- - When would a Binomial scenario be approximated by a Normal distribution -->
-<!-- ## Answer Key -->
-<!-- <details> -->
-<!-- <summary>Reveal suggested answers</summary> -->
-<!-- **Scenarios:**   -->
-<!-- 1. **Binomial**. Fixed number of bulbs and each is defective or not with the same probability.   -->
-<!-- 2. **Poisson**. Count of arrivals in a fixed time interval.   -->
-<!-- 3. **Normal**. Heights are often modeled as approximately normal.   -->
-<!-- 4. **Binomial**. Out of 30 students with done or not done as outcomes.   -->
-<!-- 5. **Poisson**. Count of cars per fixed time interval.   -->
-<!-- 6. **Normal**. IQ scores are modeled as normal by design. -->
-<!-- **Mini Check for Understanding:**   -->
-<!-- A. **Binomial**   -->
-<!-- B. Neither Poisson nor Binomial precisely. The time between events is often modeled by the **Exponential** distribution which is related to the Poisson process.   -->
-<!-- C. **Normal**   -->
-<!-- </details> -->
-<!-- ::: {.callout-caution collapse="true"} -->
-<!-- ## For which test data point, the classification result is uncertain or unstable? -->
-<!-- ::: -->
-<!-- ::: {.callout-caution collapse="true"} -->
-<!-- ## Which data point can be labelled as one particular category with 100% certainty, for all different $K$s? -->
-<!-- ::: -->
-<!-- ::: {.callout-caution collapse="true"} -->
-<!-- ## For the blue point, what happened when $K$ increases? Do we change the prediction? What about uncertainty? -->
-<!-- ::: -->
-<!-- ::: {.callout-caution collapse="true"} -->
-<!-- ## If you would like to make a classification rule or set the decision boundary to predict cats or dogs, what would the decision boundary look like? Why? -->
-<!-- ::: -->
-<!-- 1. **Income of households in a country** – Skewed heavily to the right, not symmetric. Better: Lognormal or Pareto.   -->
-<!-- 2. **Time between buses arriving at a stop** – Waiting times are exponential, not Poisson. Better: Exponential distribution.   -->
-<!-- 3. **Grades in a course (A, B, C, D, F)** – Multiple ordered categories, not just two outcomes. Better: Multinomial or ordinal logistic.   -->
-<!-- 4. **Daily stock price changes** – Heavy tails with extreme values. Better: Student’s t or heavy-tailed distributions.   -->
-<!-- 5. **Number of cars a family owns** – Not fixed trials, not symmetric continuous. Better: Geometric or negative binomial.   -->
-<!-- 6. **Survival time of patients after surgery** – Skewed times to event, cannot be negative. Better: Exponential, Weibull, or survival analysis methods. -->
+<p><br></p>
+<ol start="2" class="example" type="1">
+<li>Suppose we fit a regression line to predict the shelf life of an apple based on its weight. For a particular apple, we predict the shelf life to be 4.6 days. The apple’s residual is -0.6 days. Did we over or under estimate the shelf-life of the apple? Explain your reasoning.</li>
+</ol>
+<p><br></p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead><tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: right;">1</th>
+<th style="text-align: right;">2</th>
+<th style="text-align: right;">3</th>
+<th style="text-align: right;">4</th>
+<th style="text-align: right;">5</th>
+<th style="text-align: right;">6</th>
+<th style="text-align: right;">7</th>
+<th style="text-align: right;">8</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Tar</td>
+<td style="text-align: right;">25.0</td>
+<td style="text-align: right;">27.0</td>
+<td style="text-align: right;">20.0</td>
+<td style="text-align: right;">24.0</td>
+<td style="text-align: right;">20.0</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">21.0</td>
+<td style="text-align: right;">24.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Nicotine</td>
+<td style="text-align: right;">1.5</td>
+<td style="text-align: right;">1.7</td>
+<td style="text-align: right;">1.1</td>
+<td style="text-align: right;">1.6</td>
+<td style="text-align: right;">1.1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.2</td>
+<td style="text-align: right;">1.4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<ol start="3" class="example" type="1">
+<li><ol type="a">
+<li>Construct a scatterplot using tar for the <span class="math inline">\(x\)</span> axis and nicotine for the <span class="math inline">\(y\)</span> axis. Does the scatterplot suggest a linear relationship between the two variables? Are they positively or negatively related?</li>
+<li>Let <span class="math inline">\(y\)</span> be the amount of nicotine and let <span class="math inline">\(x\)</span> be the amount of tar. Fit a simple linear regression to the data and identify the sample regression equation.</li>
+<li>What percentage of the variation in nicotine can be explained by the linear correlation between nicotine and tar?</li>
+<li>The Raleigh brand king size cigarette is not included in the table, and it has 23 mg of tar. What is the best predicted amount of nicotine? How does the predicted amount compare to the actual amount of 1.3 mg of nicotine? What is the value of residual?</li>
+<li>Perform the test <span class="math inline">\(H_0: \beta_1 = 0\)</span> vs.&nbsp;<span class="math inline">\(H_1: \beta_1 \ne 0\)</span>.</li>
+<li>Provide 95% confidence interval for <span class="math inline">\(\beta_1\)</span>.</li>
+<li>Generate the ANOVA table for the linear regression.</li>
+</ol></li>
+</ol>
+<p><br></p>
+<ol start="4" class="example" type="1">
+<li>
+<p><strong>(MSSC)</strong> We have been doing a variety of hypothesis tests, two-sample pooled <span class="math inline">\(t\)</span> tests, <span class="math inline">\(F\)</span>-test for comparing two variances for example. However, the null hypothesis significance testing (NHST) paradigm and the p-value usage have been much criticized and shown to be problematic and often misused in data analysis. In fact, in his research, Dr.&nbsp;Yu never does NHST or uses p-value taught in MATH 4720. Please read the articles</p>
+<ul>
+<li><p><a href="https://www.tandfonline.com/doi/epdf/10.1080/00031305.2016.1154108?needAccess=true">Ronald L. Wasserstein and Nicole A. Lazar (2016), “The ASA Statement on p-Values: Context, Process, and Purpose (page 131 – 132)”</a></p></li>
+<li><p><a href="https://www.nature.com/articles/d41586-019-00857-9">V. Amrhein, S. Greenland and B. McShane (2019), “Retire statistical significance”, <em>Nature</em>, 567, 305-307.</a></p></li>
+<li><p><a href="https://www.nature.com/articles/506150a">R. Nuzzo (2014), “Scientific method: Statistical errors”, <em>Nature</em>, 506, 150–152.</a></p></li>
+</ul>
+<p>Write a one-page summary discussing the problems of NHST paradigm and p-value. Welcome to share what does not make sense to you about the hypothesis testing (or confidence interval) that was proposed about 100 years ago.</p>
+</li>
+</ol>
+<!-- &nbsp; --><!-- &nbsp; --><p><br></p>
+<ol start="5" class="example" type="1">
+<li>
+<strong>AI Usage Declaration.</strong> Using GenAI is permitted for this course. If you choose to use GenAI to assist with your homework, you must include a brief statement documenting your use. Please provide the following information:
+<ol type="a">
+<li>
+<strong>Why/How I Used AI</strong> Why do you need to use GenAI? Which tool did you use? Describe your prompts or questions. What and how did you ask the AI to help you?</li>
+<li>
+<strong>Generated Output</strong> Include a screenshot or excerpt (copy and paste) of the AI’s response.</li>
+<li>
+<strong>How I Used the Output</strong> Did you revise it? Did you use it directly, or compare it with your answers? What decisions did you make based on the output?</li>
+</ol>
+</li>
+</ol>
 
 
 </section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
@@ -899,7 +898,7 @@ window.Quarto = {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/math4720-f26/website/edit/main/activity/act_ci.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/math4720-f26/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/math4720-f26/website/edit/main/hw_new/hw08.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/math4720-f26/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

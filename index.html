@@ -336,8 +336,24 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header><p><em>This schedule will be updated as the semester progresses, with all changes documented here.</em></p>
-<div class="column-screen-inset-right">
+</header><style>
+/* Make the boundary between weeks more visible while keeping the schedule
+   as a Markdown pipe table. In this schedule, each week has two rows, so
+   the first row of each week is an odd-numbered row in the table body. */
+.weekly-schedule table {
+  border-collapse: collapse;
+}
+
+.weekly-schedule table tbody tr:nth-child(odd) > * {
+  border-top: 2px solid #555 !important;
+}
+
+.weekly-schedule table tbody tr:nth-child(odd) td:first-child {
+  font-weight: 700;
+}
+</style>
+<p><em>This schedule will be updated as the semester progresses, with all changes documented here.</em></p>
+<div class="column-screen-inset-right weekly-schedule">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 5%">
@@ -660,7 +676,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
-<td style="text-align: center;">✍️ HW 7 (due 11/27)</td>
+<td style="text-align: center;">✍️ HW 7 (due 12/4)</td>
 <td>Worksheet 9</td>
 <td style="text-align: center;">✅ Quiz 3</td>
 <td style="text-align: center;"></td>

@@ -84,9 +84,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-title","listing-author"],
+      searchColumns: [],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -425,122 +425,14 @@ window.Quarto = {
 
 
 <div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<table class="quarto-listing-table table">
+<table class="quarto-listing-table table caption-top">
 <thead>
-<tr>
-
-<th>
-No.
-</th>
-
-<th>
-Title
-</th>
-
+<tr class="header">
+<th data-quarto-table-cell-role="th">No.</th>
+<th data-quarto-table-cell-role="th">Title</th>
 </tr>
 </thead>
 <tbody class="list">
-
-<tr data-index="0" data-categories="V29ya3NoZWV0" data-listing-file-modified-sort="1783090694319" data-listing-reading-time-sort="2" data-listing-word-count-sort="293" data-listing-title-sort="Worksheet 1" data-listing-filename-sort="ws1.qmd">
-<td>
-<a href="./ws/ws1.html" class="title listing-title">Worksheet 1</a>
-</td>
-<td>
-<span class="listing-subtitle">Summarizing data</span>
-</td>
-
-</tr>
-
-<tr data-index="1" data-categories="V29ya3NoZWV0" data-listing-file-modified-sort="1783090694319" data-listing-reading-time-sort="1" data-listing-word-count-sort="113" data-listing-title-sort="Worksheet 10" data-listing-filename-sort="ws10.qmd">
-<td>
-<a href="./ws/ws10.html" class="title listing-title">Worksheet 10</a>
-</td>
-<td>
-<span class="listing-subtitle">Linear Regression</span>
-</td>
-
-</tr>
-
-<tr data-index="2" data-categories="V29ya3NoZWV0" data-listing-file-modified-sort="1783090694319" data-listing-reading-time-sort="7" data-listing-word-count-sort="1299" data-listing-title-sort="Worksheet 2" data-listing-filename-sort="ws2.qmd">
-<td>
-<a href="./ws/ws2.html" class="title listing-title">Worksheet 2</a>
-</td>
-<td>
-<span class="listing-subtitle">Probability Fundamentals</span>
-</td>
-
-</tr>
-
-<tr data-index="3" data-categories="V29ya3NoZWV0" data-listing-file-modified-sort="1783090694319" data-listing-reading-time-sort="1" data-listing-word-count-sort="72" data-listing-title-sort="Worksheet 3" data-listing-filename-sort="ws3.qmd">
-<td>
-<a href="./ws/ws3.html" class="title listing-title">Worksheet 3</a>
-</td>
-<td>
-<span class="listing-subtitle">Probability Distributions</span>
-</td>
-
-</tr>
-
-<tr data-index="4" data-categories="V29ya3NoZWV0" data-listing-file-modified-sort="1783090694319" data-listing-reading-time-sort="1" data-listing-word-count-sort="99" data-listing-title-sort="Worksheet 4" data-listing-filename-sort="ws4.qmd">
-<td>
-<a href="./ws/ws4.html" class="title listing-title">Worksheet 4</a>
-</td>
-<td>
-<span class="listing-subtitle">Sampling Distributions and Central Limit Theorem</span>
-</td>
-
-</tr>
-
-<tr data-index="5" data-categories="V29ya3NoZWV0" data-listing-file-modified-sort="1783090694319" data-listing-reading-time-sort="1" data-listing-word-count-sort="59" data-listing-title-sort="Worksheet 5" data-listing-filename-sort="ws5.qmd">
-<td>
-<a href="./ws/ws5.html" class="title listing-title">Worksheet 5</a>
-</td>
-<td>
-<span class="listing-subtitle">Confidence Intervals</span>
-</td>
-
-</tr>
-
-<tr data-index="6" data-categories="V29ya3NoZWV0" data-listing-file-modified-sort="1783090694319" data-listing-reading-time-sort="1" data-listing-word-count-sort="70" data-listing-title-sort="Worksheet 6" data-listing-filename-sort="ws6.qmd">
-<td>
-<a href="./ws/ws6.html" class="title listing-title">Worksheet 6</a>
-</td>
-<td>
-<span class="listing-subtitle">Hypothesis Testing</span>
-</td>
-
-</tr>
-
-<tr data-index="7" data-categories="V29ya3NoZWV0" data-listing-file-modified-sort="1783090694319" data-listing-reading-time-sort="1" data-listing-word-count-sort="86" data-listing-title-sort="Worksheet 7" data-listing-filename-sort="ws7.qmd">
-<td>
-<a href="./ws/ws7.html" class="title listing-title">Worksheet 7</a>
-</td>
-<td>
-<span class="listing-subtitle">Two Poluation Means</span>
-</td>
-
-</tr>
-
-<tr data-index="8" data-categories="V29ya3NoZWV0" data-listing-file-modified-sort="1783090694319" data-listing-reading-time-sort="1" data-listing-word-count-sort="49" data-listing-title-sort="Worksheet 8" data-listing-filename-sort="ws8.qmd">
-<td>
-<a href="./ws/ws8.html" class="title listing-title">Worksheet 8</a>
-</td>
-<td>
-<span class="listing-subtitle">Inference About Variances</span>
-</td>
-
-</tr>
-
-<tr data-index="9" data-categories="V29ya3NoZWV0" data-listing-file-modified-sort="1783090694320" data-listing-reading-time-sort="1" data-listing-word-count-sort="76" data-listing-title-sort="Worksheet 9" data-listing-filename-sort="ws9.qmd">
-<td>
-<a href="./ws/ws9.html" class="title listing-title">Worksheet 9</a>
-</td>
-<td>
-<span class="listing-subtitle">ANOVA</span>
-</td>
-
-</tr>
-
 </tbody>
 </table>
 <div class="listing-no-matching d-none">No matching items</div>

@@ -1,33 +1,7 @@
 [
   {
     "listing": "/hw.html",
-    "items": [
-      "/hw/hw03-extra.html",
-      "/hw/hw06-extra.html",
-      "/hw/hw01.html",
-      "/hw/hw02.html",
-      "/hw/hw03.html",
-      "/hw/hw04.html",
-      "/hw/hw05.html",
-      "/hw/hw06.html",
-      "/hw/hw07.html",
-      "/hw/hw08.html"
-    ]
-  },
-  {
-    "listing": "/ws.html",
-    "items": [
-      "/ws/ws1.html",
-      "/ws/ws10.html",
-      "/ws/ws2.html",
-      "/ws/ws3.html",
-      "/ws/ws4.html",
-      "/ws/ws5.html",
-      "/ws/ws6.html",
-      "/ws/ws7.html",
-      "/ws/ws8.html",
-      "/ws/ws9.html"
-    ]
+    "items": []
   },
   {
     "listing": "/exam.html",
@@ -35,6 +9,10 @@
       "/exam/take_home_exam1.html",
       "/exam/take_home_exam2.html"
     ]
+  },
+  {
+    "listing": "/ws.html",
+    "items": []
   },
   {
     "listing": "/exercise.html",
