@@ -11,7 +11,7 @@ execute:
 ---
 
 
-(@) For each alternative, say whether it is right-tailed, left-tailed or two sided.
+(@) For each alternative, say whether it is right-tailed, left-tailed or two-sided.
 (a) $H_1: \mu \ne 50$
 (b) $H_1: \mu > 50$
 (c) $H_1: \mu < 50$

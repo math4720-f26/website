@@ -1,6 +1,6 @@
-# Website for MSSC 6250 at Marquette University (Spring 2025)
+# Website for MATH 4720 (MSSC 5720) at Marquette University (Fall 2026)
 
-🔗 <https://mssc6250-s25.github.io/website/>
+🔗 <https://math4720-f26.github.io/website/>
 
 <hr>
 

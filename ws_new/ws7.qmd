@@ -1,6 +1,6 @@
 ---
 title: "Worksheet 7"
-subtitle: "Hypothesis Testing"
+subtitle: "Two Poluation Means"
 categories: "Worksheet"
 format:
   html:
@@ -11,23 +11,21 @@ execute:
 ---
 
 
-(@) For each alternative, say whether it is right-tailed, left-tailed or two sided.
-(a) $H_1: \mu \ne 50$
-(b) $H_1: \mu > 50$
-(c) $H_1: \mu < 50$
+(@) For each scenario, decide whether a paired t procedure or an independent two sample t procedure is appropriate.
+(a) Blood pressure before and after medication on the same 20 patients.
+(b) Mean GPA of students in two different sections taught by different instructors.
+(c) Comparing left and right hand grip strength for each person.
 
 ```{r}
 #| include: false
-# (a) two-sided (b) right-tailed (c) left-tailed
+# (a) Paired (b) Independent two sample (c) Paired
 ```
 
 
 
-(@) We are testing $H_0: \mu = 100$. A sample gives $\bar{x} = 106$ with standard error $SE = 2$.
-(a) Compute the test statistic $z$.
-(b) The rejection rule is $|z| > 2$. Do you reject $H_0$?
+(@) A 95 percent confidence interval for $\mu_1 - \mu_2$ is $(-1, 5)$. At α = 0.05, would you reject $H_0: \mu_1 -\mu_2 = 0$ in a two sided test?
 
 ```{r}
 #| include: false
-# (a) z_test = 3 (b) reject H_0
+# No
 ```

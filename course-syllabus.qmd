@@ -2,7 +2,7 @@
 title: "Syllabus"
 ---
 
-Download syllabus at [`r fontawesome::fa("file-pdf")`](/documents/syllabus-4720-103-s26.pdf)
+Download syllabus at [`r fontawesome::fa("file-pdf")`](/documents/syllabus-4720-104-f26.pdf)
 
 <!-- [**Syllabus for Section 102 3:30 - 4:45 PM**](/documents/syllabus-4720-102-f25.pdf). -->
 
@@ -10,11 +10,11 @@ Download syllabus at [`r fontawesome::fa("file-pdf")`](/documents/syllabus-4720-
 
 |          | Day     | Time           | Location       |
 |----------|---------|----------------|----------------|
-| Sec 103  | Tu & Th | 11 AM - 12:15 PM | Wehr Physics 209 |
+| Sec 104  | Tu & Th | 3:30 AM - 4:45 PM | Cudahy Hall 118 |
 
 ## Office Hours
 
--   My in-person office hours are TuTh 3:20 – 4:20 PM and We 1 - 2 PM in Cudahy Hall room 353.
+-   My in-person office hours are TuTh 4:50 – 5:50 PM and We 12 - 1 PM in Cudahy Hall room 353.
 
 -   We can schedule an online meeting via Microsoft Teams if you need/prefer.
 
@@ -76,10 +76,9 @@ knitr::include_graphics("./images/email.png")
 | ----------------------- | -----: |
 | 8 Homework sets         |    10% |
 | 4 Quizzes               |    20% |
-| 2 Exams                 |    40% |
+| 2 Exams                 |    50% |
 | some Worksheets         |    10% |
 | some Group Activities   |    10% |
-| Final Project           |    10% |
 
 
 - You will **NOT** be allowed any extra credit projects/homework/exam to compensate for a poor average. Everyone must be given the same opportunity to do well in this class. Individual exam will **NOT** be curved.
@@ -140,29 +139,27 @@ knitr::kable(grade_dist, longtable = TRUE,
 
 - Each quiz is worth 5% of your overall grade.
 
-- Option: If you miss a quiz due to an excused absence as defined in [Attendance in Academic Regulations](https://bulletin.marquette.edu/policies/attendance/undergraduate/), the 5% allocated to that quiz will be transferred to either Exam 1 or Exam 2, whichever is closest in time and not yet graded. For example, if you miss Quiz 2 and Exam 1 has not yet taken place, then Exam 1 will be worth 25% instead of 20%.
+- Option: If you miss a quiz due to an excused absence as defined in [Attendance in Academic Regulations](https://bulletin.marquette.edu/policies/attendance/undergraduate/), the 5% allocated to that quiz will be transferred to either the midterm exam or the final exam, whichever is closest in time and has not yet been graded. For example, if you miss Quiz 2 and the midterm exam has not yet taken place, then the midterm exam will be worth 30% instead of 25%.
 
 - If you miss more than one quiz, only one missed quiz can be replaced by transferring its weight to an exam. Any additional missed quizzes will receive a score of 0%.
 
 ### Exams
 
-- There will be 2 exams.
+- There will be two exams: the midterm exam and the final exam.
 
-- The exams have a in-class part and a take-home part. The in-class part tests your understanding of mathematical and statistical intuitions. The take-home part tests your ability to do statistical data analysis using statistical software such as R.
+- Each exam has an in-class part and a take-home part. The in-class part tests your understanding of mathematical and statistical intuitions. The take-home part tests your ability to conduct statistical data analysis using statistical software such as R.
 
+- For the in-class part, one **letter-size** cheat sheet is allowed. It must be turned in with your exam.
 
-- For the in-class parts, one piece of **letter size** cheat sheet is allowed. It has to be turned-in with your exam.
-
-- For the take-home parts, you are allowed to use GenAI tools. However, you **must carefully cite it or reveal your use of AI.** See @sec-genai for more details. No late submission is allowed.
+- For the take-home part, you are allowed to use GenAI tools. However, you **must carefully cite it or reveal your use of AI.** See @sec-genai for more details.
 
 - Please go to **Assessments > Dropbox** to submit your take-home exam in **PDF** format. 
 
-- Exam 1 covers **Week 1 to 7**. Exam 2 covers **Week 8 to 14**.
+- The midterm exam covers **Weeks 1 to 7**. The final exam covers **all course material**.
 
-- **No make-up exams** for any reason unless you got an [excused absence](https://bulletin.marquette.edu/policies/attendance/undergraduate/)
+- **No make-up exams** will be given for any reason unless you have an [excused absence](https://bulletin.marquette.edu/policies/attendance/undergraduate/).
 
-- Option: If you miss Exam 1 due to an excused absence defined in [Attendance in Academic Regulations](https://bulletin.marquette.edu/policies/attendance/undergraduate/), its 20% will be added to your Exam 2, i.e., (20% + 20% = 40%).
-
+- Option: If you miss the midterm exam due to an excused absence defined in [Attendance in Academic Regulations](https://bulletin.marquette.edu/policies/attendance/undergraduate/), its 25% weight will be added to your final exam, i.e., 25% + 25% = 50%.
 
 ### In-Class Worksheets
 
@@ -181,17 +178,18 @@ knitr::kable(grade_dist, longtable = TRUE,
 
 - Each incomplete activity results in a 2% deduction from your overall grade.
 
-### Final Project
+
+<!-- ### Final Project -->
 
 <!-- - There will be one (or two?) project released around Week 13. -->
 
-- You are required to use GenAI to explore a topic not addressed in class, and apply both your self-learning and course knowledge to create a data analysis report.
+<!-- - You are required to use GenAI to explore a topic not addressed in class, and apply both your self-learning and course knowledge to create a data analysis report. -->
 
 <!-- - The project topic will also be tested in the final exam. -->
 
-- You **must carefully cite your GenAI tool or reveal your use of AI.** See @sec-genai for more details.
+<!-- - You **must carefully cite your GenAI tool or reveal your use of AI.** See @sec-genai for more details. -->
 
-- No late submission is allowed.
+<!-- - No late submission is allowed. -->
 
 
 <!-- ### Class Participation -->
@@ -208,7 +206,7 @@ knitr::kable(grade_dist, longtable = TRUE,
 
 - *You are responsible for the content of all work submitted for this course.* 
 
-- For your homework, take-home exams, and project, you are allowed to use generative AI tools such as ChatGPT to generate a draft of text of your work.
+- For your homework, take-home exams, or any take-home work, you are allowed to use generative AI tools such as ChatGPT to generate a draft of text of your work.
 
 - To avoid any academic integrity issue, you **must cite your AI usage, or screenshot your entire AI usage history**. Check the followings on how to cite it.
 
@@ -270,16 +268,15 @@ If you need to request accommodations, or modify existing accommodations that ad
 
 ## Important dates
 
--   **Jan 19:** Martin Luther King Jr. Day
--   **Jan 20:** Last day to add/swap/drop
--   **Mar 3:** In-class Exam 1
--   **Mar 8-14:** Spring break
--   **Mar 10:** Midterm grade submission
--   **Apr 2 - 6:** Easter break
--   **Apr 10:** Withdrawal deadline
--   **Apr 21:** In-class Exam 2
--   **May 2**: Last day of class
--   **May 8**: Final project
--   **May 12**: Final grade submission
+-   **Sep 7:** Labor Day
+-   **Sep 8:** Last day to add/swap/drop
+-   **Oct 20:** In-class Midterm Exam
+-   **Oct 22-23:** Midterm break
+-   **Oct 27:** Midterm grade submission
+-   **Nov 20:** Withdrawal deadline
+-   **Nov 25-29:** Thanksgiving holiday
+-   **Dec 12**: Last day of class
+-   **Dec 17**: In-class Final Exam
+-   **Dec 22**: Final grade submission
 
-Click [here](https://www.marquette.edu/central/registrar/2026-spring-academic-calendar.php) for the full Marquette academic calendar.
+Click [here](https://www.marquette.edu/central/registrar/2026-fall-academic-calendar.php) for the full Marquette academic calendar.

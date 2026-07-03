@@ -1,6 +1,6 @@
 ---
-title: "Happy Halloween!🎃👻"
-subtitle: "Extra credit opportunity"
+title: "Extra credit opportunity II"
+subtitle: "Happy Easter!🐣🐰🥚"
 # categories: "Homework"
 format:
   html:
@@ -12,13 +12,13 @@ execute:
 ---
 
 ::: callout-important
-[Due **Friday, Oct 31, 11:59 PM**]{.red}
+[Due **Friday, Apr 3, 11:59 PM**]{.red}
 :::
 
-- Please include this work in your **Homework 6** submission. Submissions as a separate file or standalone document will not be accepted for extra credit.
+- Please include this work in your **Homework Easter** submission on D2L.
 
 # Extra Credit Questions
 
-(@) Download the R script [pumpkin.R](../code/pumpkin.R), and run the code to generate your statistical pumpkin! Include the resulting image in your Homework 6.
+(@) Download the R script [bunny.R](../code/bunny.R), and run the code to generate your statistics bunny! Include the resulting image in your Homework Easter.
 
-(@) Look through the code and identify any probability distributions used to create the pumpkin image.
+(@) Look through the code and identify any probability distributions used to create the plot.

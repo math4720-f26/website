@@ -5,11 +5,30 @@ format:
   html
 ---
 
+```{=html}
+<style>
+/* Make the boundary between weeks more visible while keeping the schedule
+   as a Markdown pipe table. In this schedule, each week has two rows, so
+   the first row of each week is an odd-numbered row in the table body. */
+.weekly-schedule table {
+  border-collapse: collapse;
+}
+
+.weekly-schedule table tbody tr:nth-child(odd) > * {
+  border-top: 2px solid #555 !important;
+}
+
+.weekly-schedule table tbody tr:nth-child(odd) td:first-child {
+  font-weight: 700;
+}
+</style>
+```
+
 *This schedule will be updated as the semester progresses, with all changes documented here.*
 
-::: column-screen-inset-right
+::: {.column-screen-inset-right .weekly-schedule}
 | Week | Date | Topic | Materials | Reading | R Code | Homework | Worksheet | Quiz | Exam/Exercise |
-|:------:|--------|--------|:------:|:------:|:------:|:------:|--------|:------:|:-------:|
+|:------:|--------|--------|:------:|:------:|:------:|:------:|--------|:------:|:------:|
 | 1 | Tue, Sep 1 | Syllabus/Overview of Statistics | 🖥️ syllabus<br>🖥️ statistics and data | Syllabus<br>IS Ch1<br>GenAI Video |  |  |  |  |  |
 |  | Thu, Sep 3 | Statistical Studies and Data Collection; Data Type |  | IS Ch 2 |  | ✍️ HW 1 (due 9/11) |  |  |  |
 | 2 | Tue, Sep 8 | R Software and Computation | 🖥️ R and RStudio<br>🖥️ data type and structure | IS Ch 3 | `r fontawesome::fa("file-code")` (data type and structure) |  |  |  |  |
@@ -33,7 +52,7 @@ format:
 | 11 | Tue, Nov 10 | Inference for One Population Variance | 🖥️ variances <br> 👉chi-squared | IS Ch 18 | `r fontawesome::fa("file-code")` (variances) |  |  |  |  |
 |  | Thu, Nov 12 | Inference about Two Population Variances | 👉 f |  |  |  | Worksheet 8 |  |  |
 | 12 | Tue, Nov 17 | Analysis of Variance (ANOVA) Rationale | 🖥️ ANOVA | IS Ch 24 | `r fontawesome::fa("file-code")` (ANOVA data) |  |  |  |  |
-|  | Thu, Nov 19 | Analysis of Variance (ANOVA) Procedure |  |  |  | ✍️ HW 7 (due 11/27) | Worksheet 9 | ✅ Quiz 3 |  |
+|  | Thu, Nov 19 | Analysis of Variance (ANOVA) Procedure |  |  |  | ✍️ HW 7 (due 12/4) | Worksheet 9 | ✅ Quiz 3 |  |
 | 13 | Tue, Nov 24 | Correlation; Overview of Regression | 🖥️ correlation <br> 🖥️ regression <br> 👉 regression fitting | IS Ch 27.1; IS Ch 27.2 | `r fontawesome::fa("file-code")` (correlation and regression) |  |  |  |  |
 |  | Thu, Nov 26 | ***NO CLASS: Thanksgiving*** |  |  |  |  |  |  |  |
 | 14 | Tue, Dec 1 | Simple Linear Regression: Model and Fitting **Activity: Height vs. Shoe Size** |  |  |  |  |  |  |  |
