@@ -3,8 +3,8 @@ project:
 
 website:
   page-navigation: true
-  title: "MATH 4720 (MSSC 5720) - Spring 2026"
-  description: "Homepage for MATH 4720 (MSSC 5720) - Statistical Methods at Marquette University, Spring 2026."
+  title: "MATH 4720 (MSSC 5720) - Fall 2026"
+  description: "Homepage for MATH 4720 (MSSC 5720) - Statistical Methods at Marquette University, Fall 2026."
   site-url: "https://math4720-f26.github.io/website/"
 
   repo-url: https://github.com/math4720-f26/website
