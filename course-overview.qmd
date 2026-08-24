@@ -30,7 +30,7 @@ Students will be able to use basic probability concepts and sampling distributio
 - **Statistical inference for common parameters**
 Students will be able to construct and interpret confidence intervals and hypothesis tests for key parameters (including means, proportions, and comparisons across groups), stating assumptions and limitations.
 
-- **Modeling and analysis using R***
+- **Modeling and analysis using R**
 Students will be able to use R to perform reproducible statistical analyses, including visualization, regression modeling, and model assessment, and to document work appropriately (including responsible AI support when permitted).
 
 

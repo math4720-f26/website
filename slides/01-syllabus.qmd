@@ -190,7 +190,7 @@ After college, working and doing military service for several years, I came to t
 
 ## How to Reach Me
 
-- Office hours **TuTh 3:20 - 4:20 PM** and **We 2 - 3 PM** in **Cudahy Hall 353**.
+- Office hours **TuTh 4:50 - 5:50 PM** and **We 12 - 1 PM** in **Cudahy Hall 353**.
 
 - `r emo::ji('e-mail')`  <cheng-han.yu@marquette.edu> 
   + Answer your question within 24 hours. 
@@ -201,7 +201,7 @@ After college, working and doing military service for several years, I came to t
 ```{r}
 knitr::include_graphics("./images/01-syllabus/email.png")
 ```
-  + I will **NOT** reply your e-mail if ... **Check the email policy in the [syllabus](https://math4720-s26.github.io/website/course-syllabus.html)**!
+  + I will **NOT** reply your e-mail if ... **Check the email policy in the [syllabus](https://math4720-f26.github.io/website/course-syllabus.html)**!
 
 
 
@@ -228,6 +228,7 @@ knitr::include_graphics("./images/01-syllabus/email.png")
 
 ```{r}
 #| out-width: 100%
+#| eval: false
 knitr::include_graphics("./images/01-syllabus/qishi.jpeg")
 ```
 
@@ -267,13 +268,13 @@ knitr::include_graphics("./images/01-syllabus/help_s25.png")
 
 ## Course Materials
 
-- Course Website - <https://math4720-s26.github.io/website/>
+- Course Website - <https://math4720-f26.github.io/website/>
 
 
 ```{r}
 #| fig-align: center
-#| fig-link: https://math4720-s26.github.io/website/
-knitr::include_graphics("./images/01-syllabus/website_s26.png")
+#| fig-link: https://math4720-f26.github.io/website/
+knitr::include_graphics("./images/01-syllabus/website_f26.png")
 ```
 
 - **All course materials and information** can be found on this website. Bookmark it!
@@ -330,8 +331,8 @@ knitr::include_graphics("./images/01-syllabus/IS.png")
 ```{r}
 #| out-width: 100%
 #| fig-align: center
-#| fig-link: https://d2l.mu.edu/d2l/home/630388
-knitr::include_graphics("./images/01-syllabus/d2l_s26.png")
+#| fig-link: https://d2l.mu.edu/d2l/home/656225
+knitr::include_graphics("./images/01-syllabus/d2l_f26.png")
 ```
 
 - Submit your work: **Assessments > Dropbox**
@@ -356,10 +357,9 @@ knitr::include_graphics("./images/01-syllabus/d2l_s26.png")
 | ----------------------- | -----: |
 | 8 Homework sets         |    10% |
 | 4 Quizzes               |    20% |
-| 2 Exams                 |    40% |
+| 2 Exams                 |    50% |
 | ~10 Worksheets          |    10% |
 | ~3 Group Activities     |    10% |
-| 1 Final Project         |    10% |
 
 <!-- ::: -->
 
@@ -398,7 +398,7 @@ knitr::kable(grade_dist, longtable = TRUE, format = "html", align = 'l') %>% kab
 
 - There are 8 homework sets.
 
-- You must submit YOUR OWN work. `r emo::ji("please")`
+<!-- - You must submit YOUR OWN work. `r emo::ji("please")` -->
 
 - Every homework is due by **Friday 11:59 PM ** (**Don't miss it. This is a hard deadline**`r emo::ji("exclamation")`).
 
@@ -423,18 +423,18 @@ knitr::kable(grade_dist, longtable = TRUE, format = "html", align = 'l') %>% kab
 - Each quiz is worth 5% of your overall grade.
 
 <!-- - Questions in the quizzes are similar to homework questions. So do the HW! -->
-- `r emo::ji("books")` Quizzes are individual and in **closed-book** and **no-tech** format, except a calculator.
+- `r emo::ji("books")` Quizzes are individual and in **closed-book** and **no-tech** format, except for a calculator.
 
-- `r emo::ji("x")` No cheat sheet or GenAI is allowed.
+- `r emo::ji("x")` No cheat sheets or GenAI are allowed.
 
 - `r emo::ji("x")` **No make-up quizzes** for any reason unless you got an [excused absence](https://bulletin.marquette.edu/policies/attendance/undergraduate/). Check the [syllabus](https://math4720-s26.github.io/website/course-syllabus.html#quizzes) for more details.
 
 
-## Exams (40%)
+## Exams (50%)
 
-- There will be **two** exams.
+- There will be **two** exams, one midterm and one final.
 
-- The exams have *in-class* and *take-home* parts.
+- The midterm exam has *in-class* and *take-home* parts.
 
 <!-- - The in-class exams are about one-hour long. -->
 - `r emo::ji("page_facing_up")` For the in-class parts, one piece of  **letter size** cheat sheet is allowed. It has to be turned-in with your exam.
@@ -446,9 +446,9 @@ knitr::kable(grade_dist, longtable = TRUE, format = "html", align = 'l') %>% kab
 - **Assessments > Dropbox** to submit your take-home exams in **PDF** format.
 <!-- - `r emo::ji("x")` **Handwriting is NOT allowed**. -->
 
-- Exam 1 covers Week **1 to 7**.
+- Midterm Exam covers Week **1 to 7**.
 
-- Exam 2 covers Week **8 to 14**.
+- Final Exam covers **ALL** course material.
 
 <!-- - Final exam is comprehensive and covers the **all course materials**.  `r emo::ji("sunglasses")` -->
 
@@ -473,15 +473,15 @@ knitr::kable(grade_dist, longtable = TRUE, format = "html", align = 'l') %>% kab
 - Each incomplete activity results in a 2% deduction from your overall grade.
 
 
-## Final Project (10%)
+<!-- ## Final Project (10%) -->
 
-- The project will be released after Exam 2.
+<!-- - The project will be released after Exam 2. -->
 
-- You are required to use GenAI to explore a topic not addressed in class, and apply both your self-learning and course knowledge to create a data analysis report.
+<!-- - You are required to use GenAI to explore a topic not addressed in class, and apply both your self-learning and course knowledge to create a data analysis report. -->
 
-- The project topic will also be tested in the final exam.
+<!-- - The project topic will also be tested in the final exam. -->
 
-- You **must carefully cite your GenAI tool or reveal your use of AI.**
+<!-- - You **must carefully cite your GenAI tool or reveal your use of AI.** -->
 
 
 ##  What Computing Language We Use?
@@ -493,7 +493,7 @@ knitr::kable(grade_dist, longtable = TRUE, format = "html", align = 'l') %>% kab
 - `r emo::ji("chart_with_upwards_trend") ` The best language for statistical computing!
 <!-- - `r emo::ji("x") ` If you do **NOT** want to learn R, choose another section!  -->
 - `r emo::ji("white_check_mark")` You may use other tools or software such as Excel, Python, Minitab, etc to do your work, but I will **NOT** teach any of them.
-- `r emo::ji("x")` Drop/Swap deadline: **1/20/2026**. Don't miss it!
+- `r emo::ji("x")` Drop/Swap deadline: **9/8/2026**. Don't miss it!
 
 ::::
 
@@ -537,13 +537,14 @@ knitr::include_graphics("./images/01-syllabus/Rlogo.png")
 
 <!-- ### Generative AI -->
 
-- You may use generative AI tools such as ChatGPT and Gemini to generate a first draft of text for your work, provided that this use is **documented and cited**.
+- You may use generative AI tools such as ChatGPT to generate a draft of your work, provided that this use is **documented and cited**.
 
 <!-- [Example] Data science is an interdisciplinary field that ... [^1] -->
 
 <!-- [^1]: ChatGPT, response to *“Tell me what data science is,”* Jan 14, 2025, https://chat.openai.com. -->
 
-- Unless explicitly stated otherwise, you may make use of any online resources, but you must **explicitly cite/document** where you obtained any code you directly use or use as inspiration in your solutions.
+<!-- - Unless explicitly stated otherwise, you may make use of any online resources, but you must **explicitly cite/document** where you obtained any code you directly use or use as inspiration in your solutions. -->
+
 :::
 
 ::: {.column width="20%"}

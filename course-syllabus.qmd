@@ -26,7 +26,7 @@ Download syllabus at [`r fontawesome::fa("file-pdf")`](/documents/syllabus-4720-
 
 - Basic computer and internet use expected. The course will also assume facility with using the internet and a personal computer. 
 
-- A portion of the course involves programming in [\textsf{R}](https://www.r-project.org/about.html) using [RStudio](https://rstudio.com/), but prior programming experience is not required.
+- A portion of the course involves programming in [\textsf{R}](https://www.r-project.org/about.html) using [RStudio](https://rstudio.com/) or [Posit Cloud](https://posit.cloud/), but prior programming experience is not required.
 
 
 
@@ -60,12 +60,9 @@ knitr::include_graphics("./images/email.png")
     5. The student is sending an email with no etiquette.
 
 
-## Required Textbook
+## Textbooks
 
-- **[IS]** [*Introduction to Statistics*](https://chenghanyu-introstatsbook.netlify.app/), by Dr. Cheng-Han Yu. (My online book)
-
-
-## Optional References
+- **[IS] (optional)** [*Introduction to Statistics*](https://chenghanyu-introstatsbook.netlify.app/), by Dr. Cheng-Han Yu. (My online book)
 
 - **[IMS] (optional)** [*Introduction to Modern Statistics, 2nd edition*](https://openintro-ims.netlify.app/), by Mine Çetinkaya-Rundel and Johanna Hardin. Publisher: OpenIntro. (computation and data-oriented)
 

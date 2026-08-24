@@ -139,7 +139,7 @@ knitr::include_graphics("./images/02-overview/statistics.jpg")
 ::: tiny
 ```{r}
 #| echo: false
-#| out-width: 100%
+#| out-width: 90%
 #| fig-cap: "https://en.wikipedia.org/wiki/Statistics"
 #| fig-link: https://en.wikipedia.org/wiki/Statistics
 knitr::include_graphics("./images/02-overview/stats_wiki.png")
@@ -153,8 +153,20 @@ knitr::include_graphics("./images/02-overview/stats_wiki.png")
 
 :::
 
-
 . . .
+
+My ChatGPT says
+
+::: tiny
+```{r}
+#| echo: false
+#| out-width: 75%
+knitr::include_graphics("./images/02-overview/stats_chatgpt.png")
+```
+:::
+
+
+## Science of Data
 
 - **Statistics** is a subject dealing with data, or **Science of Data**.
 
@@ -427,12 +439,12 @@ text(x = 0, y = -0.3, labels = "Set of data selected from the population:", cex 
 ::: tiny
 ```{r}
 #| label: mu_data
-roster <- read.csv("./data/marquette_roster_2025_26.csv")
+roster <- read.csv("./data/marquette_roster_2026_27.csv")
 kable(roster, align = "c")
 ```
-:::
+::: 
 
-
+ 
 
 ::: notes
 
@@ -707,9 +719,9 @@ Is **this 4720/5720 class** a *"good"* sample of the target population?
 ```{r}
 #| out-width: 60%
 par(mar = c(0, 0, 1, 0), mgp = c(1, 0.2, 0))
-major <- c("Engineering" = 17,
-           "Bio related" = 10, "Other STEM" = 6)
-pie(major, col = 2:4, main = "Major of 4720/5720 class", cex = 1.4)
+major <- c("Engineering" = 8, "CS" = 6,
+           "Bio" = 8, "Other STEM" = 2, "Education" =  1)
+pie(major, col = 2:6, main = "Major of 4720/5720 class", cex = 1.4)
 ```
 
 ::: notes
@@ -796,7 +808,7 @@ text(0.55, 0.5 + 0.18 - sqrt(0.07),
 
 ::: notes
 
-- The sample is convenient to be collected, but it is NOT **representative** of the population.
+- The sample is convenient to be collected, but it is NOT well **representative** of the population.
 - You are mostly STEM majors, and so with a high chance, your avg GPA is not the same as the GPA of humanities or business students,right.
 - **Biased** sample: The average GPA of you guys may not be close to the average GPA of all Marquette undergrads.
 - Sample data must be collected in an appropriate way. If not GIGO.
@@ -818,7 +830,7 @@ my_bar <- barplot(height = major_and_average_gpa$avg_gpa, ylab = "Average GPA",
                   ylim = c(3, 4), las = 1, xpd = FALSE) 
 text(my_bar, major_and_average_gpa$avg_gpa + 0.05, 
      paste(major_and_average_gpa$avg_gpa), 
-     col = c(4, 1, 2, 1, 1, 1, 1, 1, 1, 1), font = 2, 
+     col = c("blue", 1, 2, 1, 1, 1, 1, 1, 1, 1), font = 2, 
     cex = 1.2)  
 text(cex = 1, x = my_bar - 0.25, y = 3, xpd = TRUE,
      major_and_average_gpa$major, srt = 45)
@@ -863,15 +875,46 @@ text(cex = 1, x = my_bar - 0.25, y = 3, xpd = TRUE,
 
 ## Two Types of Studies to Collect Sample Data
 
-- **Observational Study**: Observe and measure characteristics/variables, and do **NOT** attempt to modify or intervene with the subjects being studied.
-  + <span style="color:blue"> Sample from `r emo::ji('one')` the heart disease and `r emo::ji('two')` heart disease-free populations. Then record the fat content of the diets for the two groups.</span> </span> 
 
-. . .
+::::: columns
 
-- **Experimental Study**: Apply some **treatment(s)** and then proceed to observe its responses or effects on the individuals (experimental units).
-  + <span style="color:blue">Assign volunteers to one of several diets with different levels of dietary fat (treatments). Then compare the treatments with respect to the incidence of heart disease after a period of time. </span> 
+::: {.column width="50%"}
 
-. . .
+```{r}
+#| out-width: 75%
+knitr::include_graphics("./images/02-overview/study_obs.png")
+```
+
+:::
+
+
+
+::: {.column width="50%"}
+
+::: fragment
+
+```{r}
+#| out-width: 82%
+knitr::include_graphics("./images/02-overview/study_exp.png")
+```
+
+:::
+
+:::
+
+
+::::
+
+
+<!-- - **Observational Study**: Observe and measure characteristics/variables, and do **NOT** attempt to modify or intervene with the subjects being studied. -->
+<!--   + <span style="color:blue"> Sample from `r emo::ji('one')` the heart disease and `r emo::ji('two')` heart disease-free populations. Then record the fat content of the diets for the two groups.</span> </span>  -->
+
+<!-- . . . -->
+
+<!-- - **Experimental Study**: Apply some **treatment(s)** and then proceed to observe its responses or effects on the individuals (experimental units). -->
+<!--   + <span style="color:blue">Assign volunteers to one of several diets with different levels of dietary fat (treatments). Then compare the treatments with respect to the incidence of heart disease after a period of time. </span>  -->
+
+## Two Types of Studies to Collect Sample Data
   
 ::: question
 
@@ -1066,7 +1109,7 @@ knitr::include_graphics("./images/02-overview/srs.png")
 - **Homogeneous within strata; Non-homogeneous between strata**
 
 ```{r}
-knitr::include_graphics("./images/02-overview/stratified_sampling.png")
+knitr::include_graphics("./images/02-overview/stratified_sampling_new.png")
 ```
 
 
@@ -1363,6 +1406,8 @@ arrows(1.07, 0.5, 1.15, 0.64, length = 0.08)
   + <span style="color:blue">Country (USA = 100, Canada = 101, UK = 200, Germany = 201, Japan = 300, Korea = 301) </span> 
   + <span style="color:blue">United Airlines boarding groups</span> 
 
+. . .
+
   + **The numbers represent categories only; differences between them are meaningless.**
     * Canada - USA = 101 - 100 = 1?
     * Graduate - Sophomore = 5 - 2 = 3 = Junior?
@@ -1382,7 +1427,9 @@ arrows(1.07, 0.5, 1.15, 0.64, length = 0.08)
   + <span style="color:blue">Gender (Male = 0, Female = 1, Trans = 2) </span> is **nominal** because Male, Female and Trans cannot be ordered.
   + <span style="color:blue">Country (USA = 100, Canada = 101, UK = 200, Germany = 201, Japan = 300, Korea = 301) </span> is **nominal**.
   
-<br> 
+. . .
+
+<br>
 
 - **Ordinal**: The data can be arranged in some meaningful order, but differences between data values can NOT be determined or are meaningless.
   + <span style="color:blue">Class (Freshman = 1, Sophomore = 2, Junior = 3, Senior = 4, Graduate = 5) </span> is **ordinal** because Sophomore is one class higher than Freshman.
@@ -1400,6 +1447,8 @@ arrows(1.07, 0.5, 1.15, 0.64, length = 0.08)
   + <span style="color:blue">Temperature</span> is **interval** because $80^{\circ}$F is 40 degrees higher than $40^{\circ}$F $(80-40=40)$, but $0^{\circ}$ does not mean NO heat and $80^{\circ}$F is NOT twice as hot as $40^{\circ}$F.
   
 . . .
+
+<br>
 
 - **Ratio**: The data have both meaningful differences and ratios, and there is a natural zero starting point that indicates none of the quantity. The data can do $\color{red} +$, $\color{red} -$,  $\color{red} \times$ and $\color{red} \div$.
   + <span style="color:blue">Distance</span> is **ratio** because $80$ miles is twice as far as $40$ miles $(80/40 = 2)$, and $0$ mile means no distance.
@@ -1446,7 +1495,7 @@ knitr::kable(grade_dist, longtable = TRUE, format = "html", align = 'l') %>% kab
 
 ::: your-turn
 
-Identify data type of each variable in the Marquette men's basketball player data
+Identify data type of each variable in the 2026-27 Marquette men's basketball player data
 
 :::
 
