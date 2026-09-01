@@ -6,13 +6,13 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-46eeb4c476de49ef7df495821a6125d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
 <link href="../site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
 <script src="../site_libs/quarto-contrib/countdown-0.5.0/countdown.js"></script>
 <link href="../site_libs/quarto-contrib/countdown-0.5.0/countdown.css" rel="stylesheet"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.19">
+<meta name="generator" content="quarto-1.10.18">
 <meta name="author" content="Dr.&nbsp;Cheng-Han Yu   Department of Mathematical and Statistical Sciences   Marquette University">
 <title>MATH 4720 (MSSC 5720) - Fall 2026 – Overview of Statistics and Data 📖</title>
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -21,10 +21,16 @@
 <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
 <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
 <style>
-    code{white-space: pre-wrap;}
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -33,7 +39,7 @@
       vertical-align: middle;
     }
   </style>
-<link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-54281ac7c2b23c7d08d80cd04c072199.css">
+<link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-8de3b5972c77face5b4caa2a3f642b52.css">
 <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
 <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
 <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -143,7 +149,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <br> Marquette University 
+Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <br> Marquette University
 </div>
 </div>
 </div>
@@ -460,7 +466,7 @@ Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <
 <p>Learn useful information</p>
 <ul>
 <li><p>about the <strong>population</strong> we are interested (e.g.&nbsp;All Marquette students)</p></li>
-<li><p>from our <strong>sample data</strong> (e.g.&nbsp;Students in MATH 4720)</p></li>
+<li><p>from our <strong>sample (data)</strong> (e.g.&nbsp;Students in MATH 4720)</p></li>
 <li><p>through <strong>statistical inferential</strong> methods, including <strong>estimation</strong> and <strong>testing</strong> (e.g.&nbsp;Confidence intervals)</p></li>
 </ul>
 </li>
@@ -481,8 +487,8 @@ Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <
           display:block!important;
       }</style></aside></section><section id="statistics-is-a-science-of-data-so-what-is-data" class="slide level2"><h2>Statistics is a Science of Data, so What is Data?</h2>
 <ul>
-<li><p><strong>Data</strong>: A set of <strong>objects</strong> on which we observe or measure one or more <strong>characteristics</strong>.</p></li>
-<li><p>Objects are individuals, observations, subjects or cases in statistical studies.</p></li>
+<li><p><strong>Data (set)</strong>: A set of <strong>objects</strong> on which we observe or measure one or more <strong>characteristics</strong>.</p></li>
+<li><p>Objects are individuals, subjects or cases in statistical studies.</p></li>
 <li><p>A characteristic or attribute is called a <strong>variable</strong> because it <em>varies</em> from one to another.</p></li>
 </ul>
 <aside class="notes"><ul>
@@ -1154,7 +1160,7 @@ Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <
 </div></div>
 <div class="fragment">
 <ul>
-<li><p><strong>Sample</strong>: A <strong>subset</strong> of cases selected from a population.</p></li>
+<li><p><strong>Sample</strong>: A <strong>subset</strong> of cases drawn from a population.</p></li>
 <li><p>Compute the average GPA of the sample data</p></li>
 <li><p>Hope sample avg GPA <span class="math inline">\(\approx\)</span> population avg GPA. 🙏</p></li>
 </ul>
@@ -1212,7 +1218,7 @@ Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <
 <p>Is <strong>this 4720/5720 class</strong> a <em>“good”</em> sample of the target population?</p>
 </div>
 <ul>
-<li><p>The sample is convenient to be collected, but it may NOT be <strong>representative</strong> of the population.</p></li>
+<li><p>The sample is convenient to be collected, but it may NOT <strong>well represent</strong> the population.</p></li>
 <li><p><strong>Biased</strong> sample: The average GPA of the class may be far from that of all Marquette undergrads.</p></li>
 </ul>
 
@@ -2004,7 +2010,7 @@ Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <
 </div>
 </div>
 </div>
-<div id="timer_739a9f9a3b3ed3de8c888ec8939d6fe6302218c6" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_f06e95196ab34a1e09e43a5820ae34b7dee16b14" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -2328,13 +2334,14 @@ W10=
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy
