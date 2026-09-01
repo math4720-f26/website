@@ -384,7 +384,7 @@ knitr::include_graphics("./images/02-overview/book_content.png")
 - Learn useful information 
   + about the **population** we are interested (e.g. All Marquette students)
   
-  + from our **sample data** (e.g. Students in MATH 4720)
+  + from our **sample (data)** (e.g. Students in MATH 4720)
   
   + through **statistical inferential** methods, including **estimation** and **testing** (e.g. Confidence intervals)
 
@@ -416,9 +416,9 @@ text(x = 0, y = -0.3, labels = "Set of data selected from the population:", cex 
 
 ## Statistics is a Science of Data, so What is Data?
 
-- **Data**: A set of **objects** on which we observe or measure one or more **characteristics**.
+- **Data (set)**: A set of **objects** on which we observe or measure one or more **characteristics**.
 
-- Objects are individuals, observations, subjects or cases in statistical studies.
+- Objects are individuals, subjects or cases in statistical studies.
 
 - A characteristic or attribute is called a **variable** because it *varies* from one to another.
 
@@ -678,7 +678,7 @@ for (i in these) {
 
 . . .
 
-- **Sample**: A **subset** of cases selected from a population.
+- **Sample**: A **subset** of cases drawn from a population.
 
 - Compute the average GPA of the sample data
 
@@ -739,7 +739,7 @@ Is **this 4720/5720 class** a *"good"* sample of the target population?
 
 :::
 
-- The sample is convenient to be collected, but it may NOT be **representative** of the population.
+- The sample is convenient to be collected, but it may NOT **well represent** the population.
 
 - **Biased** sample: The average GPA of the class may be far from that of all Marquette undergrads.
 

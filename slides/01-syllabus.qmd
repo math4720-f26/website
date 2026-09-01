@@ -247,7 +247,7 @@ knitr::include_graphics("./images/01-syllabus/qishi.jpeg")
 
 - Unfortunately, no TA for this course. `r emo::ji('sad')`
 
-- Help desk hours on the **4th** floor of Cudahy Hall.
+- Help desk hours on the **4th** floor of Cudahy Hall, or **CU 301**?
 
 - The hours will be released later.
 
@@ -398,17 +398,15 @@ knitr::kable(grade_dist, longtable = TRUE, format = "html", align = 'l') %>% kab
 
 - There are 8 homework sets.
 
-<!-- - You must submit YOUR OWN work. `r emo::ji("please")` -->
-
 - Every homework is due by **Friday 11:59 PM ** (**Don't miss it. This is a hard deadline**`r emo::ji("exclamation")`).
 
 - MSSC 5720 students may have more or different homework questions.
 
-- Homework is graded as *complete* or *incomplete*. Each incomplete set results in a 2% deduction from your overall grade.
+- Homework is graded as *complete* or *incomplete*. 
+
+- Each incomplete set results in a 2% deduction from your overall grade.
 
 - `r emo::ji("x")` **No make-up homework**.
-
-<!-- - The lowest score will not be in your final grade calculation. -->
 
 - Using generative AI (GenAI) tools is allowed, but you **must carefully disclose your usage.**
 
@@ -434,10 +432,10 @@ knitr::kable(grade_dist, longtable = TRUE, format = "html", align = 'l') %>% kab
 
 - There will be **two** exams, one midterm and one final.
 
-- The midterm exam has *in-class* and *take-home* parts.
+- Each exam has *in-class* and *take-home* parts.
 
 <!-- - The in-class exams are about one-hour long. -->
-- `r emo::ji("page_facing_up")` For the in-class parts, one piece of  **letter size** cheat sheet is allowed. It has to be turned-in with your exam.
+- For the in-class parts, one piece of  **letter size** cheat sheet is allowed. It has to be turned-in with your exam.
 
 - For the take-home parts, you are allowed to use GenAI tools. However, you **must carefully disclose your AI usage.**
 
@@ -641,14 +639,13 @@ This course expects all students to follow University and College statements on 
 ## GenAI and Academic Integrity
 
 ```{=html}
-<!-- Replace host and id with yours -->
 <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
   <iframe
-    src="https://marquette.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=36be65f1-ba4f-457d-bad3-b1b8013b9448&start=0.5"
+    src="https://marquette.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=36be65f1-ba4f-457d-bad3-b1b8013b9448&autoplay=false"
     title="GenAI and Academic Integrity"
     style="position:absolute; top:0; left:0; width:100%; height:90%; border:0;"
     allow="encrypted-media; fullscreen; picture-in-picture"
-    allowfullscreen
-  ></iframe>
+    allowfullscreen>
+  </iframe>
 </div>
 ```
