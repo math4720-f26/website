@@ -7,7 +7,7 @@ title: "Help Desk Hours"
 ```{r}
 #| echo: false
 #| out-width: 100%
-#| eval: false
+#| eval: true
 knitr::include_graphics("./images/help_hours_f26.png")
 ```
 
