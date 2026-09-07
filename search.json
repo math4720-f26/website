@@ -3684,7 +3684,7 @@
     "href": "index.html",
     "title": "MATH 4720 (MSSC 5720) Statistical Methods Fall 2026",
     "section": "",
-    "text": "This schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nMaterials\nReading\nR Code\nHomework\nWorksheet\nQuiz\nExam/Exercise\n\n\n\n1\nTue, Sep 1\nSyllabus/Overview of Statistics\n\n🖥️ syllabus🖥️ statistics and data\n\n\nSyllabusIS Ch1GenAI Video\n\n\n\n\n\n\n\n\n\nThu, Sep 3\nStatistical Studies and Data Collection; Data Type\n\nIS Ch 2\n\n✍️ HW 1 (due 9/11)\n\n\n\n\n\n\n2\nTue, Sep 8\nR Software and Computation\n🖥️ R and RStudio🖥️ data type and structure\nIS Ch 3\n\n (data type and structure)\n\n\n\n\n\n\n\nThu, Sep 10\nSummarizing Data: Tables and Graphics\n🖥️ data summary👉histogram breaks👉data extremes\nIS Ch 5 - 6\n\n (data graphics)\n\n\n\n\n\n\n3\nTue, Sep 15\nSummarizing Data: Numerical measures\n\n\n\n (data numerics)\n\n\n\n\n\n\n\nThu, Sep 17\nProbability Fundamentals\n🖥️ probability👉Venn diagram\nIS Ch 7 - 8\n\n✍️ HW 2 (due 9/25)\nWorksheet 1\n\n\n\n\n4\nTue, Sep 22\nConditional Probability, Independence, Bayes Formula\n\n\n\n\nWorksheet 2\n\n\n\n\n\nThu, Sep 24\nRandom Variables, Discrete Probability Distributions\n🖥️ distribution 👉binomial👉poisson\nIS Ch 9 - 10\n\n (discrete distribution)\n✍️ HW 3 (due 10/2)\n\n✅ Quiz 1\n\n\n\n5\nTue, Sep 29\nContinuous Probability Distributions\n👉normal\nIS Ch 11\n\n (continuous distribution)\n\nWorksheet 3\n\n\n\n\n\nThu, Oct 1\nSampling Distributions Activity: Match the Scenario to the Distribution\n\n🖥️ sampling-dist-clt\nIS Ch 12\n\n (sampling distribution and CLT)\n\n\n\n\n\n\n6\nTue, Oct 6\nCentral Limit Theorem (CLT)\n👉CLT 👉Rolling dice\nIS Ch 13\n\n\n\n\n\n\n\n\nThu, Oct 8\nConfidence Intervals\n🖥️ confidence interval  👉CI\nIS Ch 14\n\n (confidence interval)\n✍️ HW 4 (due 10/16)\nWorksheet 4\n\n\n\n\n7\nTue, Oct 13\nConfidence Intervals\n👉Student-t\n\n\n\n\n\n\n\n\n\nThu, Oct 15\nExam 1 Review Activity: How Much Do Students Sleep?\n\n\n\n\n\nWorksheet 5\n✅ Quiz 2\n\n\n\n8\nTue, Oct 20\nIn-class Midterm Exam\n\n\n\n\n\n\n✅ Take-home Midterm Exam\n\n\n\nThu, Oct 22\nNO CLASS: Midterm break\n\n\n\n✍️ HW 5 (due 10/30)\n\n\n\n\n\n9\nTue, Oct 27\nHypothesis Testing\n🖥️ testing 👉testing\nIS Ch 16\n\n (testing)\n\n\n\n\n\n\n\nThu, Oct 29\nHypothesis Testing\n\n\n\n\nWorksheet 6\n\n\n\n\n10\nTue, Nov 3\nTwo Population Means: Matched Pairs\n🖥️ two samples\nIS Ch 17\n\n (two samples)\n\n\n\n\n\n\n\nThu, Nov 5\nTwo Population Means: Independent Samples\n\n\n\n✍️ HW 6 (due 11/13)\nWorksheet 7\n\n\n\n\n11\nTue, Nov 10\nInference for One Population Variance\n🖥️ variances  👉chi-squared\nIS Ch 18\n\n (variances)\n\n\n\n\n\n\n\nThu, Nov 12\nInference about Two Population Variances\n👉 f\n\n\n\nWorksheet 8\n\n\n\n\n12\nTue, Nov 17\nAnalysis of Variance (ANOVA) Rationale\n🖥️ ANOVA\nIS Ch 24\n\n (ANOVA data)\n\n\n\n\n\n\n\nThu, Nov 19\nAnalysis of Variance (ANOVA) Procedure\n\n\n\n✍️ HW 7 (due 12/4)\nWorksheet 9\n✅ Quiz 3\n\n\n\n13\nTue, Nov 24\nCorrelation; Overview of Regression\n🖥️ correlation  🖥️ regression  👉 regression fitting\nIS Ch 27.1; IS Ch 27.2\n\n (correlation and regression)\n\n\n\n\n\n\n\nThu, Nov 26\nNO CLASS: Thanksgiving\n\n\n\n\n\n\n\n\n\n14\nTue, Dec 1\nSimple Linear Regression: Model and Fitting Activity: Height vs. Shoe Size\n\n\n\n\n\n\n\n\n\n\n\nThu, Dec 3\nSimple Linear Regression: Inference\n👉 sampling distribution of coefficients\nIS Ch 27.3 - 27.5\n\n✍️ HW 8 (due 12/11)\nWorksheet 10\n\n\n\n\n15\nTue, Dec 8\nSimple Linear Regression: Prediction\n\n\n\n\n\n\n\n\n\n\nThu, Dec 10\nCategorical Data Analysis\n\nIS Ch 27.6\n\n\n\n✅ Quiz 4\n✅ Take-home Final Exam\n\n\n16\nThu, Dec 17\n\nIn-class Final Exam (8 - 10 AM)\n\n\n\n\n\n\n\n\n\n\n\n\nDr. Yu reserves the right to make changes to the schedule.",
+    "text": "This schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nMaterials\nReading\nR Code\nHomework\nWorksheet\nQuiz\nExam/Exercise\n\n\n\n1\nTue, Sep 1\nSyllabus/Overview of Statistics\n\n🖥️ syllabus🖥️ statistics and data\n\n\nSyllabusIS Ch1GenAI Video\n\n\n\n\n\n\n\n\n\nThu, Sep 3\nStatistical Studies and Data Collection; Data Type\n\nIS Ch 2\n\n✍️ HW 1 (due 9/11)\n\n\n\n\n\n\n2\nTue, Sep 8\nR Software and Computation\n🖥️ R and RStudio🖥️ data type and structure\n\nIS Ch 3\n\n (data type and structure)\n\n\n\n\n\n\n\nThu, Sep 10\nSummarizing Data: Tables and Graphics\n🖥️ data summary👉histogram breaks👉data extremes\n\nIS Ch 5 - 6\n\n (data graphics)\n\n\n\n\n\n\n3\nTue, Sep 15\nSummarizing Data: Numerical measures\n👉 mean👉 sd\n\n\n\n (data numerics)\n\n\n\n\n\n\n\nThu, Sep 17\nProbability Fundamentals\n🖥️ probability👉Venn diagram\nIS Ch 7 - 8\n\n✍️ HW 2 (due 9/25)\nWorksheet 1\n\n\n\n\n4\nTue, Sep 22\nConditional Probability, Independence, Bayes Formula\n\n\n\n\nWorksheet 2\n\n\n\n\n\nThu, Sep 24\nRandom Variables, Discrete Probability Distributions\n🖥️ distribution 👉binomial👉poisson\nIS Ch 9 - 10\n\n (discrete distribution)\n✍️ HW 3 (due 10/2)\n\n✅ Quiz 1\n\n\n\n5\nTue, Sep 29\nContinuous Probability Distributions\n👉normal\nIS Ch 11\n\n (continuous distribution)\n\nWorksheet 3\n\n\n\n\n\nThu, Oct 1\nSampling Distributions Activity: Match the Scenario to the Distribution\n\n🖥️ sampling-dist-clt\nIS Ch 12\n\n (sampling distribution and CLT)\n\n\n\n\n\n\n6\nTue, Oct 6\nCentral Limit Theorem (CLT)\n👉CLT 👉Rolling dice\nIS Ch 13\n\n\n\n\n\n\n\n\nThu, Oct 8\nConfidence Intervals\n🖥️ confidence interval  👉CI\nIS Ch 14\n\n (confidence interval)\n✍️ HW 4 (due 10/16)\nWorksheet 4\n\n\n\n\n7\nTue, Oct 13\nConfidence Intervals\n👉Student-t\n\n\n\n\n\n\n\n\n\nThu, Oct 15\nExam 1 Review Activity: How Much Do Students Sleep?\n\n\n\n\n\nWorksheet 5\n✅ Quiz 2\n\n\n\n8\nTue, Oct 20\nIn-class Midterm Exam\n\n\n\n\n\n\n✅ Take-home Midterm Exam\n\n\n\nThu, Oct 22\nNO CLASS: Midterm break\n\n\n\n✍️ HW 5 (due 10/30)\n\n\n\n\n\n9\nTue, Oct 27\nHypothesis Testing\n🖥️ testing 👉testing\nIS Ch 16\n\n (testing)\n\n\n\n\n\n\n\nThu, Oct 29\nHypothesis Testing\n\n\n\n\nWorksheet 6\n\n\n\n\n10\nTue, Nov 3\nTwo Population Means: Matched Pairs\n🖥️ two samples\nIS Ch 17\n\n (two samples)\n\n\n\n\n\n\n\nThu, Nov 5\nTwo Population Means: Independent Samples\n\n\n\n✍️ HW 6 (due 11/13)\nWorksheet 7\n\n\n\n\n11\nTue, Nov 10\nInference for One Population Variance\n🖥️ variances  👉chi-squared\nIS Ch 18\n\n (variances)\n\n\n\n\n\n\n\nThu, Nov 12\nInference about Two Population Variances\n👉 f\n\n\n\nWorksheet 8\n\n\n\n\n12\nTue, Nov 17\nAnalysis of Variance (ANOVA) Rationale\n🖥️ ANOVA\nIS Ch 24\n\n (ANOVA data)\n\n\n\n\n\n\n\nThu, Nov 19\nAnalysis of Variance (ANOVA) Procedure\n\n\n\n✍️ HW 7 (due 12/4)\nWorksheet 9\n✅ Quiz 3\n\n\n\n13\nTue, Nov 24\nCorrelation; Overview of Regression\n🖥️ correlation  🖥️ regression  👉 regression fitting\nIS Ch 27.1; IS Ch 27.2\n\n (correlation and regression)\n\n\n\n\n\n\n\nThu, Nov 26\nNO CLASS: Thanksgiving\n\n\n\n\n\n\n\n\n\n14\nTue, Dec 1\nSimple Linear Regression: Model and Fitting Activity: Height vs. Shoe Size\n\n\n\n\n\n\n\n\n\n\n\nThu, Dec 3\nSimple Linear Regression: Inference\n👉 sampling distribution of coefficients\nIS Ch 27.3 - 27.5\n\n✍️ HW 8 (due 12/11)\nWorksheet 10\n\n\n\n\n15\nTue, Dec 8\nSimple Linear Regression: Prediction\n\n\n\n\n\n\n\n\n\n\nThu, Dec 10\nCategorical Data Analysis\n\nIS Ch 27.6\n\n\n\n✅ Quiz 4\n✅ Take-home Final Exam\n\n\n16\nThu, Dec 17\n\nIn-class Final Exam (8 - 10 AM)\n\n\n\n\n\n\n\n\n\n\n\n\nDr. Yu reserves the right to make changes to the schedule.",
     "crumbs": [
       "Course Information",
       "Schedule"
@@ -6724,62 +6724,6 @@
     "title": "You RRR a Beginner: R, RStudio and Posit Cloud 👨‍💻",
     "section": "",
     "text": "What is the size of mtcars data?\nType mtcars and hit Enter in the Console to see the data set.\nDiscuss data type of each variable.\nType mtcars[, 1] and hit Enter in the Console. What do you see?\n\n\n\n\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00"
-  },
-  {
-    "objectID": "slides/03-r-slides.html#install-r-step-1",
-    "href": "slides/03-r-slides.html#install-r-step-1",
-    "title": "You RRR a Beginner: R, RStudio and Posit Cloud 👨‍💻",
-    "section": "Install R – Step 1",
-    "text": "Install R – Step 1\n\nGo to https://cloud.r-project.org\n\nClick Download R for [your operating system]"
-  },
-  {
-    "objectID": "slides/03-r-slides.html#install-r-step-2",
-    "href": "slides/03-r-slides.html#install-r-step-2",
-    "title": "You RRR a Beginner: R, RStudio and Posit Cloud 👨‍💻",
-    "section": "Install R – Step 2",
-    "text": "Install R – Step 2\n\nIf you are a Mac user, you should see the page as below. You are recommended to download and install the latest version of R (now R-4.5.1 (Great Square Root)), if your OS version allows to do so. Otherwise, choose a previous version, R-3.6.3.\nIf you are a Windows user, after clicking Download R for Windows, please choose base version, then click Download R-4.5.1 for Windows."
-  },
-  {
-    "objectID": "slides/03-r-slides.html#install-r-step-3",
-    "href": "slides/03-r-slides.html#install-r-step-3",
-    "title": "You RRR a Beginner: R, RStudio and Posit Cloud 👨‍💻",
-    "section": "Install R – Step 3",
-    "text": "Install R – Step 3\n\nOnce you install R successfully, when you open R, you should be able to see the following R terminal or console:\n\n\n\nWindows\n\n\nMac"
-  },
-  {
-    "objectID": "slides/03-r-slides.html#welcome-to-the-r-world",
-    "href": "slides/03-r-slides.html#welcome-to-the-r-world",
-    "title": "You RRR a Beginner: R, RStudio and Posit Cloud 👨‍💻",
-    "section": "Welcome to the R World!",
-    "text": "Welcome to the R World!\n\nNow you are ready to use R to do statistical computation.\nYou can use R like a calculator. After typing your formula, simply hit Enter, you get the answer! For example,\n\n\n1 + 2\n\n[1] 3\n\n30 * 42 / 3\n\n[1] 420\n\nlog(5) - exp(3) * sqrt(7)\n\n[1] -51.5319"
-  },
-  {
-    "objectID": "slides/03-r-slides.html#install-rstudio-step-1",
-    "href": "slides/03-r-slides.html#install-rstudio-step-1",
-    "title": "You RRR a Beginner: R, RStudio and Posit Cloud 👨‍💻",
-    "section": "Install RStudio – Step 1",
-    "text": "Install RStudio – Step 1\n\nIn the Posit website, on top go to OPEN SOURCE &gt; DOWNLOAD RSTUDIO -&gt;"
-  },
-  {
-    "objectID": "slides/03-r-slides.html#install-rstudio-step-2",
-    "href": "slides/03-r-slides.html#install-rstudio-step-2",
-    "title": "You RRR a Beginner: R, RStudio and Posit Cloud 👨‍💻",
-    "section": "Install RStudio – Step 2",
-    "text": "Install RStudio – Step 2\n\nClick DOWNLOAD RSTUDIO."
-  },
-  {
-    "objectID": "slides/03-r-slides.html#install-rstudio-step-3",
-    "href": "slides/03-r-slides.html#install-rstudio-step-3",
-    "title": "You RRR a Beginner: R, RStudio and Posit Cloud 👨‍💻",
-    "section": "Install RStudio – Step 3",
-    "text": "Install RStudio – Step 3\nThe page will automatically detect your operating system and recommend a version of RStudio that works the best for you that is usually the latest version.\n\nClick DOWNLOAD RSTUDIO DESKTOP FOR [Your OS version].\nFollow the standard installation steps and you should get the software.\nMake sure that R is installed successfully on your computer before you download and install RStudio."
-  },
-  {
-    "objectID": "slides/03-r-slides.html#rstudio-screen",
-    "href": "slides/03-r-slides.html#rstudio-screen",
-    "title": "You RRR a Beginner: R, RStudio and Posit Cloud 👨‍💻",
-    "section": "RStudio Screen",
-    "text": "RStudio Screen\n\nWhen you open RStudio, you should see something similar to the figure below.\nIf you do, congratulations! You are able to do every statistical computation in R using RStudio locally in your computer."
   },
   {
     "objectID": "exam.html",
