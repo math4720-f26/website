@@ -219,7 +219,7 @@ knitr::include_graphics("./images/03-r/cloud.png")
 :::
 
 ```{r}
-knitr::include_graphics("./images/03-r/posit-cloud_25.png")
+knitr::include_graphics("./images/03-r/posit-cloud_26.png")
 ```
 
 
@@ -234,14 +234,14 @@ knitr::include_graphics("./images/03-r/posit-cloud_25.png")
 ::::: columns
 ::: {.column width="30%"}
 ```{r}
-knitr::include_graphics("./images/03-r/landing-1-posit.png")
+knitr::include_graphics("./images/03-r/landing-1-posit_26.png")
 ```
 :::
 
 
 ::: {.column width="70%"}
 ```{r}
-knitr::include_graphics("./images/03-r/posit-free-plan_25.png")
+knitr::include_graphics("./images/03-r/posit-free-plan_26.png")
 ```
 :::
 :::::
@@ -264,7 +264,7 @@ knitr::include_graphics("./images/03-r/new-project-cloud-posit.png")
 
 **New RStudio Project**  
 <!-- **New Project from Git Repo** -->
-```{r echo=FALSE, out.width="100%", fig.align="center"}
+```{r}
 knitr::include_graphics("./images/03-r/new-project-option.png")
 ```
 
@@ -394,16 +394,16 @@ mtcars
 {{< countdown minutes=5 font-size="5rem" >}}
 :::
 
-# Install R and RStudio Locally to Your Computer (Optional)
+<!-- # Install R and RStudio Locally to Your Computer (Optional) {visibility="hidden"} -->
 
-## Install R -- Step 1
+## Install R -- Step 1 {visibility="hidden"}
 
 - Go to <https://cloud.r-project.org>
 - Click Download R for [your operating system]
 
 ![](././images/03-r/r_download.png)
 
-## Install R -- Step 2
+## Install R -- Step 2 {visibility="hidden"}
 
 - If you are a Mac user, you should see the page as below. You are recommended to download and install the *latest* version of R (now **R-4.5.1 (Great Square Root)**), if your OS version allows to do so. Otherwise, choose a previous version, R-3.6.3.
 
@@ -412,7 +412,7 @@ mtcars
 
 ![](././images/03-r/r_version.png)
 
-## Install R -- Step 3
+## Install R -- Step 3 {visibility="hidden"}
 
 - Once you install R successfully, when you open R, you should be able to see the following R terminal or console:
 
@@ -435,7 +435,7 @@ mtcars
 
 :::::
 
-## Welcome to the R World!
+## Welcome to the R World! {visibility="hidden"}
 
 - Now you are ready to use R to do statistical computation.
 
@@ -449,14 +449,14 @@ log(5) - exp(3) * sqrt(7)
 ```
 
 
-## Install RStudio -- Step 1
+## Install RStudio -- Step 1 {visibility="hidden"}
 
 - In the [Posit website](https://posit.co/), on top go to **OPEN SOURCE** > **DOWNLOAD RSTUDIO ->**
 
 ![](./images/03-r/download_rstudio.png)
 
 
-## Install RStudio -- Step 2
+## Install RStudio -- Step 2 {visibility="hidden"}
 
 - Click **DOWNLOAD RSTUDIO**.
 
@@ -464,7 +464,7 @@ log(5) - exp(3) * sqrt(7)
 knitr::include_graphics("./images/03-r/download_rstudio2.png")
 ```
 
-## Install RStudio -- Step 3
+## Install RStudio -- Step 3 {visibility="hidden"}
 
 The page will automatically detect your operating system and recommend a version of RStudio that works the best for you that is usually the latest version.
 
@@ -474,17 +474,23 @@ The page will automatically detect your operating system and recommend a version
 
 - Make sure that R is installed successfully on your computer before you download and install RStudio.
 
-```{r echo=FALSE, out.width="55%"}
+```{r}
+#| echo: false
+#| out-width: 55%
 knitr::include_graphics("./images/03-r/download_rstudio3.png")
 ```
 
-## RStudio Screen
+## RStudio Screen {visibility="hidden"}
 
 - When you open RStudio, you should see something similar to the figure below.
 
 - If you do, congratulations! You are able to do every statistical computation in R using RStudio locally in your computer.
 
-```{r echo=FALSE, out.width="78%", fig.align="center"}
+```{r}
+#| echo: false
+#| out-width: 78%
+#| fig-align: center
 knitr::include_graphics("./images/03-r/rstudio_ubuntu.png")
 ```
+
 
