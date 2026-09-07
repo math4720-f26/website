@@ -348,14 +348,16 @@ knitr::include_graphics("./images/04-programming/stop_comment.png")
 
 - Use `<-` operator to **assign** a value to the variable. (Highly recommended`r emo::ji('+1')`)
 
-```{r assignment}
+```{r}
+#| label: assignment
 x <- 5  ## we create an object, value 5, and call it x, which is a variable.
 x  ## type the variable name to see the value stored in the object x
 ```
 
 <!-- - Can also use `=` symbol to do assignment. (`r emo::ji('x')` Does not work in some situations) -->
 
-```{r variable}
+```{r}
+#| label: variable
 (x <- x + 6)  # We can reassign any value to the variable we created
 x == 5  # We can perform any operations on variables
 log(x) # Variables can also be used in any built-in functions
@@ -385,7 +387,8 @@ include_graphics("./images/04-programming/r_assign_syntax.jpg")
 
 - `r emo::ji('worried')` It causes lots of confusion when your code is long and when others read your code.
 
-```{r bad-naming}
+```{r}
+#| label: bad-naming
 ## THIS IS BAD CODING! DON'T DO THIS!
 pi  ## pi is a built-in constant
 (pi <- 20)
@@ -407,7 +410,8 @@ abs ## abs is a built-in function
 ::::: columns
 
 ::: {.column width="50%"}
-```{r type}
+```{r}
+#| label: type
 typeof(5)
 typeof(5L)
 typeof("I_love_stat")
@@ -479,7 +483,8 @@ is.double(5L)
 ::::: columns
 
 :::: {.column width="50%"}
-```{r vector}
+```{r}
+#| label: vector
 (dbl_vec <- c(1, 2.5, 4.5)) 
 (chr_vec <- c("pretty", "girl"))
 ```
@@ -511,7 +516,8 @@ str(dbl_vec)
 ::::: columns
 
 ::: {.column width="50%"}
-```{r vector-arithmetic}
+```{r}
+#| label: vector-arithmetic
 # Create two vectors
 v1 <- c(3, 8)
 v2 <- c(4, 100) 

@@ -69,7 +69,6 @@ options(
 
 Data Summary in Tables, Graphics and Numerical Values
 
-
 ## Descriptive Statistics (Data Summary)
 
 - Before doing inferential statistics, let's first learn to understand our data by describing or summarizing it using a **table**, **graph**, or some important **measures**, so that appropriate methods can be performed for better inference results.
@@ -158,9 +157,10 @@ arrows(1.05, 0.73, 0.9, 0.61, length = 0.08)
 ::::: columns
 
 ::: {.column width="70%"}
+
 - **Packages** wrap up reusable R functions, the documentation that describes how to use them, and data sets all together.
 
-- As of August 2025, there are about 22510 R packages available on [**CRAN**](https://cran.r-project.org/) (the Comprehensive R Archive Network)!
+- As of July 2026, there are about 24186 R packages available on [**CRAN**](https://cran.r-project.org/) (the Comprehensive R Archive Network)!
 
 ```{r}
 #| eval: false
@@ -258,9 +258,13 @@ knitr::include_graphics("./images/05-data-description/lter_penguins.png")
 ```
 
 ::: notes
+
 ::: question
+
 If we want to create a frequency table shown in definition, which R data structure we can use?
+
 :::
+
 :::
 
 ## Categorical Frequency Table in R: `species` {visibility="hidden"}
@@ -405,6 +409,7 @@ knitr::include_graphics("./images/05-data-description/lter_penguins.png")
 
 
 ::: {.column width="50%"}
+
 ```{r}
 #| echo: false
 #| code-line-numbers: false
@@ -458,7 +463,9 @@ Wonder how we choose the number of classes or the class width?
 ::: fragment
 
 ::: alert
+
 R decide the number for us when we visualize the frequency distribution by a **histogram**.
+
 :::
 
 :::
@@ -475,7 +482,9 @@ R decide the number for us when we visualize the frequency distribution by a **h
 ::::: columns
 
 ::: {.column width="50%"}
+
 **Use default breaks (no need to specify)**
+
 ```{r}
 #| code-line-numbers: false
 #| echo: !expr c(-1)
@@ -484,6 +493,7 @@ hist(x = body_mass,
      xlab = "Body Mass (gram)",
      main = "Histogram (Defualt)")
 ```
+
 :::
 
 
@@ -495,6 +505,7 @@ hist(x = body_mass,
 **Use customized breaks**
 
 ::: midi
+
 ```{r}
 #| code-line-numbers: false
 #| out-width: 100%
@@ -504,6 +515,7 @@ hist(x = body_mass,
      xlab = "Body Mass (gram)",
      main = "Histogram (Ours)")
 ```
+
 :::
 
 :::
@@ -516,9 +528,8 @@ hist(x = body_mass,
 
 <!-- ## [Histogram Applet](https://math4720-f25.github.io/website/ojs/data-hist-ojs.html) -->
 
-<!-- ## -->
 
-<!-- {{< include ../ojs/data-hist-ojs.qmd >}} -->
+<!-- {{< include data-hist-ojs.qmd >}} -->
 
 
 ## Skewness
@@ -564,6 +575,7 @@ par(mfrow = c(1, 1))
 hist(x = body_mass, breaks = class_boundary, xlab = "Body Mass (gram)", las = 1,
      main = "Histogram of Penguin Body Mass")
 ```
+
 :::
 
 
@@ -573,13 +585,14 @@ hist(x = body_mass, breaks = class_boundary, xlab = "Body Mass (gram)", las = 1,
 ::: fragment
 
 ::: tiny
+
 ```{r}
 #| echo: false
-#| out-width: 67%
+#| out-width: 75%
 #| fig-align: center
-#| fig-cap: Biostatistics for the Biological and Health Sciences p.53
-knitr::include_graphics("./images/05-data-description/skew.png")
+knitr::include_graphics("./images/05-data-description/skew_gpt.png")
 ```
+
 :::
 
 :::
@@ -614,12 +627,14 @@ plot(x = penguins$bill_length_mm,
 :::
 
 ::: {.column width="30%"}
+
 ```{r}
 #| out-width: 100%
 #| echo: false
 #| fig-link: https://allisonhorst.github.io/palmerpenguins/
 knitr::include_graphics("./images/05-data-description/culmen_depth.png")
 ```
+
 :::
 
 :::::
@@ -673,12 +688,15 @@ If you need to choose one value that represents the entire data, what value woul
 ::: {.column width="50%"}
 
 ::: fragment
+
 - **Measure of Center**: We typically use the **middle** point. (What does "middle" mean?)
 
 - **Measure of Variation**: What values tell us how much variation a variable has?
+
 :::
 
 :::
+
 :::::
 
 
@@ -712,6 +730,7 @@ mean(body_mass)
 ::::: columns
 
 ::: {.column width="70%"}
+
 ```{r}
 #| echo: false
 #| out-width: 100%
@@ -745,6 +764,7 @@ polygon(M + c(-1, 1, 0) * 50,
         border = "red",
         col = 2)
 ```
+
 :::
 
 
@@ -754,15 +774,24 @@ polygon(M + c(-1, 1, 0) * 50,
 #| echo: false
 knitr::include_graphics("./images/05-data-description/seesaw.jpeg")
 ```
+
 :::
 
 :::::
 
 ::: notes
+
 - Mean is a measure of center in the sense that it can be viewed as the **balancing point** of the distribution.
 - This is the distribution of the interest rate.
 - And if you imagine that we put all those data points on a see-saw, the sample mean is the balancing point that keeps the see-saw balanced horizontally.
+
 :::
+
+
+
+
+## {background-iframe="https://chenghanyustats-introstat-mean.share.connect.posit.cloud" background-interactive="true"}
+
 
 
 
@@ -785,7 +814,8 @@ knitr::include_graphics("./images/05-data-description/seesaw.jpeg")
    + <span style="color:blue"> Data: (0, 2, 10, 14, 8, 12) </span>
    + <span style="color:blue"> Sorted Data: (0, 2, <span style="color:red">8, 10</span>, 12, 14) </span>
    + <span style="color:blue"> The median is $\frac{8 + 10}{2} = 9$ </span>
-   
+
+
 ::: notes
 
 - The **Median** is the *middle value* when data values are *sorted from the lowest to highest*.
@@ -796,6 +826,7 @@ knitr::include_graphics("./images/05-data-description/seesaw.jpeg")
 
 - If $n$ is *even*, the median is the average of the two middle numbers.
 - 8 or 10 itself is not right on the middle.
+
 :::
 
 
@@ -852,9 +883,11 @@ sort(table_data, decreasing = TRUE)
 
 
 ::: notes
+
 - Mathematically, the **mode** is the value in the data that occurs *most frequently*.
 - For continous numerical data that take on infinitely many possible values, it is common to have **no** observations with the same value in a data set, making this definition impractical.
 - Practical definition:  A mode is represented by a **prominent peak** in the distribution.
+
 :::
 
 
@@ -882,8 +915,10 @@ names(sort(table(data_extreme), decreasing = TRUE))[1] ## Mode does not change t
 
 
 ::: notes
+
 - Mean is sensitive to extreme values (outliers). 
 - Median/mode is more **robust** than mean, meaning that median and mode will not change or not change much if few data values change.
+
 :::
 
 
@@ -958,16 +993,10 @@ axis(1, labels = FALSE, tick = TRUE)
 :::
 
 
-
-
-
-<!-- ## [Outliers Applet](https://math4720-f25.github.io/website/ojs/data-extremes-ojs.html) -->
+<!-- ## [Outliers Applet](https://math4720-f26.github.io/website/ojs/data-extremes-ojs.html) -->
 
 
 <!-- {{< include data-extremes-ojs.qmd >}} -->
-
-
-
 
 
 ## Measures of Variation
@@ -992,12 +1021,14 @@ abline(v = 0, col = "#FFCC00", lwd = 3)
 
 
 ::: notes
+
 - Done the discussion of measure of center.
 - Now let's see how we quantify the variation of data.
 - Here we have three frequency distributions with the same mean, median and mode because their distribution is symmetric.
 - But from top to bottom, the data have small, median and large variation.
 - Basically larger variation means the data values spread out more. 
 - So although the data mean is right here, but in general, data values are not very close to the mean. Their deviation from the sample mean is large. OK.
+
 :::
 
 
@@ -1009,9 +1040,10 @@ abline(v = 0, col = "#FFCC00", lwd = 3)
 ::::: columns
 
 ::: {.column width="50%"}
-- **p-th percentile (quantile)**: a data value such that 
-  + at most $p\%$ of the values are below it
-  + at most $(1-p)\%$ of the values are above it
+
+- **p-th percentile (quantile)** ($P_p$): a data value such that 
+  + at least $p\%$ of the values are $\leq P_p$
+  + at least $(1-p)\%$ of the values are are $\geq P_p$
 
 ::: question
 
@@ -1027,13 +1059,16 @@ abline(v = 0, col = "#FFCC00", lwd = 3)
 ::: {.column width="50%"}
 
 ::: tiny
+
 ```{r}
 #| echo: false
 #| out-width: 33%
 #| fig-cap: "https://en.wikipedia.org/wiki/ACT_(test)"
 knitr::include_graphics("./images/05-data-description/act_math_percentile.png")
 ```
+
 :::
+
 :::
 
 :::::
@@ -1049,6 +1084,7 @@ knitr::include_graphics("./images/05-data-description/act_math_percentile.png")
 :::
 
 
+
 ## Measures of Variation: Interquartile Range (IQR)
 
 - **First Quartile (Q1)**: the <span style="color:red">25-th</span> percentile
@@ -1062,6 +1098,7 @@ knitr::include_graphics("./images/05-data-description/act_math_percentile.png")
 ::::: columns
 
 ::: {.column width="50%"}
+
 ```{r}
 #| code-line-numbers: false
 ## Use quantile() to find any percentile 
@@ -1072,9 +1109,11 @@ quantile(x = body_mass,
 quantile(x = body_mass, probs = 0.75) - 
   quantile(x = body_mass, probs = 0.25) 
 ```
+
 :::
 
 ::: {.column width="50%"}
+
 ```{r}
 #| code-line-numbers: false
 ## IQR()
@@ -1087,10 +1126,7 @@ summary(body_mass)
 Larger IQR means more or less variation?
 :::
 
-
 :::
-
-
 
 :::::
 
@@ -1099,6 +1135,8 @@ Larger IQR means more or less variation?
 ::: notes
 The range of the middle 50% of the data.
 :::
+
+
 
 ## Variance and Standard Deviation
 
@@ -1114,7 +1152,7 @@ The range of the middle 50% of the data.
 
 - SD is the **root mean squared deviation** from the mean. It measures, on average, **how far the data spread out around the average**.
 
-## {background-iframe="https://019b86e1-a4fd-0742-2647-47cb207b4813.share.connect.posit.cloud" background-interactive="true"}
+## {background-iframe="https://chenghanyustats-introstat-standarddeviation.share.connect.posit.cloud" background-interactive="true"}
 
 ## Compute Variance and SD
 
@@ -1128,23 +1166,38 @@ sd(body_mass)
 
 ## Visualizing Data Variation: Boxplot
 
-When plotting the whiskers,
-
-- minimum value in the data means the minimal value that is not an potential outlier.
-
-- maximum value in the data means the maximal value that is not an potential outlier.
-
-::: tiny
 ```{r}
 #| echo: false
-#| out-width: 75%
-#| fig-cap: "https://www.leansigmacorporation.com/box-plot-with-minitab/"
-knitr::include_graphics("./images/05-data-description/boxplot.png")
+#| out-width: 100%
+knitr::include_graphics("./images/05-data-description/boxplot_no_outlier.png")
 ```
-:::
+
+## Visualizing Data Variation: Boxplot
+
+```{r}
+#| echo: false
+#| out-width: 100%
+knitr::include_graphics("./images/05-data-description/boxplot_outlier.png")
+```
+
+<!-- When plotting the whiskers, -->
+
+<!-- - minimum value in the data means the minimal value that is not an potential outlier. -->
+
+<!-- - maximum value in the data means the maximal value that is not an potential outlier. -->
+
+<!-- ::: tiny -->
+<!-- ```{r} -->
+<!-- #| echo: false -->
+<!-- #| out-width: 75% -->
+<!-- #| fig-cap: "https://www.leansigmacorporation.com/box-plot-with-minitab/" -->
+<!-- knitr::include_graphics("./images/05-data-description/boxplot.png") -->
+<!-- ``` -->
+<!-- ::: -->
 
 
 ::: notes
+
 - To Visualize Data Variation, we can make a so-called Boxplot.
 - The plot has a box in the middle, and so-called whiskers that are these two straight lines connected to the box.
 - Let's look at the box first. We have 3 vertical lines here. The lines from left to right indicate Q1, Q2 or the median, and Q3.
@@ -1154,7 +1207,9 @@ knitr::include_graphics("./images/05-data-description/boxplot.png")
 - The lower limit of the whisker on the left is the larger one of the minimum of values and Q1 - 1.5 IQR
 - For any data values that are greater than Q3 + 1.5 IQR or smaller than Q1 - 1.5 IQR, we show them as a point.
 - Basically those points are far from the center of the data, and we could potentially treat them as extreme values or outliers.
+
 :::
+
 
 
 ## Body Mass Boxplot
@@ -1229,10 +1284,12 @@ for (i in 2:nco) {
 
 
 ::: notes
+
 - Here shows the boxplot of the interest rate data.
 - You can see that there are two very high interest rates in the data. They are 25% or more.
 - And the median interest rate is just about 10%. And so these two data points are suspected outliers. They are way far from the the median or the most data points.
 - If
+
 :::
 
 
@@ -1241,6 +1298,7 @@ for (i in 2:nco) {
 ::::: columns
 
 ::: {.column width="50%"}
+
 ```{r}
 #| code-line-numbers: false
 #| echo: !expr c(-1, -2)
@@ -1248,9 +1306,11 @@ par(mar = c(0,4,0,0))
 par(mfrow = c(1, 1))
 boxplot(body_mass, ylab = "Body Mass (g)")
 ```
+
 :::
 
 ::: {.column width="50%"}
+
 ```{r}
 #| code-line-numbers: false
 range(body_mass)
@@ -1262,14 +1322,61 @@ IQR <- Q3 - Q1
 Q1 - 1.5 * IQR
 Q3 + 1.5 * IQR
 ```
+
 :::
 
 :::::
 
+. . .
+
+::: {.callout-warning}
+
+`boxplot()` uses Tukey hinges; `quantile()` uses a default interpolation rule. They agree for odd sample sizes, but can differ for even sample sizes. Use `boxplot(body_mass)$stats` to check hinges values.
+
+:::
+
+
 ::: notes
+
 - In R, we can create a boxplot using boxplot().
 sort(int_rate, decreasing = TRUE)[1:5]
 sort(int_rate)[1:5]
+
+boxplot() uses Tukey’s hinges via fivenum(), not quantile.
+
+The two ‘hinges’ are versions of the first and third quartile, i.e., close to quantile(x, c(1,3)/4). The hinges equal the quartiles for odd 
+n
+n (where n <- length(x)) and differ for even 
+n
+n. Whereas the quartiles only equal observations for n %% 4 == 1 (
+n
+≡
+1
+m
+o
+d
+4
+n≡1mod4), the hinges do so additionally for n %% 4 == 2 (
+n
+≡
+2
+m
+o
+d
+4
+n≡2mod4), and are in the middle of two observations otherwise
+
+要讓 quantile() 模仿 base R boxplot() 的 Tukey hinges，需要依照樣本數 n 切換：
+
+{
+use type = 7,
+use type = 2,
+	​
+
+n odd,
+n even.
+	​
+
 :::
 
 

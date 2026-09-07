@@ -2296,252 +2296,252 @@
   {
     "objectID": "slides/05-data-description-slides.html#descriptive-statistics-data-summary",
     "href": "slides/05-data-description-slides.html#descriptive-statistics-data-summary",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Descriptive Statistics (Data Summary)",
     "text": "Descriptive Statistics (Data Summary)\n\nBefore doing inferential statistics, let’s first learn to understand our data by describing or summarizing it using a table, graph, or some important measures, so that appropriate methods can be performed for better inference results."
   },
   {
     "objectID": "slides/05-data-description-slides.html#frequency-table-for-categorical-variable",
     "href": "slides/05-data-description-slides.html#frequency-table-for-categorical-variable",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Frequency Table for Categorical Variable",
     "text": "Frequency Table for Categorical Variable\n\nA frequency table (frequency distribution) lists variable values individually for categorical data along with their corresponding number of times occurred in the data (frequencies or counts).\nFrequency table for categorical data with \\(n\\) data values:\n\n\n\nCategory name\nFrequency\nRelative Frequency\n\n\n\n\\(C_1\\)\n\\(f_1\\)\n\\(f_1/n\\)\n\n\n\\(C_2\\)\n\\(f_2\\)\n\\(f_2/n\\)\n\n\n…\n…\n…\n\n\n\\(C_k\\)\n\\(f_k\\)\n\\(f_k/n\\)"
   },
   {
     "objectID": "slides/05-data-description-slides.html#frequency-table-for-categorical-variable-1",
     "href": "slides/05-data-description-slides.html#frequency-table-for-categorical-variable-1",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Frequency Table for Categorical Variable",
     "text": "Frequency Table for Categorical Variable\n\nA frequency table (frequency distribution) lists variable values individually for categorical data along with their corresponding number of times occurred in the data (frequencies or counts).\nExample: A categorical variable color that has three categories\n\n\n\nCategory name\nFrequency\nRelative Frequency\n\n\n\nRed 🔴\n8\n8/50 = 0.16\n\n\nBlue 🔵\n26\n26/50 = 0.52\n\n\nBlack ⚫\n16\n16/50 = 0.32"
   },
   {
     "objectID": "slides/05-data-description-slides.html#r-packages",
     "href": "slides/05-data-description-slides.html#r-packages",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "R Packages 📦",
-    "text": "R Packages 📦\n\n\n\nPackages wrap up reusable R functions, the documentation that describes how to use them, and data sets all together.\nAs of August 2025, there are about 22510 R packages available on CRAN (the Comprehensive R Archive Network)!\n\n\ninstall.packages(\"palmerpenguins\")\n\n\n\n\n\n\n\n\n\n\n\n\npalmerpenguins package"
+    "text": "R Packages 📦\n\n\n\nPackages wrap up reusable R functions, the documentation that describes how to use them, and data sets all together.\nAs of July 2026, there are about 24186 R packages available on CRAN (the Comprehensive R Archive Network)!\n\n\ninstall.packages(\"palmerpenguins\")\n\n\n\n\n\n\n\n\n\n\n\n\npalmerpenguins package"
   },
   {
     "objectID": "slides/05-data-description-slides.html#categorical-frequency-table-palmerpenguins-package",
     "href": "slides/05-data-description-slides.html#categorical-frequency-table-palmerpenguins-package",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Categorical Frequency Table palmerpenguins package \n",
     "text": "Categorical Frequency Table palmerpenguins package \n\n\n\n\nlibrary(palmerpenguins)\n\n\nstr(penguins)\n\ntibble [344 × 8] (S3: tbl_df/tbl/data.frame)\n $ species          : Factor w/ 3 levels \"Adelie\",\"Chinstrap\",..: 1 1 1 1 1 1 1 1 1 1 ...\n $ island           : Factor w/ 3 levels \"Biscoe\",\"Dream\",..: 3 3 3 3 3 3 3 3 3 3 ...\n $ bill_length_mm   : num [1:344] 39.1 39.5 40.3 NA 36.7 39.3 38.9 39.2 34.1 42 ...\n $ bill_depth_mm    : num [1:344] 18.7 17.4 18 NA 19.3 20.6 17.8 19.6 18.1 20.2 ...\n $ flipper_length_mm: int [1:344] 181 186 195 NA 193 190 181 195 193 190 ...\n $ body_mass_g      : int [1:344] 3750 3800 3250 NA 3450 3650 3625 4675 3475 4250 ...\n $ sex              : Factor w/ 2 levels \"female\",\"male\": 2 1 1 NA 1 2 1 2 NA NA ...\n $ year             : int [1:344] 2007 2007 2007 2007 2007 2007 2007 2007 2007 2007 ...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nx &lt;- penguins[, \"species\"]"
   },
   {
     "objectID": "slides/05-data-description-slides.html#categorical-frequency-table-species",
     "href": "slides/05-data-description-slides.html#categorical-frequency-table-species",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Categorical Frequency Table: species\n",
     "text": "Categorical Frequency Table: species\n\n\n## frequency table\ntable(x)\n\nspecies\n   Adelie Chinstrap    Gentoo \n      152        68       124 \n\n\n\n\n\n\n\n\n\n\n\nIf we want to create a frequency table shown in definition, which R data structure we can use?"
   },
   {
     "objectID": "slides/05-data-description-slides.html#visualizing-a-frequency-table-bar-chart",
     "href": "slides/05-data-description-slides.html#visualizing-a-frequency-table-bar-chart",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Visualizing a Frequency Table: Bar Chart",
     "text": "Visualizing a Frequency Table: Bar Chart\n\nbarplot(height = table(x), main = \"Bar Chart\", xlab = \"Penguin Species\")"
   },
   {
     "objectID": "slides/05-data-description-slides.html#pie-chart",
     "href": "slides/05-data-description-slides.html#pie-chart",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Pie Chart",
     "text": "Pie Chart\n\npie(x = table(x), main = \"Pie Chart\")"
   },
   {
     "objectID": "slides/05-data-description-slides.html#section-1",
     "href": "slides/05-data-description-slides.html#section-1",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "",
     "text": "Create a frequency table and a bar chart for the variable island of the penguins.\n\n\nlibrary(palmerpenguins)\n\n\n\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 01:00"
   },
   {
     "objectID": "slides/05-data-description-slides.html#frequency-distribution-for-numerical-variables",
     "href": "slides/05-data-description-slides.html#frequency-distribution-for-numerical-variables",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Frequency Distribution for Numerical Variables",
     "text": "Frequency Distribution for Numerical Variables\n\nDivide the data into \\(k\\) non-overlapping groups of intervals (classes).\nConvert the data into \\(k\\) categories with an associated class interval.\nCount the number of measurements falling in a given class interval (class frequency).\n\n\n\nClass\nClass Interval\nFrequency\nRelative Frequency\n\n\n\n\\(1\\)\n\\([a_1, a_2]\\)\n\\(f_1\\)\n\\(f_1/n\\)\n\n\n\\(2\\)\n\\((a_2, a_3]\\)\n\\(f_2\\)\n\\(f_2/n\\)\n\n\n…\n…\n…\n…\n\n\n\\(k\\)\n\\((a_k, a_{k+1}]\\)\n\\(f_k\\)\n\\(f_k/n\\)\n\n\n\n\n\n\\((a_2 - a_1) = (a_3 - a_2) = \\cdots = (a_{k+1} - a_k)\\). All class widths are the same!"
   },
   {
     "objectID": "slides/05-data-description-slides.html#frequency-distribution-for-numerical-variables-1",
     "href": "slides/05-data-description-slides.html#frequency-distribution-for-numerical-variables-1",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Frequency Distribution for Numerical Variables",
     "text": "Frequency Distribution for Numerical Variables\n\nDivide the data into \\(k\\) non-overlapping groups of intervals (classes).\nConvert the data into \\(k\\) categories with an associated class interval.\nCount the number of measurements falling in a given class interval (class frequency).\n\n\n\nClass\nClass Interval\nFrequency\nRelative Frequency\n\n\n\n\\(1\\)\n\\([80, 100]\\)\n\\(2\\)\n\\(2/50\\)\n\n\n\\(2\\)\n\\((100, 120]\\)\n\\(4\\)\n\\(4/50\\)\n\n\n…\n…\n…\n…\n\n\n\\(8\\)\n\\((220, 240]\\)\n\\(3\\)\n\\(3/50\\)"
   },
   {
     "objectID": "slides/05-data-description-slides.html#section-2",
     "href": "slides/05-data-description-slides.html#section-2",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "",
     "text": "Can our grade conversion be used for creating a frequency distribution?\n\n\n\n\n\nGrade\nPercentage\n\n\n\nA\n[94, 100]\n\n\nA-\n[90, 94)\n\n\nB+\n[87, 90)\n\n\nB\n[83, 87)\n\n\nB-\n[80, 83)\n\n\nC+\n[77, 80)\n\n\nC\n[73, 77)\n\n\nC-\n[70, 73)\n\n\nD+\n[65, 70)\n\n\nD\n[60, 65)\n\n\nF\n[0, 60)"
   },
   {
     "objectID": "slides/05-data-description-slides.html#body-mass-grams-in-data-penguins",
     "href": "slides/05-data-description-slides.html#body-mass-grams-in-data-penguins",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Body Mass (Grams) in Data penguins\n",
     "text": "Body Mass (Grams) in Data penguins\n\n\nbody_mass &lt;- penguins$body_mass_g\nhead(body_mass, 20)\n\n [1] 3750 3800 3250   NA 3450 3650 3625 4675 3475 4250 3300 3700 3200 3800 4400\n[16] 3700 3450 4500 3325 4200\n\nbody_mass &lt;- body_mass[complete.cases(body_mass)]"
   },
   {
     "objectID": "slides/05-data-description-slides.html#frequency-distribution-of-body-mass",
     "href": "slides/05-data-description-slides.html#frequency-distribution-of-body-mass",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Frequency Distribution of Body Mass",
     "text": "Frequency Distribution of Body Mass\n\n\n\n\n\n\nClass\nClass_Intvl\nFreq\nRel_Freq\n\n\n\n1\n2700g - 3000g\n11\n0.03\n\n\n2\n3000g - 3300g\n29\n0.08\n\n\n3\n3300g - 3600g\n57\n0.17\n\n\n4\n3600g - 3900g\n57\n0.17\n\n\n5\n3900g - 4200g\n39\n0.11\n\n\n6\n4200g - 4500g\n34\n0.10\n\n\n7\n4500g - 4800g\n34\n0.10\n\n\n8\n4800g - 5100g\n26\n0.08\n\n\n9\n5100g - 5400g\n21\n0.06\n\n\n10\n5400g - 5700g\n22\n0.06\n\n\n11\n5700g - 6000g\n10\n0.03\n\n\n12\n6000g - 6300g\n2\n0.01\n\n\n\n\n\n\n\nrange(body_mass)\n\n[1] 2700 6300\n\n\n\nAll class widths are the same!\nNumber of classes should not be too big or too small.\nThe lower limit of the 1st class should not be greater than the minimum value of the data.\nThe upper limit of the last class should not be smaller than the maximum value of the data.\n\n\n\nWonder how we choose the number of classes or the class width?\n\n\n\n\nR decide the number for us when we visualize the frequency distribution by a histogram."
   },
   {
     "objectID": "slides/05-data-description-slides.html#visualizing-frequency-distribution-by-a-histogram",
     "href": "slides/05-data-description-slides.html#visualizing-frequency-distribution-by-a-histogram",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Visualizing Frequency Distribution by a Histogram",
     "text": "Visualizing Frequency Distribution by a Histogram\n\n\nUse default breaks (no need to specify)\n\nhist(x = body_mass, \n     xlab = \"Body Mass (gram)\",\n     main = \"Histogram (Defualt)\")\n\n\n\n\n\n\n\n\n\nUse customized breaks\n\n\nclass_boundary\n\n [1] 2700 3000 3300 3600 3900 4200 4500 4800 5100 5400 5700 6000 6300\n\nhist(x = body_mass, \n     breaks = class_boundary, #&lt;&lt;\n     xlab = \"Body Mass (gram)\",\n     main = \"Histogram (Ours)\")"
   },
   {
     "objectID": "slides/05-data-description-slides.html#skewness",
     "href": "slides/05-data-description-slides.html#skewness",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Skewness",
     "text": "Skewness\n\nKey characteristics of distributions includes shape, center and spread.\nSkewness provides a way to summarize the shape of a distribution."
   },
   {
     "objectID": "slides/05-data-description-slides.html#remembering-skewness",
     "href": "slides/05-data-description-slides.html#remembering-skewness",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Remembering Skewness",
-    "text": "Remembering Skewness\n\n\n\nIs the body mass histogram left skewed or right skewed?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBiostatistics for the Biological and Health Sciences p.53"
+    "text": "Remembering Skewness\n\n\n\nIs the body mass histogram left skewed or right skewed?"
   },
   {
     "objectID": "slides/05-data-description-slides.html#scatterplot-for-two-numerical-variables",
     "href": "slides/05-data-description-slides.html#scatterplot-for-two-numerical-variables",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Scatterplot for Two Numerical Variables",
     "text": "Scatterplot for Two Numerical Variables\n\n\nA scatterplot provides a case-by-case view of data for two numerical variables.\n\n\n\n\nplot(x = penguins$bill_length_mm, \n     y = penguins$bill_depth_mm,\n     xlab = \"Bill Length\", ylab = \"Bill Depth\",\n     pch = 16, col = 4)"
   },
   {
     "objectID": "slides/05-data-description-slides.html#section-3",
     "href": "slides/05-data-description-slides.html#section-3",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "",
     "text": "For the penguins data, do\n\n\nHistogram for variable flipper_length_mm. Discuss its shape.\nScatter plot for variables flipper_length_mm and bill_length_mm.\n\n\n\n\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 02:00"
   },
   {
     "objectID": "slides/05-data-description-slides.html#numerical-summaries-of-data",
     "href": "slides/05-data-description-slides.html#numerical-summaries-of-data",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Numerical Summaries of Data",
     "text": "Numerical Summaries of Data\n\n\n\n\n\n\n\n\n\n\n\nIf you need to choose one value that represents the entire data, what value would you choose?\n\n\n\n\nMeasure of Center: We typically use the middle point. (What does “middle” mean?)\nMeasure of Variation: What values tell us how much variation a variable has?"
   },
   {
     "objectID": "slides/05-data-description-slides.html#measures-of-center-mean",
     "href": "slides/05-data-description-slides.html#measures-of-center-mean",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Measures of Center: Mean",
     "text": "Measures of Center: Mean\n\nThe (arithmetic) mean or average is adding up all of the values, then dividing by the total number of them.\nLet \\(x_1, x_2, \\dots, x_n\\) denote the measurements observed in a sample of size \\(n\\). Then the sample mean is defined as \\[\\overline{x} = \\frac{\\sum_{i=1}^{n} x_i}{n} = \\frac{x_1 + x_2 + \\dots + x_n}{n}\\]\nIn the body mass example, \\[\\overline{x} = \\frac{3750 + 3800 + \\cdots + 3775}{342} = 4202\\] \n\n\nmean(body_mass)\n\n[1] 4202\n\n\n\nMean balances data Values. It means that the sum of deviations from the mean is 0."
   },
   {
     "objectID": "slides/05-data-description-slides.html#balancing-point",
     "href": "slides/05-data-description-slides.html#balancing-point",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Balancing Point",
     "text": "Balancing Point\n\nThink of the mean as the balancing point of the distribution.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMean is a measure of center in the sense that it can be viewed as the balancing point of the distribution.\nThis is the distribution of the interest rate.\nAnd if you imagine that we put all those data points on a see-saw, the sample mean is the balancing point that keeps the see-saw balanced horizontally."
   },
   {
     "objectID": "slides/05-data-description-slides.html#measures-of-center-median",
     "href": "slides/05-data-description-slides.html#measures-of-center-median",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Measures of Center: Median",
     "text": "Measures of Center: Median\n\nMedian: the middle value when data values are sorted.\nHalf of the values are less than or equal to the median, and the other half are greater than it.\nTo find the median, we first sort the values.\n\n\\(n\\) is odd: the median is located in the exact middle of the ordered values.\n\n Data: (0, 2, 10, 14, 8) \n Sorted Data: (0, 2, 8, 10, 14) \n The median is \\(8\\) \n\n\n\n\n\n\n\\(n\\) is even: the median is the average of the two middle numbers.\n\n Data: (0, 2, 10, 14, 8, 12) \n Sorted Data: (0, 2, 8, 10, 12, 14) \n The median is \\(\\frac{8 + 10}{2} = 9\\) \n\n\n\n\nThe Median is the middle value when data values are sorted from the lowest to highest.\nHalf of the values are less than or equal to the median, and the other half are greater than it.\nTo find the median (well without using any technology or computer), we first sort the values.\nIf \\(n\\) is odd, the median is located in the exact middle of the ordered values.\nThere are two on its right and two on its left. it is right on the middle.\nIf \\(n\\) is even, the median is the average of the two middle numbers.\n8 or 10 itself is not right on the middle."
   },
   {
     "objectID": "slides/05-data-description-slides.html#calculate-median-in-r",
     "href": "slides/05-data-description-slides.html#calculate-median-in-r",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Calculate Median in R",
     "text": "Calculate Median in R\n\nmedian(body_mass)  ## Compute the median using command median()\n\n[1] 4050\n\n\n\n\n(sort_mass &lt;- sort(body_mass))  ## sort data\n\n  [1] 2700 2850 2850 2900 2900 2900 2900 2925 2975 3000 3000 3050 3050 3050 3050\n [16] 3075 3100 3150 3150 3150 3150 3175 3175 3200 3200 3200 3200 3200 3250 3250\n [31] 3250 3250 3250 3275 3300 3300 3300 3300 3300 3300 3325 3325 3325 3325 3325\n [46] 3350 3350 3350 3350 3350 3400 3400 3400 3400 3400 3400 3400 3400 3425 3425\n [61] 3450 3450 3450 3450 3450 3450 3450 3450 3475 3475 3475 3500 3500 3500 3500\n [76] 3500 3500 3500 3525 3525 3550 3550 3550 3550 3550 3550 3550 3550 3550 3575\n [91] 3600 3600 3600 3600 3600 3600 3600 3625 3650 3650 3650 3650 3650 3650 3675\n[106] 3675 3700 3700 3700 3700 3700 3700 3700 3700 3700 3700 3700 3725 3725 3725\n[121] 3750 3750 3750 3750 3750 3775 3775 3775 3775 3800 3800 3800 3800 3800 3800\n[136] 3800 3800 3800 3800 3800 3800 3825 3850 3875 3900 3900 3900 3900 3900 3900\n[151] 3900 3900 3900 3900 3950 3950 3950 3950 3950 3950 3950 3950 3950 3950 3975\n[166] 4000 4000 4000 4000 4000 4050 4050 4050 4050 4050 4050 4075 4100 4100 4100\n[181] 4100 4100 4150 4150 4150 4150 4150 4150 4200 4200 4200 4200 4200 4250 4250\n[196] 4250 4250 4250 4275 4300 4300 4300 4300 4300 4300 4300 4300 4350 4350 4375\n[211] 4400 4400 4400 4400 4400 4400 4400 4400 4450 4450 4450 4450 4450 4475 4500\n[226] 4500 4500 4550 4550 4575 4600 4600 4600 4600 4600 4625 4625 4650 4650 4650\n[241] 4650 4650 4675 4700 4700 4700 4700 4700 4700 4725 4725 4725 4750 4750 4750\n[256] 4750 4750 4775 4800 4800 4800 4850 4850 4850 4850 4875 4875 4875 4900 4900\n[271] 4925 4925 4950 4950 4975 5000 5000 5000 5000 5000 5000 5050 5050 5050 5100\n[286] 5100 5100 5150 5150 5200 5200 5200 5200 5250 5250 5250 5300 5300 5300 5300\n[301] 5350 5350 5350 5400 5400 5400 5400 5400 5450 5500 5500 5500 5500 5500 5550\n[316] 5550 5550 5550 5550 5550 5600 5600 5650 5650 5650 5700 5700 5700 5700 5700\n[331] 5750 5800 5800 5850 5850 5850 5950 5950 6000 6000 6050 6300\n\nlength(body_mass)  ## Check sample size is odd or even\n\n[1] 342\n\n(sort_mass[171] + sort_mass[172]) / 2  ## Verify the answer\n\n[1] 4050\n\n\n\n\n\n(body_mass[171] + body_mass[172]) / 2  ## Using un-sorted data leads to a wrong answer!!\n\n[1] 5525"
   },
   {
     "objectID": "slides/05-data-description-slides.html#measures-of-center-mode",
     "href": "slides/05-data-description-slides.html#measures-of-center-mode",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Measures of Center: Mode",
     "text": "Measures of Center: Mode\n\nMode: the value that occurs most frequently.\nFor continuous numerical data, it is common to have no observations with the same value.\nPractical definition: A mode is represented by a prominent peak in the distribution.\n\n\n## Create a frequency table \ntable_data &lt;- table(body_mass)\n\n\n\n## Sort the table to find the mode that occurs most frequently\n## the number that happens most frequently will be the first one\nsort(table_data, decreasing = TRUE)\n\nbody_mass\n3800 3700 3900 3950 3550 3400 3450 4300 4400 3500 3600 3300 3650 4050 4150 4700 \n  12   11   10   10    9    8    8    8    8    7    7    6    6    6    6    6 \n5000 5550 3200 3250 3325 3350 3750 4000 4100 4200 4250 4450 4600 4650 4750 5400 \n   6    6    5    5    5    5    5    5    5    5    5    5    5    5    5    5 \n5500 5700 2900 3050 3150 3775 4850 5200 5300 3475 3725 4500 4725 4800 4875 5050 \n   5    5    4    4    4    4    4    4    4    3    3    3    3    3    3    3 \n5100 5250 5350 5650 5850 2850 3000 3175 3425 3525 3675 4350 4550 4625 4900 4925 \n   3    3    3    3    3    2    2    2    2    2    2    2    2    2    2    2 \n4950 5150 5600 5800 5950 6000 2700 2925 2975 3075 3100 3275 3575 3625 3825 3850 \n   2    2    2    2    2    2    1    1    1    1    1    1    1    1    1    1 \n3875 3975 4075 4275 4375 4475 4575 4675 4775 4975 5450 5750 6050 6300 \n   1    1    1    1    1    1    1    1    1    1    1    1    1    1 \n\n\n\nMathematically, the mode is the value in the data that occurs most frequently.\nFor continous numerical data that take on infinitely many possible values, it is common to have no observations with the same value in a data set, making this definition impractical.\nPractical definition: A mode is represented by a prominent peak in the distribution."
   },
   {
     "objectID": "slides/05-data-description-slides.html#comparison-of-mean-median-and-mode",
     "href": "slides/05-data-description-slides.html#comparison-of-mean-median-and-mode",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Comparison of Mean, Median and Mode",
     "text": "Comparison of Mean, Median and Mode\n\nMean is sensitive to extreme values (outliers).\nMedian/mode is more robust than mean.\n\n\nhead(data_extreme, 10)\n\n [1] 37500  3800  3250  3450  3650  3625  4675  3475  4250  3300\n\n\n\nmean(data_extreme)  ## Large mean! Original mean is 4202\n\n[1] 4300\n\nmedian(data_extreme)  ## Median does not change!\n\n[1] 4050\n\nnames(sort(table(data_extreme), decreasing = TRUE))[1] ## Mode does not change too!\n\n[1] \"3800\"\n\n\n\nMean is sensitive to extreme values (outliers).\nMedian/mode is more robust than mean, meaning that median and mode will not change or not change much if few data values change."
   },
   {
     "objectID": "slides/05-data-description-slides.html#comparison-of-mean-median-and-mode-1",
     "href": "slides/05-data-description-slides.html#comparison-of-mean-median-and-mode-1",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Comparison of Mean, Median and Mode",
     "text": "Comparison of Mean, Median and Mode\n\nMode is applicable for both categorical and numerical data, while median and mean work for numerical data only.\nThere may be more than one mode, but there is only one median and one mean.\n\n\n\nMode is applicable for both categorical and numerical data, while median and mean work for numerical data only.\n\nShow Categorical homeownership freq table\nShow int_rate mode\n\n\nThere may be more than one mode, but there is only one median and one mean.\nmean is sensitive to extreme values. The values at the long tails are extreme values comparing to the values in the middle.\nThis forces the mean to be pulled toward the left in order to balance the data.\nMode happens at the peak of the distribution"
   },
   {
     "objectID": "slides/05-data-description-slides.html#measures-of-variation",
     "href": "slides/05-data-description-slides.html#measures-of-variation",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Measures of Variation",
     "text": "Measures of Variation\n\n\nDone the discussion of measure of center.\nNow let’s see how we quantify the variation of data.\nHere we have three frequency distributions with the same mean, median and mode because their distribution is symmetric.\nBut from top to bottom, the data have small, median and large variation.\nBasically larger variation means the data values spread out more.\nSo although the data mean is right here, but in general, data values are not very close to the mean. Their deviation from the sample mean is large. OK."
   },
   {
     "objectID": "slides/05-data-description-slides.html#measures-of-variation-p-th-percentile",
     "href": "slides/05-data-description-slides.html#measures-of-variation-p-th-percentile",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Measures of Variation: p-th percentile",
-    "text": "Measures of Variation: p-th percentile\n\n\n\n\np-th percentile (quantile): a data value such that\n\nat most \\(p\\%\\) of the values are below it\nat most \\((1-p)\\%\\) of the values are above it\n\n\n\n\n\nTwo datasets with the same mean 20.\n\nOne data set has 99-th percentile = 30, and 1-st percentile = 10.\nThe other has 99-th percentile = 40, and 1-st percentile = 0.\n\n\nWhich data have larger variation?\n\n\n\n\n\n\n\n\nhttps://en.wikipedia.org/wiki/ACT_(test)\n\n\n\n\n\n\nThe first Measure of Variation is p-th percentile\n\np-th percentile (quantile): a data value such that\n\nat most \\(p\\%\\) of the values are below it\nat most \\((1-p)\\%\\) of the values are above it"
+    "text": "Measures of Variation: p-th percentile\n\n\n\n\np-th percentile (quantile) (\\(P_p\\)): a data value such that\n\nat least \\(p\\%\\) of the values are \\(\\leq P_p\\)\n\nat least \\((1-p)\\%\\) of the values are are \\(\\geq P_p\\)\n\n\n\n\n\n\nTwo datasets with the same mean 20.\n\nOne data set has 99-th percentile = 30, and 1-st percentile = 10.\nThe other has 99-th percentile = 40, and 1-st percentile = 0.\n\n\nWhich data have larger variation?\n\n\n\n\n\n\n\n\nhttps://en.wikipedia.org/wiki/ACT_(test)\n\n\n\n\n\n\nThe first Measure of Variation is p-th percentile\n\np-th percentile (quantile): a data value such that\n\nat most \\(p\\%\\) of the values are below it\nat most \\((1-p)\\%\\) of the values are above it"
   },
   {
     "objectID": "slides/05-data-description-slides.html#measures-of-variation-interquartile-range-iqr",
     "href": "slides/05-data-description-slides.html#measures-of-variation-interquartile-range-iqr",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Measures of Variation: Interquartile Range (IQR)",
     "text": "Measures of Variation: Interquartile Range (IQR)\n\nFirst Quartile (Q1): the 25-th percentile\nSecond Quartile (Q2): the 50-th percentile (Median)\nThird Quartile (Q3): the 75-th percentile\nInterquartile Range (IQR): Q3 - Q1\n\n\n\n\n## Use quantile() to find any percentile \n## through specifying the probability\nquantile(x = body_mass, \n         probs = c(0.25, 0.5, 0.75))\n\n 25%  50%  75% \n3550 4050 4750 \n\n## IQR by definition\nquantile(x = body_mass, probs = 0.75) - \n  quantile(x = body_mass, probs = 0.25) \n\n 75% \n1200 \n\n\n\n\n## IQR()\nIQR(body_mass)  \n\n[1] 1200\n\n## summary() to get the numeric summary\nsummary(body_mass)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n   2700    3550    4050    4202    4750    6300 \n\n\n\nLarger IQR means more or less variation?\n\n\nThe range of the middle 50% of the data."
   },
   {
     "objectID": "slides/05-data-description-slides.html#variance-and-standard-deviation",
     "href": "slides/05-data-description-slides.html#variance-and-standard-deviation",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Variance and Standard Deviation",
     "text": "Variance and Standard Deviation\n\nThe distance of an observation from its mean, \\(x_i - \\overline{x}\\), its deviation.\nSample Variance is defined as \\[ s^2 = \\frac{\\sum_{i=1}^n(x_i - \\overline{x})^2}{n-1} \\]\nSample Standard Deviation (SD) is defined as the square root of the variance \\[ s = \\sqrt{\\frac{\\sum_{i=1}^n(x_i - \\overline{x})^2}{n-1}} \\] \nVariance is the average of squared deviation from the sample mean \\(\\overline{x}\\) or the mean squared deviation from the mean.\nSD is the root mean squared deviation from the mean. It measures, on average, how far the data spread out around the average."
   },
   {
     "objectID": "slides/05-data-description-slides.html#compute-variance-and-sd",
     "href": "slides/05-data-description-slides.html#compute-variance-and-sd",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Compute Variance and SD",
     "text": "Compute Variance and SD\n\nvar(body_mass)\n\n[1] 643131\n\nsqrt(var(body_mass))\n\n[1] 802\n\nsd(body_mass)\n\n[1] 802"
   },
   {
     "objectID": "slides/05-data-description-slides.html#visualizing-data-variation-boxplot",
     "href": "slides/05-data-description-slides.html#visualizing-data-variation-boxplot",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Visualizing Data Variation: Boxplot",
-    "text": "Visualizing Data Variation: Boxplot\nWhen plotting the whiskers,\n\nminimum value in the data means the minimal value that is not an potential outlier.\nmaximum value in the data means the maximal value that is not an potential outlier.\n\n\n\n\n\n\nhttps://www.leansigmacorporation.com/box-plot-with-minitab/\n\n\n\n\n\nTo Visualize Data Variation, we can make a so-called Boxplot.\nThe plot has a box in the middle, and so-called whiskers that are these two straight lines connected to the box.\nLet’s look at the box first. We have 3 vertical lines here. The lines from left to right indicate Q1, Q2 or the median, and Q3.\nSo the length of the box shows the IQR.\nNow let’s look at the whiskers.\nThe upper limit of the whisker is the smaller one of the maximum of values and Q3 + 1.5 IQR\nThe lower limit of the whisker on the left is the larger one of the minimum of values and Q1 - 1.5 IQR\nFor any data values that are greater than Q3 + 1.5 IQR or smaller than Q1 - 1.5 IQR, we show them as a point.\nBasically those points are far from the center of the data, and we could potentially treat them as extreme values or outliers."
+    "text": "Visualizing Data Variation: Boxplot"
   },
   {
     "objectID": "slides/05-data-description-slides.html#body-mass-boxplot",
     "href": "slides/05-data-description-slides.html#body-mass-boxplot",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Body Mass Boxplot",
     "text": "Body Mass Boxplot\n\n\nHere shows the boxplot of the interest rate data.\nYou can see that there are two very high interest rates in the data. They are 25% or more.\nAnd the median interest rate is just about 10%. And so these two data points are suspected outliers. They are way far from the the median or the most data points.\nIf"
   },
   {
     "objectID": "slides/05-data-description-slides.html#boxplot-in-r",
     "href": "slides/05-data-description-slides.html#boxplot-in-r",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "Boxplot in R",
-    "text": "Boxplot in R\n\n\n\nboxplot(body_mass, ylab = \"Body Mass (g)\")\n\n\n\n\n\n\n\n\n\nrange(body_mass)\n\n[1] 2700 6300\n\nQ3 &lt;- quantile(body_mass, probs = 0.75, \n               names = FALSE)\nQ1 &lt;- quantile(body_mass, probs = 0.25, \n               names = FALSE)\nIQR &lt;- Q3 - Q1\nQ1 - 1.5 * IQR\n\n[1] 1750\n\nQ3 + 1.5 * IQR\n\n[1] 6550\n\n\n\n\nIn R, we can create a boxplot using boxplot(). sort(int_rate, decreasing = TRUE)[1:5] sort(int_rate)[1:5]"
+    "text": "Boxplot in R\n\n\n\nboxplot(body_mass, ylab = \"Body Mass (g)\")\n\n\n\n\n\n\n\n\n\nrange(body_mass)\n\n[1] 2700 6300\n\nQ3 &lt;- quantile(body_mass, probs = 0.75, \n               names = FALSE)\nQ1 &lt;- quantile(body_mass, probs = 0.25, \n               names = FALSE)\nIQR &lt;- Q3 - Q1\nQ1 - 1.5 * IQR\n\n[1] 1750\n\nQ3 + 1.5 * IQR\n\n[1] 6550\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\nboxplot() uses Tukey hinges; quantile() uses a default interpolation rule. They agree for odd sample sizes, but can differ for even sample sizes. Use boxplot(body_mass)$stats to check hinges values.\n\n\n\n\nIn R, we can create a boxplot using boxplot(). sort(int_rate, decreasing = TRUE)[1:5] sort(int_rate)[1:5]\n\nboxplot() uses Tukey’s hinges via fivenum(), not quantile.\nThe two ‘hinges’ are versions of the first and third quartile, i.e., close to quantile(x, c(1,3)/4). The hinges equal the quartiles for odd n n (where n &lt;- length(x)) and differ for even n n. Whereas the quartiles only equal observations for n %% 4 == 1 ( n ≡ 1 m o d 4 n≡1mod4), the hinges do so additionally for n %% 4 == 2 ( n ≡ 2 m o d 4 n≡2mod4), and are in the middle of two observations otherwise\n要讓 quantile() 模仿 base R boxplot() 的 Tukey hinges，需要依照樣本數 n 切換：\n{ use type = 7, use type = 2, ​\nn odd, n even. ​"
   },
   {
     "objectID": "slides/05-data-description-slides.html#section-5",
     "href": "slides/05-data-description-slides.html#section-5",
-    "title": "Describing Data 👨‍💻",
+    "title": "Describing Data 👩‍💻",
     "section": "",
     "text": "For the penguins data,\n\nMake a boxplot for the variable bill_depth_mm.\nCompute the minimum, Q1, Q2, Q3, and maximum values of bill_depth_mm. (Hint: summary() function is pretty useful! 👍)\n\n\n\n\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 02:00"
   },
@@ -3684,7 +3684,7 @@
     "href": "index.html",
     "title": "MATH 4720 (MSSC 5720) Statistical Methods Fall 2026",
     "section": "",
-    "text": "This schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nMaterials\nReading\nR Code\nHomework\nWorksheet\nQuiz\nExam/Exercise\n\n\n\n1\nTue, Sep 1\nSyllabus/Overview of Statistics\n\n🖥️ syllabus🖥️ statistics and data\n\n\nSyllabusIS Ch1GenAI Video\n\n\n\n\n\n\n\n\n\nThu, Sep 3\nStatistical Studies and Data Collection; Data Type\n\nIS Ch 2\n\n✍️ HW 1 (due 9/11)\n\n\n\n\n\n\n2\nTue, Sep 8\nR Software and Computation\n🖥️ R and RStudio🖥️ data type and structure\n\nIS Ch 3\n\n (data type and structure)\n\n\n\n\n\n\n\nThu, Sep 10\nSummarizing Data: Tables and Graphics\n🖥️ data summary👉histogram breaks👉data extremes\n\nIS Ch 5 - 6\n\n (data graphics)\n\n\n\n\n\n\n3\nTue, Sep 15\nSummarizing Data: Numerical measures\n👉 mean👉 sd\n\n\n\n (data numerics)\n\n\n\n\n\n\n\nThu, Sep 17\nProbability Fundamentals\n🖥️ probability👉Venn diagram\nIS Ch 7 - 8\n\n✍️ HW 2 (due 9/25)\nWorksheet 1\n\n\n\n\n4\nTue, Sep 22\nConditional Probability, Independence, Bayes Formula\n\n\n\n\nWorksheet 2\n\n\n\n\n\nThu, Sep 24\nRandom Variables, Discrete Probability Distributions\n🖥️ distribution 👉binomial👉poisson\nIS Ch 9 - 10\n\n (discrete distribution)\n✍️ HW 3 (due 10/2)\n\n✅ Quiz 1\n\n\n\n5\nTue, Sep 29\nContinuous Probability Distributions\n👉normal\nIS Ch 11\n\n (continuous distribution)\n\nWorksheet 3\n\n\n\n\n\nThu, Oct 1\nSampling Distributions Activity: Match the Scenario to the Distribution\n\n🖥️ sampling-dist-clt\nIS Ch 12\n\n (sampling distribution and CLT)\n\n\n\n\n\n\n6\nTue, Oct 6\nCentral Limit Theorem (CLT)\n👉CLT 👉Rolling dice\nIS Ch 13\n\n\n\n\n\n\n\n\nThu, Oct 8\nConfidence Intervals\n🖥️ confidence interval  👉CI\nIS Ch 14\n\n (confidence interval)\n✍️ HW 4 (due 10/16)\nWorksheet 4\n\n\n\n\n7\nTue, Oct 13\nConfidence Intervals\n👉Student-t\n\n\n\n\n\n\n\n\n\nThu, Oct 15\nExam 1 Review Activity: How Much Do Students Sleep?\n\n\n\n\n\nWorksheet 5\n✅ Quiz 2\n\n\n\n8\nTue, Oct 20\nIn-class Midterm Exam\n\n\n\n\n\n\n✅ Take-home Midterm Exam\n\n\n\nThu, Oct 22\nNO CLASS: Midterm break\n\n\n\n✍️ HW 5 (due 10/30)\n\n\n\n\n\n9\nTue, Oct 27\nHypothesis Testing\n🖥️ testing 👉testing\nIS Ch 16\n\n (testing)\n\n\n\n\n\n\n\nThu, Oct 29\nHypothesis Testing\n\n\n\n\nWorksheet 6\n\n\n\n\n10\nTue, Nov 3\nTwo Population Means: Matched Pairs\n🖥️ two samples\nIS Ch 17\n\n (two samples)\n\n\n\n\n\n\n\nThu, Nov 5\nTwo Population Means: Independent Samples\n\n\n\n✍️ HW 6 (due 11/13)\nWorksheet 7\n\n\n\n\n11\nTue, Nov 10\nInference for One Population Variance\n🖥️ variances  👉chi-squared\nIS Ch 18\n\n (variances)\n\n\n\n\n\n\n\nThu, Nov 12\nInference about Two Population Variances\n👉 f\n\n\n\nWorksheet 8\n\n\n\n\n12\nTue, Nov 17\nAnalysis of Variance (ANOVA) Rationale\n🖥️ ANOVA\nIS Ch 24\n\n (ANOVA data)\n\n\n\n\n\n\n\nThu, Nov 19\nAnalysis of Variance (ANOVA) Procedure\n\n\n\n✍️ HW 7 (due 12/4)\nWorksheet 9\n✅ Quiz 3\n\n\n\n13\nTue, Nov 24\nCorrelation; Overview of Regression\n🖥️ correlation  🖥️ regression  👉 regression fitting\nIS Ch 27.1; IS Ch 27.2\n\n (correlation and regression)\n\n\n\n\n\n\n\nThu, Nov 26\nNO CLASS: Thanksgiving\n\n\n\n\n\n\n\n\n\n14\nTue, Dec 1\nSimple Linear Regression: Model and Fitting Activity: Height vs. Shoe Size\n\n\n\n\n\n\n\n\n\n\n\nThu, Dec 3\nSimple Linear Regression: Inference\n👉 sampling distribution of coefficients\nIS Ch 27.3 - 27.5\n\n✍️ HW 8 (due 12/11)\nWorksheet 10\n\n\n\n\n15\nTue, Dec 8\nSimple Linear Regression: Prediction\n\n\n\n\n\n\n\n\n\n\nThu, Dec 10\nCategorical Data Analysis\n\nIS Ch 27.6\n\n\n\n✅ Quiz 4\n✅ Take-home Final Exam\n\n\n16\nThu, Dec 17\n\nIn-class Final Exam (8 - 10 AM)\n\n\n\n\n\n\n\n\n\n\n\n\nDr. Yu reserves the right to make changes to the schedule.",
+    "text": "This schedule will be updated as the semester progresses, with all changes documented here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nMaterials\nReading\nR Code\nHomework\nWorksheet\nQuiz\nExam/Exercise\n\n\n\n1\nTue, Sep 1\nSyllabus/Overview of Statistics\n\n🖥️ syllabus🖥️ statistics and data\n\n\nSyllabusIS Ch1GenAI Video\n\n\n\n\n\n\n\n\n\nThu, Sep 3\nStatistical Studies and Data Collection; Data Type\n\nIS Ch 2\n\n✍️ HW 1 (due 9/11)\n\n\n\n\n\n\n2\nTue, Sep 8\nR Software and Computation\n🖥️ R and RStudio🖥️ data type and structure\n\nIS Ch 3\n\n (data type and structure)\n\n\n\n\n\n\n\nThu, Sep 10\nSummarizing Data: Tables and Graphics\n\n🖥️ data summary👉histogram breaks👉data extremes\n\nIS Ch 5 - 6\n\n (data graphics)\n\n\n\n\n\n\n3\nTue, Sep 15\nSummarizing Data: Numerical measures\n👉 mean👉 sd\n\n\n\n (data numerics)\n\n\n\n\n\n\n\nThu, Sep 17\nProbability Fundamentals\n🖥️ probability👉Venn diagram\nIS Ch 7 - 8\n\n✍️ HW 2 (due 9/25)\nWorksheet 1\n\n\n\n\n4\nTue, Sep 22\nConditional Probability, Independence, Bayes Formula\n\n\n\n\nWorksheet 2\n\n\n\n\n\nThu, Sep 24\nRandom Variables, Discrete Probability Distributions\n🖥️ distribution 👉binomial👉poisson\nIS Ch 9 - 10\n\n (discrete distribution)\n✍️ HW 3 (due 10/2)\n\n✅ Quiz 1\n\n\n\n5\nTue, Sep 29\nContinuous Probability Distributions\n👉normal\nIS Ch 11\n\n (continuous distribution)\n\nWorksheet 3\n\n\n\n\n\nThu, Oct 1\nSampling Distributions Activity: Match the Scenario to the Distribution\n\n🖥️ sampling-dist-clt\nIS Ch 12\n\n (sampling distribution and CLT)\n\n\n\n\n\n\n6\nTue, Oct 6\nCentral Limit Theorem (CLT)\n👉CLT 👉Rolling dice\nIS Ch 13\n\n\n\n\n\n\n\n\nThu, Oct 8\nConfidence Intervals\n🖥️ confidence interval  👉CI\nIS Ch 14\n\n (confidence interval)\n✍️ HW 4 (due 10/16)\nWorksheet 4\n\n\n\n\n7\nTue, Oct 13\nConfidence Intervals\n👉Student-t\n\n\n\n\n\n\n\n\n\nThu, Oct 15\nExam 1 Review Activity: How Much Do Students Sleep?\n\n\n\n\n\nWorksheet 5\n✅ Quiz 2\n\n\n\n8\nTue, Oct 20\nIn-class Midterm Exam\n\n\n\n\n\n\n✅ Take-home Midterm Exam\n\n\n\nThu, Oct 22\nNO CLASS: Midterm break\n\n\n\n✍️ HW 5 (due 10/30)\n\n\n\n\n\n9\nTue, Oct 27\nHypothesis Testing\n🖥️ testing 👉testing\nIS Ch 16\n\n (testing)\n\n\n\n\n\n\n\nThu, Oct 29\nHypothesis Testing\n\n\n\n\nWorksheet 6\n\n\n\n\n10\nTue, Nov 3\nTwo Population Means: Matched Pairs\n🖥️ two samples\nIS Ch 17\n\n (two samples)\n\n\n\n\n\n\n\nThu, Nov 5\nTwo Population Means: Independent Samples\n\n\n\n✍️ HW 6 (due 11/13)\nWorksheet 7\n\n\n\n\n11\nTue, Nov 10\nInference for One Population Variance\n🖥️ variances  👉chi-squared\nIS Ch 18\n\n (variances)\n\n\n\n\n\n\n\nThu, Nov 12\nInference about Two Population Variances\n👉 f\n\n\n\nWorksheet 8\n\n\n\n\n12\nTue, Nov 17\nAnalysis of Variance (ANOVA) Rationale\n🖥️ ANOVA\nIS Ch 24\n\n (ANOVA data)\n\n\n\n\n\n\n\nThu, Nov 19\nAnalysis of Variance (ANOVA) Procedure\n\n\n\n✍️ HW 7 (due 12/4)\nWorksheet 9\n✅ Quiz 3\n\n\n\n13\nTue, Nov 24\nCorrelation; Overview of Regression\n🖥️ correlation  🖥️ regression  👉 regression fitting\nIS Ch 27.1; IS Ch 27.2\n\n (correlation and regression)\n\n\n\n\n\n\n\nThu, Nov 26\nNO CLASS: Thanksgiving\n\n\n\n\n\n\n\n\n\n14\nTue, Dec 1\nSimple Linear Regression: Model and Fitting Activity: Height vs. Shoe Size\n\n\n\n\n\n\n\n\n\n\n\nThu, Dec 3\nSimple Linear Regression: Inference\n👉 sampling distribution of coefficients\nIS Ch 27.3 - 27.5\n\n✍️ HW 8 (due 12/11)\nWorksheet 10\n\n\n\n\n15\nTue, Dec 8\nSimple Linear Regression: Prediction\n\n\n\n\n\n\n\n\n\n\nThu, Dec 10\nCategorical Data Analysis\n\nIS Ch 27.6\n\n\n\n✅ Quiz 4\n✅ Take-home Final Exam\n\n\n16\nThu, Dec 17\n\nIn-class Final Exam (8 - 10 AM)\n\n\n\n\n\n\n\n\n\n\n\n\nDr. Yu reserves the right to make changes to the schedule.",
     "crumbs": [
       "Course Information",
       "Schedule"
@@ -6726,62 +6726,6 @@
     "text": "What is the size of mtcars data?\nType mtcars and hit Enter in the Console to see the data set.\nDiscuss data type of each variable.\nType mtcars[, 1] and hit Enter in the Console. What do you see?\n\n\n\n\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
-    "objectID": "slides/03-r-slides.html#install-r-step-1",
-    "href": "slides/03-r-slides.html#install-r-step-1",
-    "title": "You RRR a Beginner: R, RStudio and Posit Cloud 👨‍💻",
-    "section": "Install R – Step 1",
-    "text": "Install R – Step 1\n\nGo to https://cloud.r-project.org\n\nClick Download R for [your operating system]"
-  },
-  {
-    "objectID": "slides/03-r-slides.html#install-r-step-2",
-    "href": "slides/03-r-slides.html#install-r-step-2",
-    "title": "You RRR a Beginner: R, RStudio and Posit Cloud 👨‍💻",
-    "section": "Install R – Step 2",
-    "text": "Install R – Step 2\n\nIf you are a Mac user, you should see the page as below. You are recommended to download and install the latest version of R (now R-4.5.1 (Great Square Root)), if your OS version allows to do so. Otherwise, choose a previous version, R-3.6.3.\nIf you are a Windows user, after clicking Download R for Windows, please choose base version, then click Download R-4.5.1 for Windows."
-  },
-  {
-    "objectID": "slides/03-r-slides.html#install-r-step-3",
-    "href": "slides/03-r-slides.html#install-r-step-3",
-    "title": "You RRR a Beginner: R, RStudio and Posit Cloud 👨‍💻",
-    "section": "Install R – Step 3",
-    "text": "Install R – Step 3\n\nOnce you install R successfully, when you open R, you should be able to see the following R terminal or console:\n\n\n\nWindows\n\n\nMac"
-  },
-  {
-    "objectID": "slides/03-r-slides.html#welcome-to-the-r-world",
-    "href": "slides/03-r-slides.html#welcome-to-the-r-world",
-    "title": "You RRR a Beginner: R, RStudio and Posit Cloud 👨‍💻",
-    "section": "Welcome to the R World!",
-    "text": "Welcome to the R World!\n\nNow you are ready to use R to do statistical computation.\nYou can use R like a calculator. After typing your formula, simply hit Enter, you get the answer! For example,\n\n\n1 + 2\n\n[1] 3\n\n30 * 42 / 3\n\n[1] 420\n\nlog(5) - exp(3) * sqrt(7)\n\n[1] -51.5319"
-  },
-  {
-    "objectID": "slides/03-r-slides.html#install-rstudio-step-1",
-    "href": "slides/03-r-slides.html#install-rstudio-step-1",
-    "title": "You RRR a Beginner: R, RStudio and Posit Cloud 👨‍💻",
-    "section": "Install RStudio – Step 1",
-    "text": "Install RStudio – Step 1\n\nIn the Posit website, on top go to OPEN SOURCE &gt; DOWNLOAD RSTUDIO -&gt;"
-  },
-  {
-    "objectID": "slides/03-r-slides.html#install-rstudio-step-2",
-    "href": "slides/03-r-slides.html#install-rstudio-step-2",
-    "title": "You RRR a Beginner: R, RStudio and Posit Cloud 👨‍💻",
-    "section": "Install RStudio – Step 2",
-    "text": "Install RStudio – Step 2\n\nClick DOWNLOAD RSTUDIO."
-  },
-  {
-    "objectID": "slides/03-r-slides.html#install-rstudio-step-3",
-    "href": "slides/03-r-slides.html#install-rstudio-step-3",
-    "title": "You RRR a Beginner: R, RStudio and Posit Cloud 👨‍💻",
-    "section": "Install RStudio – Step 3",
-    "text": "Install RStudio – Step 3\nThe page will automatically detect your operating system and recommend a version of RStudio that works the best for you that is usually the latest version.\n\nClick DOWNLOAD RSTUDIO DESKTOP FOR [Your OS version].\nFollow the standard installation steps and you should get the software.\nMake sure that R is installed successfully on your computer before you download and install RStudio."
-  },
-  {
-    "objectID": "slides/03-r-slides.html#rstudio-screen",
-    "href": "slides/03-r-slides.html#rstudio-screen",
-    "title": "You RRR a Beginner: R, RStudio and Posit Cloud 👨‍💻",
-    "section": "RStudio Screen",
-    "text": "RStudio Screen\n\nWhen you open RStudio, you should see something similar to the figure below.\nIf you do, congratulations! You are able to do every statistical computation in R using RStudio locally in your computer."
-  },
-  {
     "objectID": "exam.html",
     "href": "exam.html",
     "title": "Take-home Exams",
@@ -6930,5 +6874,19 @@
     "title": "Exercise",
     "section": "",
     "text": "More extra exercises to be added as the semester progresses.\n\n\n\n\n\n\n\n\n\n\nNo.\n\n\n\nTitle\n\n\n\n\n\n\n\n\nExercise 1\n\n\nExercises for Exam 1\n\n\n\n\n\n\nExercise 2\n\n\nExercises for Exam 2\n\n\n\n\n\n\nExercise 3\n\n\nExercises for Final Exam\n\n\n\n\n\n\nKey Topics of Multiple Linear Regression\n\n\nMultiple Linear Regression for Final Exam\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides/05-data-description-slides.html#visualizing-data-variation-boxplot-1",
+    "href": "slides/05-data-description-slides.html#visualizing-data-variation-boxplot-1",
+    "title": "Describing Data 👩‍💻",
+    "section": "Visualizing Data Variation: Boxplot",
+    "text": "Visualizing Data Variation: Boxplot\n\n\n\n\n\n\n\n\n\n\n\n\n\nTo Visualize Data Variation, we can make a so-called Boxplot.\nThe plot has a box in the middle, and so-called whiskers that are these two straight lines connected to the box.\nLet’s look at the box first. We have 3 vertical lines here. The lines from left to right indicate Q1, Q2 or the median, and Q3.\nSo the length of the box shows the IQR.\nNow let’s look at the whiskers.\nThe upper limit of the whisker is the smaller one of the maximum of values and Q3 + 1.5 IQR\nThe lower limit of the whisker on the left is the larger one of the minimum of values and Q1 - 1.5 IQR\nFor any data values that are greater than Q3 + 1.5 IQR or smaller than Q1 - 1.5 IQR, we show them as a point.\nBasically those points are far from the center of the data, and we could potentially treat them as extreme values or outliers."
+  },
+  {
+    "objectID": "slides/05-data-description-slides.html#section-6",
+    "href": "slides/05-data-description-slides.html#section-6",
+    "title": "Describing Data 👩‍💻",
+    "section": "",
+    "text": "For the penguins data,\n\nMake a boxplot for the variable bill_depth_mm.\nCompute the minimum, Q1, Q2, Q3, and maximum values of bill_depth_mm. (Hint: summary() function is pretty useful! 👍)\n\n\n\n\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 02:00"
   }
 ]
