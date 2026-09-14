@@ -84,13 +84,13 @@ library(countdown)
 ::: {.column width="50%"}
 
 ::: center
-**Jan 23, 2026**
+**Sep 14, 2026**
 :::
 
 ```{r}
 #| echo: false
-#| out-width: 100%
-knitr::include_graphics("./images/06-probability/chance_01_23_2026.png") 
+#| out-width: 75%
+knitr::include_graphics("./images/06-probability/chance_09_14_2026.png") 
 ```
 :::
 
@@ -179,15 +179,15 @@ diagram::curvedarrow(from = c(0.56, -0.47), to = c(-0.56, -0.47),
 text(x = 0, y = 0.8, labels = "Probability", cex = 1.5)
 text(x = 0, y = -0.8, labels = "Statistical Inference", cex = 1.5)
 
-plot(0, 0, type = "n", axes = FALSE, xlab = "", ylab = "")
-plotrix::draw.ellipse(x = -0.3, y = 0.5, a = 0.65, b = 0.45, lwd = 2)
-plotrix::draw.ellipse(x = -0.3, y = 0.4, a = 0.35, b = 0.2, lwd = 2, lty = 2)
-text(x = -0.3, y = 0.7, labels = "Set of all measurements: Population", cex = 1.2)
-plotrix::draw.ellipse(x = 0.5, y = -0.5, a = 0.36, b = 0.21, lwd = 2, lty = 1)
-diagram::curvedarrow(from = c(-0.3, 0.4), to = c(0.5, -0.3), 
-                     curve = -0.2, arr.pos = 0.98)
-text(x = 0.5, y = -0.5, labels = "Sample", cex = 1.2)
-text(x = 0, y = -0.4, labels = "Set of data selected from the population:", cex = 1.2)
+# plot(0, 0, type = "n", axes = FALSE, xlab = "", ylab = "")
+# plotrix::draw.ellipse(x = -0.3, y = 0.5, a = 0.65, b = 0.45, lwd = 2)
+# plotrix::draw.ellipse(x = -0.3, y = 0.4, a = 0.35, b = 0.2, lwd = 2, lty = 2)
+# text(x = -0.3, y = 0.7, labels = "Set of all measurements: Population", cex = 1.2)
+# plotrix::draw.ellipse(x = 0.5, y = -0.5, a = 0.36, b = 0.21, lwd = 2, lty = 1)
+# diagram::curvedarrow(from = c(-0.3, 0.4), to = c(0.5, -0.3), 
+#                      curve = -0.2, arr.pos = 0.98)
+# text(x = 0.5, y = -0.5, labels = "Sample", cex = 1.2)
+# text(x = 0, y = -0.4, labels = "Set of data selected from the population:", cex = 1.2)
 ```
 
 
@@ -206,23 +206,50 @@ Statistics is based on probability, and while probability is not required for th
 
 - <span style="color:blue"> **Relative Frequency** </span>: The probability that some outcome of a process will be obtained is interpreted as the **relative frequency** with which that outcome would be obtained _if the process were repeated **a large number of times** independently under **similar conditions**._
 
+::::: columns
+
+::: {.column width="80%"}
+
 ```{r}
 rel_freq_head <- rep(0, 2)
 times <- c(10, 1000)
+set.seed(2026)
 for (i in 1:2) {
   x <- sample(c("Heads", "Tails"), times[i], replace = TRUE)
   freq_table <- as.matrix(table(x)); colnames(freq_table) <- "Frequency"
   rel_freq_table <- cbind(freq_table, "Relative Frequency" = freq_table[, 1] / times[i])
   rel_freq_table <- rbind(rel_freq_table, Total = apply(rel_freq_table, 2, sum))
   print(rel_freq_table)
-  cat("---------------------\n")
+  if (i == 1) {
+    cat("----------------------------------\n")
+  }
   rel_freq_head[i] <- rel_freq_table[1, 2]
 }
 ```
 
+:::
+
+
+::: {.column width="20%"}
+```{r}
+#| out-width: 100%
+knitr::include_graphics("./images/06-probability/coin_toss.png")
+```
+:::
+
+::::
+
+
 - If we repeat tossing the coin 10 times, the probability of obtaining heads is `r rel_freq_head[1] * 100`%.
 
 - If 1000 times, the probability is `r rel_freq_head[2] * 100`%.
+
+. . .
+
+::: question
+Any issue of relative frequency probability?
+:::
+
 
 
 ::: notes
@@ -233,11 +260,6 @@ for (i in 1:2) {
 
 :::
   
-. . .
-
-::: question
-Any issue of relative frequency probability?
-:::
 
 
 ## Issues of **Relative Frequency**
@@ -421,7 +443,7 @@ Is the sample space also an event?
 ## Set Concept: Example of **Rolling a six-side balanced die**
 
 ::: tip
-Draw a [**Venn Diagram**](http://www.stat.ucla.edu/~vlew/stat11/lectures/venn/venn.html) every time you get stuck!
+Draw a [**Venn Diagram**](https://chenghanyustats-introstat-venndiagram.share.connect.posit.cloud) every time you get stuck!
 :::
 
 - <span style="color:black"> **Complement** </span> of an event (set) $A$, <span style="color:black"> $A^c$ </span>: a set of **all** outcomes (elements) of $\mathcal{S}$ in which $A$ does **not** occur.
@@ -934,7 +956,7 @@ knitr::include_graphics("./images/06-probability/covid.jpeg")
 ::: {.column width="50%"}
 ```{r}
 #| out-width: 60%
-knitr::include_graphics("./images/06-probability/test_table.png")
+knitr::include_graphics("./images/06-probability/test_table_new.png")
 ```
 :::
 
@@ -958,7 +980,7 @@ knitr::include_graphics("./images/06-probability/test_table.png")
 
 ::: midi
 
-$$\begin{align*} P(A \mid B) &= \frac{P(A \cap B)}{P(B)} \quad ( \text{def. of cond. prob.}) \\ &= \frac{P(A \cap B)}{P((B \cap A) \cup (B \cap A^c))} \quad ( \text{partition } B) \\ &= \frac{P(B \mid A)P(A)}{P(B \mid A)P(A) + P(B \mid A^c)P(A^c)}  \quad ( \text{multiplication rule}) \end{align*}$$
+$$\begin{align*} P(A \mid B) &= \frac{P(A \cap B)}{P(B)} \quad ( \text{cond. prob.}) \\ &= \frac{P(A \cap B)}{P((B \cap A) \cup (B \cap A^c))} \quad ( \text{partition } B) \\ &= \frac{P(B \mid A)P(A)}{P(B \mid A)P(A) + P(B \mid A^c)P(A^c)}  \quad ( \text{multiplication rule}) \end{align*}$$
 
 
 

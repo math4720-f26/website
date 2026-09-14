@@ -38,7 +38,7 @@ execute:
     (c) The weights of aspirin tablets
 
 ```{r}
-#| echo: false
+#| echo: true
   # (a) Categorical
   # (b) Categorical
   # (c) Numerical
@@ -73,7 +73,7 @@ execute:
     (d) A sample of married couples is randomly selected and the number of children in each family is recorded.
  
 ```{r}
-#| echo: false
+#| echo: true
   # (a) Discrete
   # (b) Continuous
   # (c) Continuous
@@ -95,7 +95,7 @@ execute:
 
 
 ```{r}
-#| echo: false
+#| echo: true
   # (a) Stratified
   # (b) Cluster
   # (c) Random
@@ -118,7 +118,7 @@ execute:
 
 
 ```{r}
-#| echo: false
+#| echo: true
   # (a) Observational: self-reported voluntary sample may not be representative and may be biased. The question is posted in E-newsletter, so the sample is biased from the begining.
   # (b) Experiment: Male physicians only. Better to include male and female who are not physicians.
 ```
@@ -139,7 +139,7 @@ knitr::include_graphics("./hw01-fiona.png")
 
 
 ```{r}
-#| echo: false
+#| echo: true
   # (a) Year, number of baby girls named Fiona born in that year, nation. 
   # (b) Year (numerical, discrete), number of baby girls named Fiona born in that year (numerical, discrete), nation (categorical, nominal).
 ```
