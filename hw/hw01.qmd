@@ -54,7 +54,7 @@ execute:
     (d) Bob measures time in days, with 0 corresponding to his birth date. The day before his birth is -1, the day after his birth is +1, and so on. Bib has converted the dates of major historical events to his numbering system. What is the level of measurement of these numbers?
 
 ```{r}
-#| echo: false
+#| echo: true
   # (a) Ratio
   # (b) Ordinal
   # (c) Nominal
