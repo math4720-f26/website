@@ -98,10 +98,10 @@ window.Quarto = {
 </script>
 <meta property="og:title" content="Probability Fundamentals r emo::ji('dice') – MATH 4720 (MSSC 5720) - Fall 2026">
 <meta property="og:description" content="MATH 4720/MSSC 5720 Introduction to Statistics">
-<meta property="og:image" content="https://math4720-f26.github.io/website/slides/images/06-probability/chance_01_23_2026.png">
+<meta property="og:image" content="https://math4720-f26.github.io/website/slides/images/06-probability/chance_09_14_2026.png">
 <meta property="og:site_name" content="MATH 4720 (MSSC 5720) - Fall 2026">
-<meta property="og:image:height" content="844">
-<meta property="og:image:width" content="1006">
+<meta property="og:image:height" content="866">
+<meta property="og:image:width" content="818">
 </head>
 <body class="nav-sidebar docked quarto-light">
 
@@ -236,12 +236,12 @@ window.Quarto = {
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="center">
-<p><strong>Jan 23, 2026</strong></p>
+<p><strong>Sep 14, 2026</strong></p>
 </div>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="./images/06-probability/chance_01_23_2026.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+<figure class="figure"><p><img src="./images/06-probability/chance_09_14_2026.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></p>
 </figure>
 </div>
 </div>
@@ -310,13 +310,7 @@ window.Quarto = {
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="06-probability_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="06-probability_files/figure-html/unnamed-chunk-6-2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
+<figure class="figure"><p><img src="06-probability_files/figure-revealjs/unnamed-chunk-6-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
 </figure>
 </div>
 </div>
@@ -332,37 +326,49 @@ window.Quarto = {
 <span style="color:blue"> <strong>Relative Frequency</strong> </span>: The probability that some outcome of a process will be obtained is interpreted as the <strong>relative frequency</strong> with which that outcome would be obtained <em>if the process were repeated <strong>a large number of times</strong> independently under <strong>similar conditions</strong>.</em>
 </li>
 </ul>
+<div class="columns">
+<div class="column" style="width:80%;">
 <div class="cell" data-layout-align="center">
 <div class="cell-output cell-output-stdout">
 <pre><code>      Frequency Relative Frequency
-Heads         3                0.3
-Tails         7                0.7
+Heads         6                0.6
+Tails         4                0.4
 Total        10                1.0
----------------------
+----------------------------------
       Frequency Relative Frequency
-Heads       511              0.511
-Tails       489              0.489
-Total      1000              1.000
----------------------</code></pre>
+Heads       473              0.473
+Tails       527              0.527
+Total      1000              1.000</code></pre>
+</div>
+</div>
+</div><div class="column" style="width:20%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="./images/06-probability/coin_toss.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </div>
 <ul>
-<li><p>If we repeat tossing the coin 10 times, the probability of obtaining heads is 30%.</p></li>
-<li><p>If 1000 times, the probability is 51.1%.</p></li>
+<li><p>If we repeat tossing the coin 10 times, the probability of obtaining heads is 60%.</p></li>
+<li><p>If 1000 times, the probability is 47.3%.</p></li>
 </ul>
+<p>. . .</p>
+<div class="question">
+<p>Any issue of relative frequency probability?</p>
+</div>
 <div class="notes">
 <ul>
 <li>Suppose we toss a coin.
 <ul>
-<li>If we repeat tossing the coin 10 times, the probability of obtaining heads is 30%.</li>
-<li>If 1000 times, the probability is 51.1%.</li>
+<li>If we repeat tossing the coin 10 times, the probability of obtaining heads is 60%.</li>
+<li>If 1000 times, the probability is 47.3%.</li>
 </ul>
 </li>
 </ul>
-</div>
-<p>. . .</p>
-<div class="question">
-<p>Any issue of relative frequency probability?</p>
 </div>
 </section><section id="issues-of-relative-frequency" class="level2"><h2 class="anchored" data-anchor-id="issues-of-relative-frequency">Issues of <strong>Relative Frequency</strong>
 </h2>
@@ -552,7 +558,7 @@ Total      1000              1.000
 </ul></section><section id="set-concept-example-of-rolling-a-six-side-balanced-die" class="level2"><h2 class="anchored" data-anchor-id="set-concept-example-of-rolling-a-six-side-balanced-die">Set Concept: Example of <strong>Rolling a six-side balanced die</strong>
 </h2>
 <div class="tip">
-<p>Draw a <a href="http://www.stat.ucla.edu/~vlew/stat11/lectures/venn/venn.html"><strong>Venn Diagram</strong></a> every time you get stuck!</p>
+<p>Draw a <a href="https://chenghanyustats-introstat-venndiagram.share.connect.posit.cloud"><strong>Venn Diagram</strong></a> every time you get stuck!</p>
 </div>
 <ul>
 <li>
@@ -637,7 +643,7 @@ Total      1000              1.000
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="06-probability_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+<figure class="figure"><p><img src="06-probability_files/figure-revealjs/unnamed-chunk-13-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -1002,7 +1008,7 @@ Total      1000              1.000
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="./images/06-probability/test_table.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
+<figure class="figure"><p><img src="./images/06-probability/test_table_new.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:60.0%"></p>
 </figure>
 </div>
 </div>
@@ -1027,11 +1033,11 @@ Total      1000              1.000
 <li>If <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are any events whose probabilities are not 0 or 1, then</li>
 </ul>
 <div class="midi">
-<p><span class="math display">\[\begin{align*} P(A \mid B) &amp;= \frac{P(A \cap B)}{P(B)} \quad ( \text{def. of cond. prob.}) \\ &amp;= \frac{P(A \cap B)}{P((B \cap A) \cup (B \cap A^c))} \quad ( \text{partition } B) \\ &amp;= \frac{P(B \mid A)P(A)}{P(B \mid A)P(A) + P(B \mid A^c)P(A^c)}  \quad ( \text{multiplication rule}) \end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*} P(A \mid B) &amp;= \frac{P(A \cap B)}{P(B)} \quad ( \text{cond. prob.}) \\ &amp;= \frac{P(A \cap B)}{P((B \cap A) \cup (B \cap A^c))} \quad ( \text{partition } B) \\ &amp;= \frac{P(B \mid A)P(A)}{P(B \mid A)P(A) + P(B \mid A^c)P(A^c)}  \quad ( \text{multiplication rule}) \end{align*}\]</span></p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="06-probability_files/figure-html/unnamed-chunk-22-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:33.0%"></p>
+<figure class="figure"><p><img src="06-probability_files/figure-revealjs/unnamed-chunk-23-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:33.0%"></p>
 </figure>
 </div>
 </div>
@@ -1162,6 +1168,41 @@ window._ojs.paths.runtimeToRoot = "../..";
 window._ojs.paths.docToRoot = "..";
 window._ojs.selfContained = false;
 window._ojs.runtime.interpretFromScriptTags();
+</script><script>
+  // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+  // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+  // slide changes (different for each slide format).
+  (function () {
+    // dispatch for htmlwidgets
+    function fireSlideEnter() {
+      const event = window.document.createEvent("Event");
+      event.initEvent("slideenter", true, true);
+      window.document.dispatchEvent(event);
+    }
+
+    function fireSlideChanged(previousSlide, currentSlide) {
+      fireSlideEnter();
+
+      // dispatch for shiny
+      if (window.jQuery) {
+        if (previousSlide) {
+          window.jQuery(previousSlide).trigger("hidden");
+        }
+        if (currentSlide) {
+          window.jQuery(currentSlide).trigger("shown");
+        }
+      }
+    }
+
+    // hookup for slidy
+    if (window.w3c_slidy) {
+      window.w3c_slidy.add_observer(function (slide_num) {
+        // slide_num starts at position 1
+        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+      });
+    }
+
+  })();
 </script><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

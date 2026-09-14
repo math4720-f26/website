@@ -181,12 +181,12 @@ Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="center">
-<p><strong>Jan 23, 2026</strong></p>
+<p><strong>Sep 14, 2026</strong></p>
 </div>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure><p><img data-src="./images/06-probability/chance_01_23_2026.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
+<figure><p><img data-src="./images/06-probability/chance_09_14_2026.png" class="quarto-figure quarto-figure-center" style="width:75.0%"></p>
 </figure>
 </div>
 </div>
@@ -264,21 +264,8 @@ Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <
 <li><p><span style="color:blue"> <strong>Probability</strong> </span>: We <em>know</em> the process generating the data and are interested in properties of observations.</p></li>
 <li><p><span style="color:blue"> <strong>Statistics</strong> </span>: We <em>observed</em> the data (sample) and are interested in determining what is the process generating the data (population).</p></li>
 </ul>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure><p><img data-src="06-probability_files/figure-html/unnamed-chunk-6-1.png" class="quarto-figure quarto-figure-center" style="width:60.0%"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure><p><img data-src="06-probability_files/figure-html/unnamed-chunk-6-2.png" class="quarto-figure quarto-figure-center" style="width:60.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<aside class="notes"><p>Statistics is based on probability, and while probability is not required for the applied techniques in this book, it may help you gain a deeper understanding of the methods and set a better foundation for future courses.</p>
+
+<img data-src="06-probability_files/figure-revealjs/unnamed-chunk-6-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:60.0%"><aside class="notes"><p>Statistics is based on probability, and while probability is not required for the applied techniques in this book, it may help you gain a deeper understanding of the methods and set a better foundation for future courses.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -298,29 +285,44 @@ Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <
 <span style="color:blue"> <strong>Relative Frequency</strong> </span>: The probability that some outcome of a process will be obtained is interpreted as the <strong>relative frequency</strong> with which that outcome would be obtained <em>if the process were repeated <strong>a large number of times</strong> independently under <strong>similar conditions</strong>.</em>
 </li>
 </ul>
+<div class="columns">
+<div class="column" style="width:80%;">
 <div class="cell" data-layout-align="center">
 <div class="cell-output cell-output-stdout">
 <pre><code>      Frequency Relative Frequency
-Heads         3                0.3
-Tails         7                0.7
+Heads         6                0.6
+Tails         4                0.4
 Total        10                1.0
----------------------
+----------------------------------
       Frequency Relative Frequency
-Heads       511              0.511
-Tails       489              0.489
-Total      1000              1.000
----------------------</code></pre>
+Heads       473              0.473
+Tails       527              0.527
+Total      1000              1.000</code></pre>
 </div>
 </div>
+</div><div class="column" style="width:20%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure><p><img data-src="./images/06-probability/coin_toss.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
 <ul>
-<li><p>If we repeat tossing the coin 10 times, the probability of obtaining heads is 30%.</p></li>
-<li><p>If 1000 times, the probability is 51.1%.</p></li>
+<li><p>If we repeat tossing the coin 10 times, the probability of obtaining heads is 60%.</p></li>
+<li><p>If 1000 times, the probability is 47.3%.</p></li>
 </ul>
+<div class="fragment">
+<div class="question">
+<p>Any issue of relative frequency probability?</p>
+</div>
 <aside class="notes"><ul>
 <li>Suppose we toss a coin.
 <ul>
-<li>If we repeat tossing the coin 10 times, the probability of obtaining heads is 30%.</li>
-<li>If 1000 times, the probability is 51.1%.</li>
+<li>If we repeat tossing the coin 10 times, the probability of obtaining heads is 60%.</li>
+<li>If 1000 times, the probability is 47.3%.</li>
 </ul>
 </li>
 </ul><style type="text/css">
@@ -333,10 +335,7 @@ Total      1000              1.000
           width: 1px!important;
           overflow: hidden!important;
           display:block!important;
-      }</style></aside><div class="fragment">
-<div class="question">
-<p>Any issue of relative frequency probability?</p>
-</div>
+      }</style></aside>
 </div>
 </section><section id="issues-of-relative-frequency" class="slide level2"><h2>Issues of <strong>Relative Frequency</strong>
 </h2>
@@ -594,7 +593,7 @@ Total      1000              1.000
 </section><section id="set-concept-example-of-rolling-a-six-side-balanced-die" class="slide level2"><h2>Set Concept: Example of <strong>Rolling a six-side balanced die</strong>
 </h2>
 <div class="tip">
-<p>Draw a <a href="http://www.stat.ucla.edu/~vlew/stat11/lectures/venn/venn.html"><strong>Venn Diagram</strong></a> every time you get stuck!</p>
+<p>Draw a <a href="https://chenghanyustats-introstat-venndiagram.share.connect.posit.cloud"><strong>Venn Diagram</strong></a> every time you get stuck!</p>
 </div>
 <ul>
 <li>
@@ -711,7 +710,7 @@ Total      1000              1.000
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure><p><img data-src="06-probability_files/figure-html/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
+<figure><p><img data-src="06-probability_files/figure-revealjs/unnamed-chunk-13-1.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -855,7 +854,7 @@ Total      1000              1.000
 </ul>
 </div>
 </div></div>
-<div id="timer_8aba5d4153d73bcc9e8ff7cc923dcb65a878b0b6" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_7bb18d2bbfdae1784ec86c20d77a902d296c978d" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -1095,7 +1094,7 @@ Total      1000              1.000
 </ul>
 </li>
 </ul>
-<!-- - If $P(A \cap B)= 0.1$, are $A$ and $B$ independent? --><!-- - If $P(A \cap B)= 0.1$, what is $P(A \mid B)$? --><div id="timer_8aba5d4153d73bcc9e8ff7cc923dcb65a878b0b6" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<!-- - If $P(A \cap B)= 0.1$, are $A$ and $B$ independent? --><!-- - If $P(A \cap B)= 0.1$, what is $P(A \mid B)$? --><div id="timer_7bb18d2bbfdae1784ec86c20d77a902d296c978d" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -1141,7 +1140,7 @@ Total      1000              1.000
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure><p><img data-src="./images/06-probability/test_table.png" class="quarto-figure quarto-figure-center" style="width:60.0%"></p>
+<figure><p><img data-src="./images/06-probability/test_table_new.png" class="quarto-figure quarto-figure-center" style="width:60.0%"></p>
 </figure>
 </div>
 </div>
@@ -1174,11 +1173,11 @@ Total      1000              1.000
 <li>If <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are any events whose probabilities are not 0 or 1, then</li>
 </ul>
 <div class="midi">
-<p><span class="math display">\[\begin{align*} P(A \mid B) &amp;= \frac{P(A \cap B)}{P(B)} \quad ( \text{def. of cond. prob.}) \\ &amp;= \frac{P(A \cap B)}{P((B \cap A) \cup (B \cap A^c))} \quad ( \text{partition } B) \\ &amp;= \frac{P(B \mid A)P(A)}{P(B \mid A)P(A) + P(B \mid A^c)P(A^c)}  \quad ( \text{multiplication rule}) \end{align*}\]</span></p>
+<p><span class="math display">\[\begin{align*} P(A \mid B) &amp;= \frac{P(A \cap B)}{P(B)} \quad ( \text{cond. prob.}) \\ &amp;= \frac{P(A \cap B)}{P((B \cap A) \cup (B \cap A^c))} \quad ( \text{partition } B) \\ &amp;= \frac{P(B \mid A)P(A)}{P(B \mid A)P(A) + P(B \mid A^c)P(A^c)}  \quad ( \text{multiplication rule}) \end{align*}\]</span></p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure><p><img data-src="06-probability_files/figure-html/unnamed-chunk-22-1.png" class="quarto-figure quarto-figure-center" style="width:33.0%"></p>
+<figure><p><img data-src="06-probability_files/figure-revealjs/unnamed-chunk-23-1.png" class="quarto-figure quarto-figure-center" style="width:33.0%"></p>
 </figure>
 </div>
 </div>
@@ -1528,6 +1527,41 @@ W10=
     window._ojs.paths.docToRoot = "..";
     window._ojs.selfContained = false;
     window._ojs.runtime.interpretFromScriptTags();
+    </script><script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
     </script><script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
