@@ -252,6 +252,16 @@ window.Quarto = {
 <!-- begin: webr fodder -->
 <!-- end: webr fodder -->
 </section><section id="random-variables" class="level1" data-background-image="https://upload.wikimedia.org/wikipedia/commons/1/1c/6sided_dice_%28cropped%29.jpg" data-background-size="cover" data-background-position="50% 50%" data-background-color="#447099"><h1 data-background-image="https://upload.wikimedia.org/wikipedia/commons/1/1c/6sided_dice_%28cropped%29.jpg" data-background-size="cover" data-background-position="50% 50%" data-background-color="#447099"><span class="orange">Random Variables</span></h1>
+<!-- ## R is a Calculator - Examples -->
+<!-- ```{webr} -->
+<!-- 2 + 3 * 5 + 4 -->
+<!-- ``` -->
+<!-- ```{webr} -->
+<!-- 5 / 10 ^ 2 -->
+<!-- ``` -->
+<!-- ```{webr} -->
+<!-- 2 + 3 * (5 + 4) -->
+<!-- ``` -->
 <section id="random-variables-1" class="level2"><h2 class="anchored" data-anchor-id="random-variables-1">Random Variables</h2>
 <ul>
 <li>Recap: A <strong>variable</strong> in a data set is a characteristic that varies from one to another.
@@ -402,49 +412,7 @@ window.Quarto = {
 <li><span style="color:blue"> <span class="math inline">\(P(X = 1 \text{ or } 2) = P(\{X = 1\} \cup \{X = 2\}) = P(X = 1) + P(X = 2)\)</span>. </span></li>
 </ul>
 </li>
-</ul></section><section id="mean-of-a-discrete-random-variable" class="level2"><h2 class="anchored" data-anchor-id="mean-of-a-discrete-random-variable">Mean of a Discrete Random Variable</h2>
-<ul>
-<li><p>Suppose <span class="math inline">\(X\)</span> takes values <span class="math inline">\(x_1, \dots, x_k\)</span> with probabilities <span class="math inline">\(P(X = x_1), \dots, P(X = x_k)\)</span>.</p></li>
-<li><p>The <strong>mean</strong> or <strong>expected value</strong> of <span class="math inline">\(X\)</span> is the sum of each outcome multiplied by its corresponding probability: <span class="math display">\[E(X) := x_1 \times P(X = x_1) + \dots + x_k \times P(X = x_k) = \sum_{i=1}^kx_iP(X=x_i)\]</span></p></li>
-<li><p>The Greek letter <span class="math inline">\(\mu\)</span> may be used in place of the notation <span class="math inline">\(E(X)\)</span>.</p></li>
-</ul>
-<div class="notes">
-<ul>
-<li>Give an example</li>
-</ul>
-</div>
-<p>. . .</p>
-<div class="alert">
-<p>👉 The mean of a discrete random variable <span class="math inline">\(X\)</span> is the <strong>weighted average</strong> of possible values <span class="math inline">\(x\)</span> <em>weighted by their corresponding probability</em>.</p>
-</div>
-<p>. . .</p>
-<div class="question">
-<p>What is the mean of <span class="math inline">\(X\)</span> (the number of heads) in the previous example?</p>
-</div>
-<p>. . .</p>
-<div class="question">
-<p>What about variance of <span class="math inline">\(X\)</span>?</p>
-</div>
-<div class="notes">
-<ul>
-<li>On average, we will see one heads comes up when we toss a fair coin twice.</li>
-</ul>
-</div>
-</section><section id="variance-of-a-discrete-random-variable" class="level2" data-visibility="hidden"><h2 data-visibility="hidden" class="anchored" data-anchor-id="variance-of-a-discrete-random-variable">Variance of a Discrete Random Variable</h2>
-<ul>
-<li><p>Suppose <span class="math inline">\(X\)</span> takes values <span class="math inline">\(x_1, \dots , x_k\)</span> with probabilities <span class="math inline">\(P(X = x_1), \dots, P(X = x_k)\)</span> and expected value <span class="math inline">\(\mu = E(X)\)</span>.</p></li>
-<li><p>The variance of <span class="math inline">\(X\)</span>, denoted by <span class="math inline">\(\mathrm{Var}(X)\)</span> or <span class="math inline">\(\sigma^2\)</span>, is <span class="math display">\[\small \mathrm{Var}(X) := (x_1 - \mu)^2 \times P(X = x_1) + \dots + (x_k - \mu)^2 \times P(X = x_k) = \sum_{i=1}^k(x_i - \mu)^2P(X=x_i)\]</span></p></li>
-<li><p>The standard deviation of <span class="math inline">\(X\)</span>, <span class="math inline">\(\sigma\)</span>, is the square root of the variance.</p></li>
-</ul>
-<p>. . .</p>
-<div class="alert">
-<p>👉 The variance of a discrete random variable <span class="math inline">\(X\)</span> is the <em>weighted sum of squared deviation</em> from the mean weighted by probability values.</p>
-</div>
-<p>. . .</p>
-<div class="question">
-<p>What is the variance of <span class="math inline">\(X\)</span> (the number of heads) in the previous example?</p>
-</div>
-</section></section><section id="binomial-distribution-1" class="level1"><h1>Binomial Distribution</h1>
+</ul></section></section><section id="binomial-distribution-1" class="level1"><h1>Binomial Distribution</h1>
 <section id="binomial-experiment-and-random-variable" class="level2"><h2 class="anchored" data-anchor-id="binomial-experiment-and-random-variable">Binomial Experiment and Random Variable</h2>
 <ul>
 <li>A <strong>binomial experiment</strong> is the one having the following properties:
@@ -455,6 +423,9 @@ window.Quarto = {
 <li><p>👉 The probability of success is <strong>constant</strong> for all trials.</p></li>
 </ol>
 </li>
+</ul>
+<p>. . .</p>
+<ul>
 <li>If <span class="math inline">\(X\)</span> is defined as <span style="color:blue"> the number of successes observed in <span class="math inline">\(n\)</span> trials </span>, <span class="math inline">\(X\)</span> is a binomial random variable.</li>
 </ul>
 <p>. . .</p>
@@ -470,8 +441,7 @@ window.Quarto = {
 </div>
 </section><section id="binomial-distribution-2" class="level2"><h2 class="anchored" data-anchor-id="binomial-distribution-2">Binomial Distribution</h2>
 <ul>
-<li>
-<p>The probability function <span class="math inline">\(P(X = x)\)</span> of a binomial r.v. <span class="math inline">\(X\)</span> can be <em>fully</em> determined by</p>
+<li>The probability function <span class="math inline">\(P(X = x)\)</span> of a binomial r.v. <span class="math inline">\(X\)</span> can be <em>fully</em> determined by
 <ul>
 <li>the number of trials <span class="math inline">\(n\)</span>
 </li>
@@ -479,12 +449,16 @@ window.Quarto = {
 </li>
 </ul>
 </li>
-<li><p>Different <span class="math inline">\((n, \pi)\)</span> pairs generate different binomial probability distributions.</p></li>
-<li><p><span class="math inline">\(X\)</span> is said to follow a binomial distribution with <strong>parameters</strong> <span class="math inline">\(n\)</span> and <span class="math inline">\(\pi\)</span>, written as <span class="math inline">\(\color{blue}{X \sim binomial(n, \pi)}\)</span>.</p></li>
+<li>Different <span class="math inline">\((n, \pi)\)</span> pairs generate different binomial probability distributions.</li>
 </ul>
 <p>. . .</p>
 <ul>
-<li>The binomial probability function is <span class="math display">\[ \color{blue}{P(X = x \mid n, \pi) = \frac{n!}{x!(n-x)!}\pi^x(1-\pi)^{n-x}, \quad x = 0, 1, 2, \dots, n}\]</span> with mean <span class="math inline">\(\mu = E(X) = n\pi\)</span> and variance <span class="math inline">\(\sigma^2 = \mathrm{Var}(X) = n\pi(1-\pi)\)</span>.</li>
+<li>
+<span class="math inline">\(X\)</span> is said to follow a binomial distribution with <strong>parameters</strong> <span class="math inline">\(n\)</span> and <span class="math inline">\(\pi\)</span>, written as <span class="math inline">\(\color{blue}{X \sim binomial(n, \pi)}\)</span>.</li>
+</ul>
+<p>. . .</p>
+<ul>
+<li>The binomial probability function is <span class="math display">\[ \color{blue}{P(X = x \mid n, \pi) = \frac{n!}{x!(n-x)!}\pi^x(1-\pi)^{n-x}, \quad x = 0, 1, 2, \dots, n}\]</span> with <strong>mean</strong> <span class="math inline">\(\mu = E(X) = n\pi\)</span> and <strong>variance</strong> <span class="math inline">\(\sigma^2 = \mathrm{Var}(X) = n\pi(1-\pi)\)</span>.</li>
 </ul>
 <div class="notes">
 <ul>
@@ -506,7 +480,7 @@ window.Quarto = {
 </li>
 </ul>
 </div>
-<!-- ## [Binomial Distribution Applet](https://math4720-f25.github.io/website/ojs/prob-binomial-ojs.html) -->
+<!-- ## [Binomial Distribution Applet](https://math4720-f26.github.io/website/ojs/prob-binomial-ojs.html) -->
 <!-- {{< include prob-binomial-ojs.qmd >}} -->
 </section><section id="binomial-distribution-example" class="level2"><h2 class="anchored" data-anchor-id="binomial-distribution-example">Binomial Distribution Example</h2>
 <div class="columns">
@@ -600,7 +574,7 @@ window.Quarto = {
 </div>
 <p>. . .</p>
 <div class="tip">
-<p>Never do this by hand. We compute them using R!</p>
+<p>Never hand calculate this. We compute them using R!</p>
 </div>
 </section><section id="binomial-example-computation-in-r" class="level2"><h2 class="anchored" data-anchor-id="binomial-example-computation-in-r">Binomial Example Computation in R</h2>
 <!-- - R Shiny app is at [Binomial Calculator](http://sctc.mscs.mu.edu:3838/sample-apps/Calculator/) -->
@@ -622,35 +596,56 @@ window.Quarto = {
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">## 1. P(X = 6)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">dbinom</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fl">6</span>, size <span class="op">=</span> <span class="fl">15</span>, prob <span class="op">=</span> <span class="fl">0.2</span><span class="op">)</span> </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.043</code></pre>
+<div>
+<div id="webr-1" class="exercise-cell">
+
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">## 2. P(X &gt;= 6) = 1 - P(X &lt;= 5)</span></span>
-<span><span class="fl">1</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">pbinom</a></span><span class="op">(</span>q <span class="op">=</span> <span class="fl">5</span>, size <span class="op">=</span> <span class="fl">15</span>, prob <span class="op">=</span> <span class="fl">0.2</span><span class="op">)</span> </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.0611</code></pre>
+<script type="webr-1-contents">
+eyJhdHRyIjp7ImF1dG9ydW4iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6IiMjIDEuIFAoWCA9IDYpXG5kYmlub20oeCA9IDYsIHNpemUgPSAxNSwgcHJvYiA9IDAuMikgIn0=
+</script>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div>
+<div id="webr-2" class="exercise-cell">
+
+</div>
+<script type="webr-2-contents">
+eyJhdHRyIjp7ImF1dG9ydW4iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6IiMjIDIuIFAoWCA+PSA2KSA9IDEgLSBQKFggPD0gNSlcbjEgLSBwYmlub20ocSA9IDUsIHNpemUgPSAxNSwgcHJvYiA9IDAuMikgIn0=
+</script>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">## 2. P(X &gt;= 6) = P(X &gt; 5)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">pbinom</a></span><span class="op">(</span>q <span class="op">=</span> <span class="fl">5</span>, size <span class="op">=</span> <span class="fl">15</span>, prob <span class="op">=</span> <span class="fl">0.2</span>, </span>
-<span>       lower.tail <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span>  </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.0611</code></pre>
+<div>
+<div id="webr-3" class="exercise-cell">
+
+</div>
+<script type="webr-3-contents">
+eyJhdHRyIjp7ImF1dG9ydW4iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6IiMjIDIuIFAoWCA+PSA2KSA9IFAoWCA+IDUpXG5wYmlub20ocSA9IDUsIHNpemUgPSAxNSwgcHJvYiA9IDAuMiwgXG4gICAgICAgbG93ZXIudGFpbCA9IEZBTFNFKSAgIn0=
+</script>
 </div>
 </div>
+</div>
+</div>
+<p>. . .</p>
+<div class="cell" data-layout-align="center">
+<div>
+<div id="webr-4" class="exercise-cell">
+
+</div>
+<script type="webr-4-contents">
+eyJhdHRyIjp7ImF1dG9ydW4iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6IiMjIENvbXB1dGUgUChYID49IDgpXG5wYmlub20ocSA9IF9fX18sIHNpemUgPSBfX19fXywgcHJvYiA9IF9fX19fLCBsb3dlci50YWlsID0gX19fX18pIn0=
+</script>
 </div>
 </div>
 </section><section id="binomial15-0.2" class="level2"><h2 class="anchored" data-anchor-id="binomial15-0.2">Binomial(15, 0.2)</h2>
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fl">0</span><span class="op">:</span><span class="fl">15</span>, y <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">dbinom</a></span><span class="op">(</span><span class="fl">0</span><span class="op">:</span><span class="fl">15</span>, size <span class="op">=</span> <span class="fl">15</span>, prob <span class="op">=</span> <span class="fl">0.2</span><span class="op">)</span>, type <span class="op">=</span> <span class="st">'h'</span>, xlab <span class="op">=</span> <span class="st">"x"</span>, </span>
-<span>     ylab <span class="op">=</span> <span class="st">"P(X = x)"</span>, lwd <span class="op">=</span> <span class="fl">5</span>, main <span class="op">=</span> <span class="st">"Binomial(15, 0.2)"</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fl">0</span><span class="op">:</span><span class="fl">15</span>, y <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">dbinom</a></span><span class="op">(</span><span class="fl">0</span><span class="op">:</span><span class="fl">15</span>, size <span class="op">=</span> <span class="fl">15</span>, prob <span class="op">=</span> <span class="fl">0.2</span><span class="op">)</span>, type <span class="op">=</span> <span class="st">'h'</span>, xlab <span class="op">=</span> <span class="st">"x"</span>, </span>
+<span>     ylab <span class="op">=</span> <span class="st">"P(X = x)"</span>, lwd <span class="op">=</span> <span class="fl">10</span>, main <span class="op">=</span> <span class="st">"Binomial(15, 0.2)"</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-10-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-12-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -675,7 +670,7 @@ window.Quarto = {
 </ul>
 <p>. . .</p>
 <ul>
-<li>Let <span class="math inline">\(X\)</span> be a Poisson r.v. Then <span class="math inline">\(\color{blue}{X \sim Poisson(\lambda)}\)</span>, where <span class="math inline">\(\lambda\)</span> is the parameter representing the <strong>mean</strong> number of occurrences of the event in the interval. <span class="math display">\[\color{blue}{P(X = x \mid \lambda) = \frac{\lambda^x e^{-\lambda}}{x!}, \quad x = 0, 1, 2, \dots}\]</span> with both mean and variance being equal to <span class="math inline">\(\lambda\)</span>.</li>
+<li>Let <span class="math inline">\(X\)</span> be a Poisson r.v. Then <span class="math inline">\(\color{blue}{X \sim Poisson(\lambda)}\)</span>, where <span class="math inline">\(\lambda\)</span> is the parameter representing the <strong>mean</strong> number of occurrences of the event in the space/time interval. <span class="math display">\[\color{blue}{P(X = x \mid \lambda) = \frac{\lambda^x e^{-\lambda}}{x!}, \quad x = 0, 1, 2, \dots}\]</span> with both mean and variance being equal to <span class="math inline">\(\lambda\)</span>.</li>
 </ul>
 <div class="notes">
 <ul>
@@ -684,9 +679,15 @@ window.Quarto = {
 </div>
 </section><section id="assumptions-and-properties-of-poisson-variables" class="level2"><h2 class="anchored" data-anchor-id="assumptions-and-properties-of-poisson-variables">Assumptions and Properties of Poisson Variables</h2>
 <ul>
-<li><p>👉 <strong>Events occur one at a time</strong>; two or more events do not occur at the same time or in the same space or spot.</p></li>
-<li><p>👉 The occurrence of an event in a given period of time or region of space is <strong>independent</strong> of the occurrence of the event in a <strong>nonoverlapping</strong> time period or region of space.</p></li>
-<li><p>👉 <span class="math inline">\(\lambda\)</span> is <strong>constant</strong> of any period or region.</p></li>
+<li>👉 <strong>Events occur one at a time</strong>; two or more events do not occur at the same time or in the same space or spot.</li>
+</ul>
+<p>. . .</p>
+<ul>
+<li>👉 The occurrence of an event in a given period of time or region of space is <strong>independent</strong> of the occurrence of the event in a <strong>nonoverlapping</strong> time period or region of space.</li>
+</ul>
+<p>. . .</p>
+<ul>
+<li>👉 <span class="math inline">\(\lambda\)</span> is <strong>constant</strong> of any period or region.</li>
 </ul>
 <div class="notes">
 <ul>
@@ -709,7 +710,7 @@ window.Quarto = {
 </ul>
 </li>
 </ul>
-<!-- ## [Poisson Distribution Applet](https://math4720-f25.github.io/website/ojs/prob-poisson-ojs.html) --><!-- {{< include prob-poisson-ojs.qmd >}} --></section><section id="poisson-distribution-example" class="level2"><h2 class="anchored" data-anchor-id="poisson-distribution-example">Poisson Distribution Example</h2>
+<!-- ## [Poisson Distribution Applet](https://math4720-f26.github.io/website/ojs/prob-poisson-ojs.html) --><!-- {{< include prob-poisson-ojs.qmd >}} --></section><section id="poisson-distribution-example" class="level2"><h2 class="anchored" data-anchor-id="poisson-distribution-example">Poisson Distribution Example</h2>
 <div class="columns">
 <div class="column" style="width:90%;">
 <p>Last year there were 4200 births at the University of Wisconsin Hospital. Assume <span class="math inline">\(X\)</span> be the number of births in a given day at the center, and <span class="math inline">\(X \sim Poisson(\lambda)\)</span>. Find</p>
@@ -733,11 +734,11 @@ window.Quarto = {
 </div>
 <p>. . .</p>
 <ol type="1">
-<li><span class="math inline">\(\small \lambda = \frac{\text{Number of birth in a year}}{\text{Number of days}} = \frac{4200}{365} = 11.5\)</span></li>
+<li><span class="math inline">\(\small \lambda = \dfrac{\text{Number of birth in a year}}{\text{Number of days}} = \dfrac{4200}{365} = 11.5\)</span></li>
 </ol>
 <p>. . .</p>
 <ol start="2" type="1">
-<li><span class="math inline">\(\small P(X = 10 \mid \lambda = 11.5) = \frac{\lambda^x e^{-\lambda}}{x!} = \frac{11.5^{10} e^{-11.5}}{10!} = 0.113\)</span></li>
+<li><span class="math inline">\(\small P(X = 10 \mid \lambda = 11.5) = \dfrac{\lambda^x e^{-\lambda}}{x!} = \dfrac{11.5^{10} e^{-11.5}}{10!} = 0.113\)</span></li>
 </ol>
 <p>. . .</p>
 <ol start="3" type="1">
@@ -768,30 +769,57 @@ window.Quarto = {
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="op">(</span><span class="va">lam</span> <span class="op">&lt;-</span> <span class="fl">4200</span> <span class="op">/</span> <span class="fl">365</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 11.5</code></pre>
+<div>
+<div id="webr-5" class="exercise-cell">
+
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">## P(X = 10)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">dpois</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fl">10</span>, lambda <span class="op">=</span> <span class="va">lam</span><span class="op">)</span>  </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.113</code></pre>
+<script type="webr-5-contents">
+eyJhdHRyIjp7ImF1dG9ydW4iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6IihsYW0gPC0gNDIwMCAvIDM2NSkifQ==
+</script>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div>
+<div id="webr-6" class="exercise-cell">
+
+</div>
+<script type="webr-6-contents">
+eyJhdHRyIjp7ImF1dG9ydW4iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6IiMjIFAoWCA9IDEwKVxuZHBvaXMoeCA9IDEwLCBsYW1iZGEgPSBsYW0pICAifQ==
+</script>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">## P(X &gt; 10) = 1 - P(X &lt;= 10)</span></span>
-<span><span class="fl">1</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">ppois</a></span><span class="op">(</span>q <span class="op">=</span> <span class="fl">10</span>, lambda <span class="op">=</span> <span class="va">lam</span><span class="op">)</span>  </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.599</code></pre>
+<div>
+<div id="webr-7" class="exercise-cell">
+
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">## P(X &gt; 10)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">ppois</a></span><span class="op">(</span>q <span class="op">=</span> <span class="fl">10</span>, lambda <span class="op">=</span> <span class="va">lam</span>, </span>
-<span>      lower.tail <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span> </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.599</code></pre>
+<script type="webr-7-contents">
+eyJhdHRyIjp7ImF1dG9ydW4iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6IiMjIFAoWCA+IDEwKSA9IDEgLSBQKFggPD0gMTApXG4xIC0gcHBvaXMocSA9IDEwLCBsYW1iZGEgPSBsYW0pICAifQ==
+</script>
 </div>
 </div>
+<div class="cell" data-layout-align="center">
+<div>
+<div id="webr-8" class="exercise-cell">
+
+</div>
+<script type="webr-8-contents">
+eyJhdHRyIjp7ImF1dG9ydW4iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6IiMjIFAoWCA+IDEwKVxucHBvaXMocSA9IDEwLCBsYW1iZGEgPSBsYW0sIFxuICAgICAgbG93ZXIudGFpbCA9IEZBTFNFKSAifQ==
+</script>
+</div>
+</div>
+</div>
+</div>
+<p>. . .</p>
+<div class="cell" data-layout-align="center">
+<div>
+<div id="webr-9" class="exercise-cell">
+
+</div>
+<script type="webr-9-contents">
+eyJhdHRyIjp7ImF1dG9ydW4iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6IiMjIENvbXB1dGUgUChYID49IDgpXG5wcG9pcyhxID0gX19fXywgbGFtID0gX19fX18sIGxvd2VyLnRhaWwgPSBfX19fXykifQ==
+</script>
 </div>
 </div>
 </section><section id="poisson11.5" class="level2"><h2 class="anchored" data-anchor-id="poisson11.5">Poisson(11.5)</h2>
@@ -800,12 +828,11 @@ window.Quarto = {
 <span class="math inline">\(X\)</span> has no upper limit. The graph is <em>truncated</em> at <span class="math inline">\(x = 24\)</span>.</li>
 </ul>
 <div class="cell" data-layout-align="center">
-<details class="code-fold"><summary>Code</summary><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/graphics/par.html">par</a></span><span class="op">(</span>mar <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">3.8</span>, <span class="fl">3.8</span>, <span class="fl">1</span>, <span class="fl">0</span><span class="op">)</span>, mgp <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">2.5</span>, <span class="fl">0.5</span>, <span class="fl">0</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="fl">0</span><span class="op">:</span><span class="fl">24</span>, <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">dpois</a></span><span class="op">(</span><span class="fl">0</span><span class="op">:</span><span class="fl">24</span>, lambda <span class="op">=</span> <span class="va">lam</span><span class="op">)</span>, type <span class="op">=</span> <span class="st">'h'</span>, lwd <span class="op">=</span> <span class="fl">5</span>, las <span class="op">=</span> <span class="fl">1</span>,</span>
+<details class="code-fold"><summary>Code</summary><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="fl">0</span><span class="op">:</span><span class="fl">24</span>, <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">dpois</a></span><span class="op">(</span><span class="fl">0</span><span class="op">:</span><span class="fl">24</span>, lambda <span class="op">=</span> <span class="fl">4200</span> <span class="op">/</span> <span class="fl">365</span><span class="op">)</span>, type <span class="op">=</span> <span class="st">'h'</span>, lwd <span class="op">=</span> <span class="fl">10</span>, las <span class="op">=</span> <span class="fl">1</span>,</span>
 <span>     ylab <span class="op">=</span> <span class="st">"P(X = x)"</span>, xlab <span class="op">=</span> <span class="st">"x"</span>, main <span class="op">=</span> <span class="st">"Poisson(11.5)"</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details><div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-14-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-19-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -814,11 +841,11 @@ window.Quarto = {
 <section id="continuous-probability-distributions-1" class="level2"><h2 class="anchored" data-anchor-id="continuous-probability-distributions-1">Continuous Probability Distributions</h2>
 <ul>
 <li><p>A continuous r.v. can take on <strong>any</strong> values from <em>an interval of the real line</em>.</p></li>
-<li><p>Instead of probability functions, a continuous r.v. <span class="math inline">\(X\)</span> has the <strong>probability density function (pdf)</strong> <span class="math inline">\(f(x)\)</span> such that for any real value <span class="math inline">\(a &lt; b\)</span>, <span class="math display">\[P(a &lt; X &lt; b) = \int_{a}^b f(x) dx\]</span></p></li>
+<li><p>A continuous r.v. <span class="math inline">\(X\)</span> has a <strong>probability density function (pdf)</strong> <span class="math inline">\(f(x)\)</span> such that for any real value <span class="math inline">\(a &lt; b\)</span>, <span class="math display">\[P(a &lt; X &lt; b) = \int_{a}^b f(x) dx\]</span></p></li>
 </ul>
 <!-- - The **cumulative distribution function (cdf)** of $X$ is defined as --><!-- $$F(x) := P(X \le x) = \int_{-\infty}^x f(t)dt$$ --><p>. . .</p>
 <ul>
-<li>Every pdf must satisfy <span style="color:blue"> (1) <span class="math inline">\(f(x) \ge 0\)</span> for all <span class="math inline">\(x\)</span>; (2) <span class="math inline">\(\int_{-\infty}^{\infty} f(x) dx = 1\)</span> </span>
+<li>Every pdf must satisfy <span style="color:blue"> (1) <span class="math inline">\(f(x) \ge 0\)</span> for any possible <span class="math inline">\(x\)</span>; (2) <span class="math inline">\(\int_{-\infty}^{\infty} f(x) dx = 1\)</span> </span>
 </li>
 </ul>
 <p>. . .</p>
@@ -832,7 +859,7 @@ window.Quarto = {
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-15-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-20-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -845,15 +872,15 @@ window.Quarto = {
 </div>
 </section><section id="commonly-used-continuous-distributions" class="level2"><h2 class="anchored" data-anchor-id="commonly-used-continuous-distributions">Commonly Used Continuous Distributions</h2>
 <ul>
-<li><p><a href="https://homepage.divms.uiowa.edu/~mbognar/">Distribution Applet</a></p></li>
+<li><p><a href="https://chenghanyustats-distributions.share.connect.posit.cloud/">Distribution Applet</a></p></li>
 <li><p>In this course, we will touch <strong>normal (Gaussian)</strong>, <strong>Student’s t</strong>, <strong>chi-squared</strong>, <strong>F</strong></p></li>
 <li><p>Some other common distributions include <strong>uniform</strong>, <strong>exponential</strong>, <strong>gamma</strong>, <strong>beta</strong>, <strong>inverse gamma</strong>, <strong>Cauchy</strong>, etc. (MATH 4700)</p></li>
 </ul></section><section id="normal-gaussian-distribution" class="level2"><h2 class="anchored" data-anchor-id="normal-gaussian-distribution">Normal (Gaussian) Distribution</h2>
 <ul>
-<li>The normal distribution, <span class="math inline">\(N(\mu, \sigma^2\)</span>), has the pdf given by <span class="math display">\[\small f(x) = \frac{1}{\sqrt{2\pi}\sigma}e^{\frac{-(x-\mu)^2}{2\sigma^2}}, \quad -\infty &lt; x &lt; \infty\]</span>
+<li>The normal distribution, <span class="math inline">\(N(\mu, \sigma^2\)</span>), has the pdf: <span class="math display">\[\small f(x) = \frac{1}{\sqrt{2\pi}\sigma}e^{\frac{-(x-\mu)^2}{2\sigma^2}}, \quad -\infty &lt; x &lt; \infty\]</span>
 <ul>
 <li>Two parameters mean <span class="math inline">\(\mu\)</span> and variance <span class="math inline">\(\sigma^2\)</span> (standard deviation <span class="math inline">\(\sigma\)</span>)</li>
-<li>Always bell shaped, and symmetric about the mean <span class="math inline">\(\mu\)</span>
+<li>Always <em>bell shaped</em>, and <em>symmetric</em> about the mean <span class="math inline">\(\mu\)</span>
 </li>
 <li>When <span class="math inline">\(\mu = 0\)</span> and <span class="math inline">\(\sigma = 1\)</span>, <span class="math inline">\(N(0, 1)\)</span> is called <strong>standard normal</strong>.</li>
 </ul>
@@ -862,7 +889,7 @@ window.Quarto = {
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-16-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-21-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -871,16 +898,16 @@ window.Quarto = {
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-17-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-22-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
 </div>
-<!-- ## [Normal Distribution Applet](https://math4720-f25.github.io/website/ojs/prob-normal-ojs.html) -->
+<!-- ## [Normal Distribution Applet](https://math4720-f26.github.io/website/ojs/prob-normal-ojs.html) -->
 <!-- {{< include prob-normal-ojs.qmd >}} -->
 </section><section id="standardization-and-z-scores" class="level2"><h2 class="anchored" data-anchor-id="standardization-and-z-scores">Standardization and Z-Scores</h2>
 <ul>
-<li><p><strong>Standardization</strong>: Convert <span class="math inline">\(N(\mu, \sigma^2)\)</span> to <span class="math inline">\(N(0, 1)\)</span>.</p></li>
+<li><p><strong>Standardization</strong>: Convert <span class="math inline">\(N(\mu, \sigma^2)\)</span> into <span class="math inline">\(N(0, 1)\)</span>.</p></li>
 <li><p><strong>Why standardization</strong>: Put data onto a <em>standardized scale</em>, making comparisons easier!</p></li>
 </ul>
 <p>. . .</p>
@@ -972,7 +999,7 @@ window.Quarto = {
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-19-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:56.0%"></p>
+<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-24-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:56.0%"></p>
 </figure>
 </div>
 </div>
@@ -985,7 +1012,7 @@ window.Quarto = {
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-20-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:56.0%"></p>
+<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-25-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:56.0%"></p>
 </figure>
 </div>
 </div>
@@ -998,7 +1025,7 @@ window.Quarto = {
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-21-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-26-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -1011,7 +1038,7 @@ window.Quarto = {
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-22-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-27-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -1069,20 +1096,30 @@ window.Quarto = {
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-23-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-28-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">pnorm</a></span><span class="op">(</span><span class="fl">1</span>, mean <span class="op">=</span> <span class="fl">0</span>, sd <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.841</code></pre>
+<div>
+<div id="webr-10" class="exercise-cell">
+
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">pnorm</a></span><span class="op">(</span><span class="fl">1300</span>, mean <span class="op">=</span> <span class="fl">1100</span>, sd <span class="op">=</span> <span class="fl">200</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.841</code></pre>
+<script type="webr-10-contents">
+eyJhdHRyIjp7ImF1dG9ydW4iOmZhbHNlLCJlY2hvIjp0cnVlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6InBub3JtKDEsIG1lYW4gPSAwLCBzZCA9IDEpIn0=
+</script>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div>
+<div id="webr-11" class="exercise-cell">
+
+</div>
+<script type="webr-11-contents">
+eyJhdHRyIjp7ImF1dG9ydW4iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6InBub3JtKDEzMDAsIG1lYW4gPSAxMTAwLCBzZCA9IDIwMCkifQ==
+</script>
 </div>
 </div>
 <ul>
@@ -1105,7 +1142,7 @@ window.Quarto = {
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-25-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-31-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -1128,7 +1165,7 @@ window.Quarto = {
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-26-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-32-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -1139,36 +1176,15 @@ window.Quarto = {
 </ul>
 <p>We want the <strong>upper tail</strong> area, so <code>lower.tail = FALSE</code>!</p>
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">pnorm</a></span><span class="op">(</span>q <span class="op">=</span> <span class="fl">1190</span>, mean <span class="op">=</span> <span class="fl">1100</span>, sd <span class="op">=</span> <span class="fl">200</span>, </span>
-<span>      lower.tail <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.326</code></pre>
+<div>
+<div id="webr-12" class="exercise-cell">
+
+</div>
+<script type="webr-12-contents">
+eyJhdHRyIjp7ImF1dG9ydW4iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6InBub3JtKHEgPSAxMTkwLCBtZWFuID0gMTEwMCwgc2QgPSAyMDAsIFxuICAgICAgbG93ZXIudGFpbCA9IEZBTFNFKSJ9
+</script>
 </div>
 </div>
-</div>
-</div>
-</section><section id="sat-example-contd-2" class="level2" data-visibility="hidden"><h2 data-visibility="hidden" class="anchored" data-anchor-id="sat-example-contd-2">SAT Example Cont’d</h2>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-28-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<ul>
-<li>
-<span style="color:red"> Step 3: Find <span class="math inline">\(z\)</span>-score </span>:
-<ul>
-<li><span style="color:blue"> <span class="math inline">\(z = \frac{1190 - 1100}{200} = 0.45\)</span> and we like to compute <span class="math inline">\(P(X &gt; 1190) = P\left( \frac{X - \mu}{\sigma} &gt; \frac{1190 - 1000}{200} \right) = P(Z &gt; 0.45) = 1 - P(Z \le 0.45)\)</span> </span></li>
-</ul>
-</li>
-<li><span style="color:red"> Step 4: Find the area using <code><a href="https://rdrr.io/r/stats/Normal.html">pnorm()</a></code> </span></li>
-</ul>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fl">1</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">pnorm</a></span><span class="op">(</span><span class="fl">0.45</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.326</code></pre>
 </div>
 </div>
 </section><section id="normal-percentiles-in-r" class="level2"><h2 class="anchored" data-anchor-id="normal-percentiles-in-r">Normal Percentiles in R</h2>
@@ -1212,7 +1228,7 @@ window.Quarto = {
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-30-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-34-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
 </figure>
 </div>
 </div>
@@ -1223,145 +1239,23 @@ window.Quarto = {
 </ul>
 <p>We want the <strong>q</strong>uantile, so use <code><a href="https://rdrr.io/r/stats/Normal.html">qnorm()</a></code>!</p>
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">qnorm</a></span><span class="op">(</span>p <span class="op">=</span> <span class="fl">0.95</span>, mean <span class="op">=</span> <span class="fl">1100</span>, sd <span class="op">=</span> <span class="fl">200</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 1429</code></pre>
+<div>
+<div id="webr-13" class="exercise-cell">
+
 </div>
+<script type="webr-13-contents">
+eyJhdHRyIjp7ImF1dG9ydW4iOmZhbHNlLCJlZGl0Ijp0cnVlLCJldmFsIjp0cnVlfSwiY29kZSI6InFub3JtKHAgPSAwLjk1LCBtZWFuID0gMTEwMCwgc2QgPSAyMDApIn0=
+</script>
 </div>
-</div>
-</div>
-</section><section id="sat-example-contd-3" class="level2" data-visibility="hidden"><h2 data-visibility="hidden" class="anchored" data-anchor-id="sat-example-contd-3">SAT Example Cont’d</h2>
-<ul>
-<li>
-<span style="color:red"> Step 3: Find <span class="math inline">\(z\)</span>-score s.t. <span class="math inline">\(P(Z &lt; z) = 0.95\)</span> using <code><a href="https://rdrr.io/r/stats/Normal.html">qnorm()</a></code></span>:</li>
-</ul>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb27"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="op">(</span><span class="va">z_95</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">qnorm</a></span><span class="op">(</span><span class="fl">0.95</span><span class="op">)</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 1.64</code></pre>
-</div>
-</div>
-<ul>
-<li>
-<span style="color:red"> Step 4: Find the <span class="math inline">\(x\)</span> of the original scale </span>
-<ul>
-<li><span style="color:blue"> <span class="math inline">\(z_{0.95} = \frac{x-\mu}{\sigma}\)</span>. So <span class="math inline">\(x = \mu + z_{0.95}\sigma\)</span>. </span></li>
-</ul>
-</li>
-</ul>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb29"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="op">(</span><span class="va">x_95</span> <span class="op">&lt;-</span> <span class="fl">1100</span> <span class="op">+</span> <span class="va">z_95</span> <span class="op">*</span> <span class="fl">200</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 1429</code></pre>
-</div>
-</div>
-<ul>
-<li>The 95th percentile for SAT scores is 1429.</li>
-</ul>
-<p>. . .</p>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb31"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">qnorm</a></span><span class="op">(</span>p <span class="op">=</span> <span class="fl">0.95</span>, mean <span class="op">=</span> <span class="fl">1100</span>, sd <span class="op">=</span> <span class="fl">200</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 1429</code></pre>
-</div>
-</div>
-<!-- ## Finding Probabilties -->
-<!-- 👉 **Draw and label the normal curve and shade the area of interest.** -->
-<!-- - 👉 **Less than** -->
-<!--   + $\small P(X < x) = P(Z < z)$ -->
-<!--   + `pnorm(z)` -->
-<!--   + `pnorm(x, mean = mu, sd = sigma)` -->
-<!-- - 👉 **Greater than** -->
-<!--   + $\small P(X > x) = P(Z > z) = 1 - P(Z \le z)$ -->
-<!--   + `1 - pnorm(z)` -->
-<!-- ::: alert -->
-<!-- - 👉 Standardization is not a must.  -->
-<!-- - 👉 We have to specify the mean and SD of the original distribution of $X$, like `pnorm(x, mean = mu, sd = sigma)`. -->
-<!-- ::: -->
-</section><section id="finding-probabilties" class="level2" data-visibility="hidden"><h2 data-visibility="hidden" class="anchored" data-anchor-id="finding-probabilties">Finding Probabilties</h2>
-<p>👉 <strong>Draw and label the normal curve and shade the area of interest.</strong></p>
-<ul>
-<li>👉 <strong>Less than</strong>
-<ul>
-<li><span class="math inline">\(\small P(X &lt; x) = P(Z &lt; z)\)</span></li>
-<li><code>pnorm(z)</code></li>
-<li><code>pnorm(x, mean = mu, sd = sigma)</code></li>
-</ul>
-</li>
-<li>👉 <strong>Greater than</strong>
-<ul>
-<li><span class="math inline">\(\small P(X &gt; x) = P(Z &gt; z) = 1 - P(Z \le z)\)</span></li>
-<li><code>1 - pnorm(z)</code></li>
-</ul>
-</li>
-</ul>
-<div class="alert">
-<ul>
-<li><p>👉 Standardization is not a must.</p></li>
-<li><p>👉 We have to specify the mean and SD of the original distribution of <span class="math inline">\(X\)</span>, like <code>pnorm(x, mean = mu, sd = sigma)</code>.</p></li>
-</ul>
-</div>
-</section><section id="finding-probabilties-1" class="level2" data-visibility="hidden"><h2 data-visibility="hidden" class="anchored" data-anchor-id="finding-probabilties-1">Finding Probabilties</h2>
-<ul>
-<li>👉 <strong>Between two numbers</strong>
-<ul>
-<li><span class="math inline">\(\small P(a &lt; X &lt; b) = P(z_a &lt; Z &lt; z_b) = P(Z &lt; z_b) - P(Z &lt; z_a)\)</span></li>
-<li><code>pnorm(z_b) - pnorm(z_a)</code></li>
-</ul>
-</li>
-<li>👉 <strong>Outside of two numbers</strong> <span class="math inline">\((a &lt; b)\)</span> <span class="math display">\[\small \begin{align} P(X &lt; a \text{ or } X &gt; b) &amp;= P(Z &lt; z_a \text{ or } Z &gt; z_b) \\ &amp;= P(Z &lt; z_a) + P(Z &gt; z_b) \\ &amp;= P(Z &lt; z_a) + 1 - P(Z &lt; z_b) \end{align}\]</span>
-<ul>
-<li><code>pnorm(z_a) + 1 - pnorm(z_b)</code></li>
-<li><code>pnorm(z_a) + pnorm(z_b, lower.tail = FALSE)</code></li>
-</ul>
-</li>
-</ul>
-<div class="alert">
-<ul>
-<li><p>👉 Any probability can be computed using the <em>“less than”</em> form (<em>lower</em> or <em>left</em> tail).</p></li>
-<li><p>👉 If the calculation involves the “greater than” form, add <code>lower.tail = FALSE</code> in <code><a href="https://rdrr.io/r/stats/Normal.html">pnorm()</a></code>.</p></li>
-</ul>
-</div>
-</section><section id="checking-normality-normal-quantile-plot" class="level2" data-visibility="hidden"><h2 data-visibility="hidden" class="anchored" data-anchor-id="checking-normality-normal-quantile-plot">Checking Normality: Normal Quantile Plot</h2>
-<ul>
-<li><p>Many statistical methods assume variables are normally distributed.</p></li>
-<li><p>Testing the appropriateness of the normal assumption is a key step.</p></li>
-<li>
-<p>A <strong>normal quantile plot (normal probability plot)</strong> or a <strong>Quantile-Quantile plot (QQ plot)</strong> helps us check normality assumption.</p>
-<ul>
-<li>
-<span class="math inline">\(X\)</span>-axis: Quantiles of the <em>ordered</em> data if the data were normally distributed.</li>
-<li>
-<span class="math inline">\(Y\)</span>-axis: <em>Ordered</em> data values</li>
-</ul>
-</li>
-<li><p>If the data are like normally distributed, the points on the QQ plot will lie close to a <strong>straight line</strong>.</p></li>
-</ul>
-<div class="notes">
-<ul>
-<li>Many statistical methods assume variables are normally distributed.</li>
-<li>Testing the appropriateness of the normal assumption is a key step in many data analyses.</li>
-<li>A <strong>normal quantile plot (normal probability plot)</strong> or a <strong>Quantile-Quantile plot (QQ plot)</strong> consists of a plot of the <strong>ordered data</strong> on the Y-axis and the <span class="math inline">\(z\)</span>-scores associated with order of the observations on the X-axis.</li>
-<li>If the distribution of the data is close to a normal distribution, the plotted points on the QQ plot will lie close to a <strong>straight line</strong>.</li>
-</ul>
-</div>
-</section><section id="qq-plot-in-r" class="level2" data-visibility="hidden"><h2 data-visibility="hidden" class="anchored" data-anchor-id="qq-plot-in-r">QQ plot in R</h2>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb33"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/qqnorm.html">qqnorm</a></span><span class="op">(</span><span class="va">normal_sample</span>, main <span class="op">=</span> <span class="st">"Normal data"</span>, col <span class="op">=</span> <span class="fl">4</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/stats/qqnorm.html">qqline</a></span><span class="op">(</span><span class="va">normal_sample</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/stats/qqnorm.html">qqnorm</a></span><span class="op">(</span><span class="va">right_skewed_sample</span>, main <span class="op">=</span> <span class="st">"Right-skewed data"</span>, col <span class="op">=</span> <span class="fl">6</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/stats/qqnorm.html">qqline</a></span><span class="op">(</span><span class="va">right_skewed_sample</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="07-distribution_files/figure-revealjs/unnamed-chunk-35-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
-</figure>
 </div>
 </div>
 </div>
 
 
-<script type="ojs-module-contents">
-eyJjb250ZW50cyI6W119
+<script type="webr-data">
+eyJvcHRpb25zIjp7ImJhc2VVcmwiOiJodHRwczovL3dlYnIuci13YXNtLm9yZy92MC41LjQvIn0sInBhY2thZ2VzIjp7InBrZ3MiOlsiZXZhbHVhdGUiLCJrbml0ciIsImh0bWx0b29scyJdLCJyZXBvcyI6W119LCJyZW5kZXJfZGYiOiJkZWZhdWx0In0=
+</script><script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3siY2VsbE5hbWUiOiJ3ZWJyLXdpZGdldC0xMyIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6IntcbiAgLy8gV2FpdCBmb3Igb3V0cHV0IHRvIGJlIHdyaXR0ZW4gdG8gdGhlIERPTSwgdGhlbiB0cmlnZ2VyIHdpZGdldCByZW5kZXJpbmdcbiAgYXdhaXQgX3dlYnJfdmFsdWVfMTM7XG4gIGlmICh3aW5kb3cuSFRNTFdpZGdldHMpIHtcbiAgICB3aW5kb3cuSFRNTFdpZGdldHMuc3RhdGljUmVuZGVyKCk7XG4gIH1cbiAgaWYgKHdpbmRvdy5QYWdlZFRhYmxlRG9jKSB7XG4gICAgd2luZG93LlBhZ2VkVGFibGVEb2MuaW5pdEFsbCgpO1xuICB9XG59XG4ifSx7ImNlbGxOYW1lIjoid2Vici0xMyIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJzb3VyY2UiOiJ2aWV3b2YgX3dlYnJfZWRpdG9yXzEzID0ge1xuICBjb25zdCB7IFdlYlJFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuICBjb25zdCBzY3JpcHRDb250ZW50ID0gZG9jdW1lbnQucXVlcnlTZWxlY3Rvcihgc2NyaXB0W3R5cGU9XFxcIndlYnItMTMtY29udGVudHNcXFwiXWApLnRleHRDb250ZW50O1xuICBjb25zdCBibG9jayA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKHNjcmlwdENvbnRlbnQpKTtcblxuICBjb25zdCBvcHRpb25zID0gT2JqZWN0LmFzc2lnbih7IGlkOiBgd2Vici0xMy1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBXZWJSRXhlcmNpc2VFZGl0b3Iod2ViUk9qcy53ZWJSUHJvbWlzZSwgYmxvY2suY29kZSwgb3B0aW9ucyk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fd2Vicl92YWx1ZV8xMyA9IHdlYlJPanMucHJvY2Vzcyhfd2Vicl9lZGl0b3JfMTMsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJ3ZWJyLXdpZGdldC0xMiIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6IntcbiAgLy8gV2FpdCBmb3Igb3V0cHV0IHRvIGJlIHdyaXR0ZW4gdG8gdGhlIERPTSwgdGhlbiB0cmlnZ2VyIHdpZGdldCByZW5kZXJpbmdcbiAgYXdhaXQgX3dlYnJfdmFsdWVfMTI7XG4gIGlmICh3aW5kb3cuSFRNTFdpZGdldHMpIHtcbiAgICB3aW5kb3cuSFRNTFdpZGdldHMuc3RhdGljUmVuZGVyKCk7XG4gIH1cbiAgaWYgKHdpbmRvdy5QYWdlZFRhYmxlRG9jKSB7XG4gICAgd2luZG93LlBhZ2VkVGFibGVEb2MuaW5pdEFsbCgpO1xuICB9XG59XG4ifSx7ImNlbGxOYW1lIjoid2Vici0xMiIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJzb3VyY2UiOiJ2aWV3b2YgX3dlYnJfZWRpdG9yXzEyID0ge1xuICBjb25zdCB7IFdlYlJFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuICBjb25zdCBzY3JpcHRDb250ZW50ID0gZG9jdW1lbnQucXVlcnlTZWxlY3Rvcihgc2NyaXB0W3R5cGU9XFxcIndlYnItMTItY29udGVudHNcXFwiXWApLnRleHRDb250ZW50O1xuICBjb25zdCBibG9jayA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKHNjcmlwdENvbnRlbnQpKTtcblxuICBjb25zdCBvcHRpb25zID0gT2JqZWN0LmFzc2lnbih7IGlkOiBgd2Vici0xMi1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBXZWJSRXhlcmNpc2VFZGl0b3Iod2ViUk9qcy53ZWJSUHJvbWlzZSwgYmxvY2suY29kZSwgb3B0aW9ucyk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fd2Vicl92YWx1ZV8xMiA9IHdlYlJPanMucHJvY2Vzcyhfd2Vicl9lZGl0b3JfMTIsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJ3ZWJyLXdpZGdldC0xMSIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6IntcbiAgLy8gV2FpdCBmb3Igb3V0cHV0IHRvIGJlIHdyaXR0ZW4gdG8gdGhlIERPTSwgdGhlbiB0cmlnZ2VyIHdpZGdldCByZW5kZXJpbmdcbiAgYXdhaXQgX3dlYnJfdmFsdWVfMTE7XG4gIGlmICh3aW5kb3cuSFRNTFdpZGdldHMpIHtcbiAgICB3aW5kb3cuSFRNTFdpZGdldHMuc3RhdGljUmVuZGVyKCk7XG4gIH1cbiAgaWYgKHdpbmRvdy5QYWdlZFRhYmxlRG9jKSB7XG4gICAgd2luZG93LlBhZ2VkVGFibGVEb2MuaW5pdEFsbCgpO1xuICB9XG59XG4ifSx7ImNlbGxOYW1lIjoid2Vici0xMSIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJzb3VyY2UiOiJ2aWV3b2YgX3dlYnJfZWRpdG9yXzExID0ge1xuICBjb25zdCB7IFdlYlJFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuICBjb25zdCBzY3JpcHRDb250ZW50ID0gZG9jdW1lbnQucXVlcnlTZWxlY3Rvcihgc2NyaXB0W3R5cGU9XFxcIndlYnItMTEtY29udGVudHNcXFwiXWApLnRleHRDb250ZW50O1xuICBjb25zdCBibG9jayA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKHNjcmlwdENvbnRlbnQpKTtcblxuICBjb25zdCBvcHRpb25zID0gT2JqZWN0LmFzc2lnbih7IGlkOiBgd2Vici0xMS1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBXZWJSRXhlcmNpc2VFZGl0b3Iod2ViUk9qcy53ZWJSUHJvbWlzZSwgYmxvY2suY29kZSwgb3B0aW9ucyk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fd2Vicl92YWx1ZV8xMSA9IHdlYlJPanMucHJvY2Vzcyhfd2Vicl9lZGl0b3JfMTEsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJ3ZWJyLXdpZGdldC0xMCIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6IntcbiAgLy8gV2FpdCBmb3Igb3V0cHV0IHRvIGJlIHdyaXR0ZW4gdG8gdGhlIERPTSwgdGhlbiB0cmlnZ2VyIHdpZGdldCByZW5kZXJpbmdcbiAgYXdhaXQgX3dlYnJfdmFsdWVfMTA7XG4gIGlmICh3aW5kb3cuSFRNTFdpZGdldHMpIHtcbiAgICB3aW5kb3cuSFRNTFdpZGdldHMuc3RhdGljUmVuZGVyKCk7XG4gIH1cbiAgaWYgKHdpbmRvdy5QYWdlZFRhYmxlRG9jKSB7XG4gICAgd2luZG93LlBhZ2VkVGFibGVEb2MuaW5pdEFsbCgpO1xuICB9XG59XG4ifSx7ImNlbGxOYW1lIjoid2Vici0xMCIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJzb3VyY2UiOiJ2aWV3b2YgX3dlYnJfZWRpdG9yXzEwID0ge1xuICBjb25zdCB7IFdlYlJFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuICBjb25zdCBzY3JpcHRDb250ZW50ID0gZG9jdW1lbnQucXVlcnlTZWxlY3Rvcihgc2NyaXB0W3R5cGU9XFxcIndlYnItMTAtY29udGVudHNcXFwiXWApLnRleHRDb250ZW50O1xuICBjb25zdCBibG9jayA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKHNjcmlwdENvbnRlbnQpKTtcblxuICBjb25zdCBvcHRpb25zID0gT2JqZWN0LmFzc2lnbih7IGlkOiBgd2Vici0xMC1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBXZWJSRXhlcmNpc2VFZGl0b3Iod2ViUk9qcy53ZWJSUHJvbWlzZSwgYmxvY2suY29kZSwgb3B0aW9ucyk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fd2Vicl92YWx1ZV8xMCA9IHdlYlJPanMucHJvY2Vzcyhfd2Vicl9lZGl0b3JfMTAsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJ3ZWJyLXdpZGdldC05IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoie1xuICAvLyBXYWl0IGZvciBvdXRwdXQgdG8gYmUgd3JpdHRlbiB0byB0aGUgRE9NLCB0aGVuIHRyaWdnZXIgd2lkZ2V0IHJlbmRlcmluZ1xuICBhd2FpdCBfd2Vicl92YWx1ZV85O1xuICBpZiAod2luZG93LkhUTUxXaWRnZXRzKSB7XG4gICAgd2luZG93LkhUTUxXaWRnZXRzLnN0YXRpY1JlbmRlcigpO1xuICB9XG4gIGlmICh3aW5kb3cuUGFnZWRUYWJsZURvYykge1xuICAgIHdpbmRvdy5QYWdlZFRhYmxlRG9jLmluaXRBbGwoKTtcbiAgfVxufVxuIn0seyJjZWxsTmFtZSI6IndlYnItOSIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJzb3VyY2UiOiJ2aWV3b2YgX3dlYnJfZWRpdG9yXzkgPSB7XG4gIGNvbnN0IHsgV2ViUkV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwid2Vici05LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHdlYnItOS1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBXZWJSRXhlcmNpc2VFZGl0b3Iod2ViUk9qcy53ZWJSUHJvbWlzZSwgYmxvY2suY29kZSwgb3B0aW9ucyk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fd2Vicl92YWx1ZV85ID0gd2ViUk9qcy5wcm9jZXNzKF93ZWJyX2VkaXRvcl85LCB7fSk7XG4ifSx7ImNlbGxOYW1lIjoid2Vici13aWRnZXQtOCIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6IntcbiAgLy8gV2FpdCBmb3Igb3V0cHV0IHRvIGJlIHdyaXR0ZW4gdG8gdGhlIERPTSwgdGhlbiB0cmlnZ2VyIHdpZGdldCByZW5kZXJpbmdcbiAgYXdhaXQgX3dlYnJfdmFsdWVfODtcbiAgaWYgKHdpbmRvdy5IVE1MV2lkZ2V0cykge1xuICAgIHdpbmRvdy5IVE1MV2lkZ2V0cy5zdGF0aWNSZW5kZXIoKTtcbiAgfVxuICBpZiAod2luZG93LlBhZ2VkVGFibGVEb2MpIHtcbiAgICB3aW5kb3cuUGFnZWRUYWJsZURvYy5pbml0QWxsKCk7XG4gIH1cbn1cbiJ9LHsiY2VsbE5hbWUiOiJ3ZWJyLTgiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF93ZWJyX2VkaXRvcl84ID0ge1xuICBjb25zdCB7IFdlYlJFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuICBjb25zdCBzY3JpcHRDb250ZW50ID0gZG9jdW1lbnQucXVlcnlTZWxlY3Rvcihgc2NyaXB0W3R5cGU9XFxcIndlYnItOC1jb250ZW50c1xcXCJdYCkudGV4dENvbnRlbnQ7XG4gIGNvbnN0IGJsb2NrID0gSlNPTi5wYXJzZShiNjREZWNvZGUoc2NyaXB0Q29udGVudCkpO1xuXG4gIGNvbnN0IG9wdGlvbnMgPSBPYmplY3QuYXNzaWduKHsgaWQ6IGB3ZWJyLTgtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgV2ViUkV4ZXJjaXNlRWRpdG9yKHdlYlJPanMud2ViUlByb21pc2UsIGJsb2NrLmNvZGUsIG9wdGlvbnMpO1xuXG4gIHJldHVybiBlZGl0b3IuY29udGFpbmVyO1xufVxuX3dlYnJfdmFsdWVfOCA9IHdlYlJPanMucHJvY2Vzcyhfd2Vicl9lZGl0b3JfOCwge30pO1xuIn0seyJjZWxsTmFtZSI6IndlYnItd2lkZ2V0LTciLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJ7XG4gIC8vIFdhaXQgZm9yIG91dHB1dCB0byBiZSB3cml0dGVuIHRvIHRoZSBET00sIHRoZW4gdHJpZ2dlciB3aWRnZXQgcmVuZGVyaW5nXG4gIGF3YWl0IF93ZWJyX3ZhbHVlXzc7XG4gIGlmICh3aW5kb3cuSFRNTFdpZGdldHMpIHtcbiAgICB3aW5kb3cuSFRNTFdpZGdldHMuc3RhdGljUmVuZGVyKCk7XG4gIH1cbiAgaWYgKHdpbmRvdy5QYWdlZFRhYmxlRG9jKSB7XG4gICAgd2luZG93LlBhZ2VkVGFibGVEb2MuaW5pdEFsbCgpO1xuICB9XG59XG4ifSx7ImNlbGxOYW1lIjoid2Vici03IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfd2Vicl9lZGl0b3JfNyA9IHtcbiAgY29uc3QgeyBXZWJSRXhlcmNpc2VFZGl0b3IsIGI2NERlY29kZSB9ID0gd2luZG93Ll9leGVyY2lzZV9vanNfcnVudGltZTtcbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJ3ZWJyLTctY29udGVudHNcXFwiXWApLnRleHRDb250ZW50O1xuICBjb25zdCBibG9jayA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKHNjcmlwdENvbnRlbnQpKTtcblxuICBjb25zdCBvcHRpb25zID0gT2JqZWN0LmFzc2lnbih7IGlkOiBgd2Vici03LWNvbnRlbnRzYCB9LCBibG9jay5hdHRyKTtcbiAgY29uc3QgZWRpdG9yID0gbmV3IFdlYlJFeGVyY2lzZUVkaXRvcih3ZWJST2pzLndlYlJQcm9taXNlLCBibG9jay5jb2RlLCBvcHRpb25zKTtcblxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcbn1cbl93ZWJyX3ZhbHVlXzcgPSB3ZWJST2pzLnByb2Nlc3MoX3dlYnJfZWRpdG9yXzcsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJ3ZWJyLXdpZGdldC02IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoie1xuICAvLyBXYWl0IGZvciBvdXRwdXQgdG8gYmUgd3JpdHRlbiB0byB0aGUgRE9NLCB0aGVuIHRyaWdnZXIgd2lkZ2V0IHJlbmRlcmluZ1xuICBhd2FpdCBfd2Vicl92YWx1ZV82O1xuICBpZiAod2luZG93LkhUTUxXaWRnZXRzKSB7XG4gICAgd2luZG93LkhUTUxXaWRnZXRzLnN0YXRpY1JlbmRlcigpO1xuICB9XG4gIGlmICh3aW5kb3cuUGFnZWRUYWJsZURvYykge1xuICAgIHdpbmRvdy5QYWdlZFRhYmxlRG9jLmluaXRBbGwoKTtcbiAgfVxufVxuIn0seyJjZWxsTmFtZSI6IndlYnItNiIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJzb3VyY2UiOiJ2aWV3b2YgX3dlYnJfZWRpdG9yXzYgPSB7XG4gIGNvbnN0IHsgV2ViUkV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwid2Vici02LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHdlYnItNi1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBXZWJSRXhlcmNpc2VFZGl0b3Iod2ViUk9qcy53ZWJSUHJvbWlzZSwgYmxvY2suY29kZSwgb3B0aW9ucyk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fd2Vicl92YWx1ZV82ID0gd2ViUk9qcy5wcm9jZXNzKF93ZWJyX2VkaXRvcl82LCB7fSk7XG4ifSx7ImNlbGxOYW1lIjoid2Vici13aWRnZXQtNSIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6IntcbiAgLy8gV2FpdCBmb3Igb3V0cHV0IHRvIGJlIHdyaXR0ZW4gdG8gdGhlIERPTSwgdGhlbiB0cmlnZ2VyIHdpZGdldCByZW5kZXJpbmdcbiAgYXdhaXQgX3dlYnJfdmFsdWVfNTtcbiAgaWYgKHdpbmRvdy5IVE1MV2lkZ2V0cykge1xuICAgIHdpbmRvdy5IVE1MV2lkZ2V0cy5zdGF0aWNSZW5kZXIoKTtcbiAgfVxuICBpZiAod2luZG93LlBhZ2VkVGFibGVEb2MpIHtcbiAgICB3aW5kb3cuUGFnZWRUYWJsZURvYy5pbml0QWxsKCk7XG4gIH1cbn1cbiJ9LHsiY2VsbE5hbWUiOiJ3ZWJyLTUiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF93ZWJyX2VkaXRvcl81ID0ge1xuICBjb25zdCB7IFdlYlJFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuICBjb25zdCBzY3JpcHRDb250ZW50ID0gZG9jdW1lbnQucXVlcnlTZWxlY3Rvcihgc2NyaXB0W3R5cGU9XFxcIndlYnItNS1jb250ZW50c1xcXCJdYCkudGV4dENvbnRlbnQ7XG4gIGNvbnN0IGJsb2NrID0gSlNPTi5wYXJzZShiNjREZWNvZGUoc2NyaXB0Q29udGVudCkpO1xuXG4gIGNvbnN0IG9wdGlvbnMgPSBPYmplY3QuYXNzaWduKHsgaWQ6IGB3ZWJyLTUtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgV2ViUkV4ZXJjaXNlRWRpdG9yKHdlYlJPanMud2ViUlByb21pc2UsIGJsb2NrLmNvZGUsIG9wdGlvbnMpO1xuXG4gIHJldHVybiBlZGl0b3IuY29udGFpbmVyO1xufVxuX3dlYnJfdmFsdWVfNSA9IHdlYlJPanMucHJvY2Vzcyhfd2Vicl9lZGl0b3JfNSwge30pO1xuIn0seyJjZWxsTmFtZSI6IndlYnItd2lkZ2V0LTQiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJ7XG4gIC8vIFdhaXQgZm9yIG91dHB1dCB0byBiZSB3cml0dGVuIHRvIHRoZSBET00sIHRoZW4gdHJpZ2dlciB3aWRnZXQgcmVuZGVyaW5nXG4gIGF3YWl0IF93ZWJyX3ZhbHVlXzQ7XG4gIGlmICh3aW5kb3cuSFRNTFdpZGdldHMpIHtcbiAgICB3aW5kb3cuSFRNTFdpZGdldHMuc3RhdGljUmVuZGVyKCk7XG4gIH1cbiAgaWYgKHdpbmRvdy5QYWdlZFRhYmxlRG9jKSB7XG4gICAgd2luZG93LlBhZ2VkVGFibGVEb2MuaW5pdEFsbCgpO1xuICB9XG59XG4ifSx7ImNlbGxOYW1lIjoid2Vici00IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfd2Vicl9lZGl0b3JfNCA9IHtcbiAgY29uc3QgeyBXZWJSRXhlcmNpc2VFZGl0b3IsIGI2NERlY29kZSB9ID0gd2luZG93Ll9leGVyY2lzZV9vanNfcnVudGltZTtcbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJ3ZWJyLTQtY29udGVudHNcXFwiXWApLnRleHRDb250ZW50O1xuICBjb25zdCBibG9jayA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKHNjcmlwdENvbnRlbnQpKTtcblxuICBjb25zdCBvcHRpb25zID0gT2JqZWN0LmFzc2lnbih7IGlkOiBgd2Vici00LWNvbnRlbnRzYCB9LCBibG9jay5hdHRyKTtcbiAgY29uc3QgZWRpdG9yID0gbmV3IFdlYlJFeGVyY2lzZUVkaXRvcih3ZWJST2pzLndlYlJQcm9taXNlLCBibG9jay5jb2RlLCBvcHRpb25zKTtcblxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcbn1cbl93ZWJyX3ZhbHVlXzQgPSB3ZWJST2pzLnByb2Nlc3MoX3dlYnJfZWRpdG9yXzQsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJ3ZWJyLXdpZGdldC0zIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoie1xuICAvLyBXYWl0IGZvciBvdXRwdXQgdG8gYmUgd3JpdHRlbiB0byB0aGUgRE9NLCB0aGVuIHRyaWdnZXIgd2lkZ2V0IHJlbmRlcmluZ1xuICBhd2FpdCBfd2Vicl92YWx1ZV8zO1xuICBpZiAod2luZG93LkhUTUxXaWRnZXRzKSB7XG4gICAgd2luZG93LkhUTUxXaWRnZXRzLnN0YXRpY1JlbmRlcigpO1xuICB9XG4gIGlmICh3aW5kb3cuUGFnZWRUYWJsZURvYykge1xuICAgIHdpbmRvdy5QYWdlZFRhYmxlRG9jLmluaXRBbGwoKTtcbiAgfVxufVxuIn0seyJjZWxsTmFtZSI6IndlYnItMyIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJzb3VyY2UiOiJ2aWV3b2YgX3dlYnJfZWRpdG9yXzMgPSB7XG4gIGNvbnN0IHsgV2ViUkV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwid2Vici0zLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHdlYnItMy1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBXZWJSRXhlcmNpc2VFZGl0b3Iod2ViUk9qcy53ZWJSUHJvbWlzZSwgYmxvY2suY29kZSwgb3B0aW9ucyk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fd2Vicl92YWx1ZV8zID0gd2ViUk9qcy5wcm9jZXNzKF93ZWJyX2VkaXRvcl8zLCB7fSk7XG4ifSx7ImNlbGxOYW1lIjoid2Vici13aWRnZXQtMiIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6IntcbiAgLy8gV2FpdCBmb3Igb3V0cHV0IHRvIGJlIHdyaXR0ZW4gdG8gdGhlIERPTSwgdGhlbiB0cmlnZ2VyIHdpZGdldCByZW5kZXJpbmdcbiAgYXdhaXQgX3dlYnJfdmFsdWVfMjtcbiAgaWYgKHdpbmRvdy5IVE1MV2lkZ2V0cykge1xuICAgIHdpbmRvdy5IVE1MV2lkZ2V0cy5zdGF0aWNSZW5kZXIoKTtcbiAgfVxuICBpZiAod2luZG93LlBhZ2VkVGFibGVEb2MpIHtcbiAgICB3aW5kb3cuUGFnZWRUYWJsZURvYy5pbml0QWxsKCk7XG4gIH1cbn1cbiJ9LHsiY2VsbE5hbWUiOiJ3ZWJyLTIiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF93ZWJyX2VkaXRvcl8yID0ge1xuICBjb25zdCB7IFdlYlJFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuICBjb25zdCBzY3JpcHRDb250ZW50ID0gZG9jdW1lbnQucXVlcnlTZWxlY3Rvcihgc2NyaXB0W3R5cGU9XFxcIndlYnItMi1jb250ZW50c1xcXCJdYCkudGV4dENvbnRlbnQ7XG4gIGNvbnN0IGJsb2NrID0gSlNPTi5wYXJzZShiNjREZWNvZGUoc2NyaXB0Q29udGVudCkpO1xuXG4gIGNvbnN0IG9wdGlvbnMgPSBPYmplY3QuYXNzaWduKHsgaWQ6IGB3ZWJyLTItY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgV2ViUkV4ZXJjaXNlRWRpdG9yKHdlYlJPanMud2ViUlByb21pc2UsIGJsb2NrLmNvZGUsIG9wdGlvbnMpO1xuXG4gIHJldHVybiBlZGl0b3IuY29udGFpbmVyO1xufVxuX3dlYnJfdmFsdWVfMiA9IHdlYlJPanMucHJvY2Vzcyhfd2Vicl9lZGl0b3JfMiwge30pO1xuIn0seyJjZWxsTmFtZSI6IndlYnItd2lkZ2V0LTEiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJ7XG4gIC8vIFdhaXQgZm9yIG91dHB1dCB0byBiZSB3cml0dGVuIHRvIHRoZSBET00sIHRoZW4gdHJpZ2dlciB3aWRnZXQgcmVuZGVyaW5nXG4gIGF3YWl0IF93ZWJyX3ZhbHVlXzE7XG4gIGlmICh3aW5kb3cuSFRNTFdpZGdldHMpIHtcbiAgICB3aW5kb3cuSFRNTFdpZGdldHMuc3RhdGljUmVuZGVyKCk7XG4gIH1cbiAgaWYgKHdpbmRvdy5QYWdlZFRhYmxlRG9jKSB7XG4gICAgd2luZG93LlBhZ2VkVGFibGVEb2MuaW5pdEFsbCgpO1xuICB9XG59XG4ifSx7ImNlbGxOYW1lIjoid2Vici0xIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfd2Vicl9lZGl0b3JfMSA9IHtcbiAgY29uc3QgeyBXZWJSRXhlcmNpc2VFZGl0b3IsIGI2NERlY29kZSB9ID0gd2luZG93Ll9leGVyY2lzZV9vanNfcnVudGltZTtcbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJ3ZWJyLTEtY29udGVudHNcXFwiXWApLnRleHRDb250ZW50O1xuICBjb25zdCBibG9jayA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKHNjcmlwdENvbnRlbnQpKTtcblxuICBjb25zdCBvcHRpb25zID0gT2JqZWN0LmFzc2lnbih7IGlkOiBgd2Vici0xLWNvbnRlbnRzYCB9LCBibG9jay5hdHRyKTtcbiAgY29uc3QgZWRpdG9yID0gbmV3IFdlYlJFeGVyY2lzZUVkaXRvcih3ZWJST2pzLndlYlJQcm9taXNlLCBibG9jay5jb2RlLCBvcHRpb25zKTtcblxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcbn1cbl93ZWJyX3ZhbHVlXzEgPSB3ZWJST2pzLnByb2Nlc3MoX3dlYnJfZWRpdG9yXzEsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJ3ZWJyLXByZWx1ZGUiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJ3ZWJST2pzID0ge1xuICBjb25zdCB7IFdlYlIsIENoYW5uZWxUeXBlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lLldlYlI7XG4gIGNvbnN0IHtcbiAgICBXZWJSRXZhbHVhdG9yLFxuICAgIFdlYlJFbnZpcm9ubWVudE1hbmFnZXIsXG4gICAgc2V0dXBSLFxuICAgIGI2NERlY29kZSxcbiAgICBjb2xsYXBzZVBhdGhcbiAgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc3RhdHVzQ29udGFpbmVyID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoXCJleGVyY2lzZS1sb2FkaW5nLXN0YXR1c1wiKTtcbiAgY29uc3QgaW5kaWNhdG9yQ29udGFpbmVyID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoXCJleGVyY2lzZS1sb2FkaW5nLWluZGljYXRvclwiKTtcbiAgaW5kaWNhdG9yQ29udGFpbmVyLmNsYXNzTGlzdC5yZW1vdmUoXCJkLW5vbmVcIik7XG5cbiAgbGV0IHN0YXR1c1RleHQgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KFwiZGl2XCIpXG4gIHN0YXR1c1RleHQuY2xhc3NMaXN0ID0gXCJleGVyY2lzZS1sb2FkaW5nLWRldGFpbHNcIjtcbiAgc3RhdHVzVGV4dCA9IHN0YXR1c0NvbnRhaW5lci5hcHBlbmRDaGlsZChzdGF0dXNUZXh0KTtcbiAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBJbml0aWFsaXNlYDtcblxuICAvLyBIb2lzdCBpbmRpY2F0b3Igb3V0IGZyb20gZmluYWwgc2xpZGUgd2hlbiBydW5uaW5nIHVuZGVyIHJldmVhbFxuICBjb25zdCByZXZlYWxTdGF0dXMgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnJldmVhbCAuZXhlcmNpc2UtbG9hZGluZy1pbmRpY2F0b3JcIik7XG4gIGlmIChyZXZlYWxTdGF0dXMpIHtcbiAgICByZXZlYWxTdGF0dXMucmVtb3ZlKCk7XG4gICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5yZXZlYWwgPiAuc2xpZGVzXCIpLmFwcGVuZENoaWxkKHJldmVhbFN0YXR1cyk7XG4gIH1cblxuICAvLyBNYWtlIGFueSByZXZlYWwgc2xpZGVzIHdpdGggbGl2ZSBjZWxscyBzY3JvbGxhYmxlXG4gIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3JBbGwoXCIucmV2ZWFsIC5leGVyY2lzZS1jZWxsXCIpLmZvckVhY2goKGVsKSA9PiB7XG4gICAgZWwuY2xvc2VzdCgnc2VjdGlvbi5zbGlkZScpLmNsYXNzTGlzdC5hZGQoXCJzY3JvbGxhYmxlXCIpO1xuICB9KVxuXG4gIC8vIHdlYlIgc3VwcGxlbWVudGFsIGRhdGEgYW5kIG9wdGlvbnNcbiAgY29uc3QgZGF0YUNvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwid2Vici1kYXRhXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgZGF0YSA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKGRhdGFDb250ZW50KSk7XG5cbiAgLy8gR3JhYiBsaXN0IG9mIHJlc291cmNlcyB0byBiZSBkb3dubG9hZGVkXG4gIGNvbnN0IGZpbGVzQ29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJ2ZnMtZmlsZVxcXCJdYCkudGV4dENvbnRlbnQ7XG4gIGNvbnN0IGZpbGVzID0gSlNPTi5wYXJzZShiNjREZWNvZGUoZmlsZXNDb250ZW50KSk7XG5cbiAgLy8gVXNlIFBvc3RNZXNzYWdlIGNoYW5uZWwgZm9yIGFzeW5jIGNvbW11bmljYXRpb25cbiAgLy8gV2UgZG8gbm90IGV4cGVjdCB0byB0YWtlIG5lc3RlZCBwcm9tcHQgaW5wdXQgaW4gUXVhcnRvIExpdmUgY2VsbHNcbiAgZGF0YS5vcHRpb25zLmNoYW5uZWxUeXBlID0gQ2hhbm5lbFR5cGUuUG9zdE1lc3NhZ2U7XG5cbiAgLy8gSW5pdGlhbGlzZSB3ZWJSIGFuZCBzZXR1cCBmb3IgUiBjb2RlIGV2YWx1YXRpb25cbiAgbGV0IHdlYlJQcm9taXNlID0gKGFzeW5jICh3ZWJSKSA9PiB7XG4gICAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBEb3dubG9hZGluZyB3ZWJSYDtcbiAgICBhd2FpdCB3ZWJSLmluaXQoKTtcblxuICAgIC8vIEluc3RhbGwgcHJvdmlkZWQgbGlzdCBvZiBwYWNrYWdlc1xuICAgIC8vIEVuc3VyZSB3ZWJSIGRlZmF1bHQgcmVwbyBpcyBpbmNsdWRlZFxuICAgIGRhdGEucGFja2FnZXMucmVwb3MucHVzaChcImh0dHBzOi8vcmVwby5yLXdhc20ub3JnXCIpXG4gICAgYXdhaXQgZGF0YS5wYWNrYWdlcy5wa2dzLm1hcCgocGtnKSA9PiAoKSA9PiB7XG4gICAgICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gYERvd25sb2FkaW5nIHBhY2thZ2U6ICR7cGtnfWA7XG4gICAgICByZXR1cm4gd2ViUi5ldmFsUlZvaWQoYFxuICAgICAgICB3ZWJyOjppbnN0YWxsKHBrZywgcmVwb3MgPSByZXBvcylcbiAgICAgICAgbGlicmFyeShwa2csIGNoYXJhY3Rlci5vbmx5ID0gVFJVRSlcbiAgICAgIGAsIHsgZW52OiB7XG4gICAgICAgIHBrZzogcGtnLFxuICAgICAgICByZXBvczogZGF0YS5wYWNrYWdlcy5yZXBvcyxcbiAgICAgIH19KTtcbiAgICB9KS5yZWR1Y2UoKGN1ciwgbmV4dCkgPT4gY3VyLnRoZW4obmV4dCksIFByb21pc2UucmVzb2x2ZSgpKTtcblxuICAgIC8vIERvd25sb2FkIGFuZCBpbnN0YWxsIHJlc291cmNlc1xuICAgIGF3YWl0IGZpbGVzLm1hcCgoZmlsZSkgPT4gYXN5bmMgKCkgPT4ge1xuICAgICAgY29uc3QgbmFtZSA9IGZpbGUuc3Vic3RyaW5nKGZpbGUubGFzdEluZGV4T2YoJy8nKSArIDEpO1xuICAgICAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBEb3dubG9hZGluZyByZXNvdXJjZTogJHtuYW1lfWA7XG4gICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKGZpbGUpO1xuICAgICAgaWYgKCFyZXNwb25zZS5vaykge1xuICAgICAgICB0aHJvdyBuZXcgRXJyb3IoYENhbid0IGRvd25sb2FkIFxcYCR7ZmlsZX1cXGAuIEVycm9yICR7cmVzcG9uc2Uuc3RhdHVzfTogXCIke3Jlc3BvbnNlLnN0YXR1c1RleHR9XCIuYCk7XG4gICAgICB9XG4gICAgICBjb25zdCBkYXRhID0gYXdhaXQgcmVzcG9uc2UuYXJyYXlCdWZmZXIoKTtcblxuICAgICAgLy8gU3RvcmUgVVJMcyBpbiB0aGUgY3dkIHdpdGhvdXQgYW55IHN1YmRpcmVjdG9yeSBzdHJ1Y3R1cmVcbiAgICAgIGlmIChmaWxlLmluY2x1ZGVzKFwiOi8vXCIpKSB7XG4gICAgICAgIGZpbGUgPSBuYW1lO1xuICAgICAgfVxuXG4gICAgICAvLyBDb2xsYXBzZSBoaWdoZXIgZGlyZWN0b3J5IHN0cnVjdHVyZVxuICAgICAgZmlsZSA9IGNvbGxhcHNlUGF0aChmaWxlKTtcblxuICAgICAgLy8gQ3JlYXRlIGRpcmVjdG9yeSB0cmVlLCBpZ25vcmluZyBcImRpcmVjdG9yeSBleGlzdHNcIiBWRlMgZXJyb3JzXG4gICAgICBjb25zdCBwYXJ0cyA9IGZpbGUuc3BsaXQoJy8nKS5zbGljZSgwLCAtMSk7XG4gICAgICBsZXQgcGF0aCA9ICcnO1xuICAgICAgd2hpbGUgKHBhcnRzLmxlbmd0aCA+IDApIHtcbiAgICAgICAgcGF0aCArPSBwYXJ0cy5zaGlmdCgpICsgJy8nO1xuICAgICAgICBjb25zdCBhbmFseXNpcyA9IGF3YWl0IHdlYlIuRlMuYW5hbHl6ZVBhdGgocGF0aCk7XG4gICAgICAgIGlmICghYW5hbHlzaXMuZXhpc3RzKSB7XG4gICAgICAgICAgdHJ5IHtcbiAgICAgICAgICAgIGF3YWl0IHdlYlIuRlMubWtkaXIocGF0aCk7XG4gICAgICAgICAgfSBjYXRjaCAoZSkge1xuICAgICAgICAgICAgdGhyb3cgbmV3IEVycm9yKGBGaWxlc3lzdGVtIEVycm9yOiBcIiR7ZS5tZXNzYWdlfVwiLmApO1xuICAgICAgICAgIH1cbiAgICAgICAgfVxuICAgICAgfVxuXG4gICAgICAvLyBXcml0ZSB0aGlzIGZpbGUgdG8gdGhlIFZGU1xuICAgICAgcmV0dXJuIGF3YWl0IHdlYlIuRlMud3JpdGVGaWxlKGZpbGUsIG5ldyBVaW50OEFycmF5KGRhdGEpKTtcbiAgICB9KS5yZWR1Y2UoKGN1ciwgbmV4dCkgPT4gY3VyLnRoZW4obmV4dCksIFByb21pc2UucmVzb2x2ZSgpKTtcblxuICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgSW5zdGFsbGluZyB3ZWJSIHNoaW1zYDtcbiAgICBhd2FpdCB3ZWJSLmV2YWxSVm9pZChgd2Vicjo6c2hpbV9pbnN0YWxsKClgKTtcblxuICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgV2ViUiBlbnZpcm9ubWVudCBzZXR1cGA7XG4gICAgYXdhaXQgc2V0dXBSKHdlYlIsIGRhdGEpO1xuXG4gICAgc3RhdHVzVGV4dC5yZW1vdmUoKTtcbiAgICBpZiAoc3RhdHVzQ29udGFpbmVyLmNoaWxkcmVuLmxlbmd0aCA9PSAwKSB7XG4gICAgICBzdGF0dXNDb250YWluZXIucGFyZW50Tm9kZS5yZW1vdmUoKTtcbiAgICB9XG4gICAgcmV0dXJuIHdlYlI7XG4gIH0pKG5ldyBXZWJSKGRhdGEub3B0aW9ucykpO1xuXG4gIC8vIEtlZXAgdHJhY2sgb2YgaW5pdGlhbCBPSlMgYmxvY2sgcmVuZGVyXG4gIGNvbnN0IHJlbmRlcmVkT2pzID0ge307XG5cbiAgY29uc3QgcHJvY2VzcyA9IGFzeW5jIChjb250ZXh0LCBpbnB1dHMpID0+IHtcbiAgICBjb25zdCB3ZWJSID0gYXdhaXQgd2ViUlByb21pc2U7XG4gICAgY29uc3QgZXZhbHVhdG9yID0gbmV3IFdlYlJFdmFsdWF0b3Iod2ViUiwgY29udGV4dClcbiAgICBhd2FpdCBldmFsdWF0b3IucHJvY2VzcyhpbnB1dHMpO1xuICAgIHJldHVybiBldmFsdWF0b3IuY29udGFpbmVyO1xuICB9XG5cbiAgcmV0dXJuIHtcbiAgICBwcm9jZXNzLFxuICAgIHdlYlJQcm9taXNlLFxuICAgIHJlbmRlcmVkT2pzLFxuICB9O1xufVxuIn1dfQ==
 </script><div id="exercise-loading-indicator" class="exercise-loading-indicator d-none d-flex align-items-center gap-2">
 <div id="exercise-loading-status" class="d-flex gap-2">
 
