@@ -49,7 +49,7 @@ names(roulette_vec) <- days_vec
 
 ```{r}
 #| echo: false
-#| eval: true
+#| eval: false
 ## (a)
 total_daily <- poker_vec + roulette_vec
 total_daily
