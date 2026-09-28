@@ -22,9 +22,9 @@ execute:
 # 11a Binomial. 11b Poisson. 11c Normal.
 ```
 
-(@) **Normal symmetry facts.** If $X \sim N(\mu, \sigma^2)$, decide without calculating:
-(a) $P(X>\mu)$ is 0.5, less than 0.5, or greater than 0.5?
-(b) Which is larger: $P(X>μ+σ)$ or $P(X<μ−σ)$? Why?
+(@) **Normal symmetry facts.** If $X \sim N(0, 1)$, decide without calculating:
+(a) $P(X>0)$ is 0.5, less than 0.5, or greater than 0.5?
+(b) Is $P(X>1)$ less than, equal to, or greater than $P(X<-1)$? Why?
 
 ```{r}
 #| include: false

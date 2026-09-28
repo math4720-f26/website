@@ -11,11 +11,11 @@ You will practice identifying which type of probability distribution (**binomial
 
 (1) Form a group of **four** or **five**.
 
-(2) Scan the QR code, or go to <https://forms.office.com/r/X58MYTbEne> to fill out your names.
+(2) Scan the QR code, or go to <https://forms.cloud.microsoft/r/hfsT9Ljz2m> to fill out your names.
 
 (3) In the form, read each scenario, choose the most appropriate distribution, or all three distributions may not be appropriate to model the scenario.
 
-(4) The first group with the most correct answers will get a hex sticker, and share their reasoning!
+<!-- (4) The first group with the most correct answers will get a hex sticker, and share their reasoning! -->
 <!-- # ```{r} -->
 <!-- # #| echo: false -->
 <!-- # #| out-width: 10% -->
@@ -27,7 +27,7 @@ You will practice identifying which type of probability distribution (**binomial
 ```{r}
 #| echo: false
 #| column: margin
-knitr::include_graphics("../images/QRCode_distribution_s26.png")
+knitr::include_graphics("../images/QRCode_distribution_f26.png")
 ```
 
 ## Scenarios

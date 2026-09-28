@@ -11,8 +11,8 @@ format:
 webr:
   cell-options:
     autorun: false
-  packages:
-    - tidyverse
+  # packages:
+  #   - tidyverse
 knitr:
   opts_chunk:
     out-width: 100%
@@ -62,12 +62,17 @@ options(digits = 3)
 
 # [Sampling Distribution]{.orange}{background-image="./images/08-sampling-dist-clt/Bernoulli.jpg" background-size="cover" background-position="50% 50%" background-color="#447099"}
 
+
 ::: notes
+
 - Sampling distribution is an important concept that connect probability and statistics together. 
 - Til now, we can start talk a little bit about statistical inference. 
 - After we finish the discussion of probability this week, we are going to formally study statistical inference next week.
 - To do statistical inference, we use the sampling distribution a lot, and that's why we have to learn what it is before doing statistical inference.
+
 :::
+
+
 
 ## Parameter
 
@@ -78,7 +83,7 @@ options(digits = 3)
   
 . . .
 
-- In statistics, we usually assume our target population follows some distribution, but _its parameters are **unknown** to us_.
+- In statistics, we usually assume our target population characteristic follows some distribution, but _its parameters are **unknown** to us_.
 
 . . .
 
@@ -93,6 +98,7 @@ options(digits = 3)
 # https://unsplash.com/photos/5jctAMjz21A
 knitr::include_graphics("./images/08-sampling-dist-clt/weight.jpeg")
 ```
+
 :::
 
 ::: {.column width="50%"}
@@ -103,6 +109,7 @@ knitr::include_graphics("./images/08-sampling-dist-clt/weight.jpeg")
 #| out-width: 55%
 knitr::include_graphics("./images/08-sampling-dist-clt/storm.jpeg")
 ```
+
 :::
 
 :::::
@@ -161,12 +168,17 @@ for (i in these) {
 }
 ```
 
+
+
 ::: notes
+
 - Previously when we talk about probability distributions, we usually assume there is a r.v. that follows some distribution, right? For example, $X$ from binomial, poisson, normal
 - Now, let's assume we have a bunch of r.v.
 - $n$ random variables: $X_1, X_2, \dots, X_n$.
 - Assume $X_1, X_2, \dots, X_n$ follow the **same** distribution, e.g., <span style="color:blue"> $X_i \sim N(\mu, \sigma^2), i = 1, \dots, n$ </span>.
+
 :::
+
 
 
 ## Treat Each Data Point as a Random Variable
@@ -181,12 +193,15 @@ for (i in these) {
 . . .
 
 ::: alert
+
 - *Before* we actually collect the data, the data $X_1, X_2, \dots, X_n$ are random variables from the population distribution $N(\mu, \sigma^2)$.
 - Once we collect the data, we know the *realized* value of these random variables, $x_1, x_2, \dots, x_n$.
+
 :::
   
   
 ::: notes
+
 - Assume $X_1, X_2, \dots, X_n$ follow the **same** distribution.
 - Assume that $X_1, X_2, \dots, X_n$ are **independent**, i.e., the distribution of $X_i$ is not affected by any other $X_j$.
 - Now this is where we connect the idea of sample data and population with the random variable and the distribution.
@@ -196,6 +211,7 @@ for (i in these) {
 - $(X_1, X_2, \dots, X_n)$ is our random sample data that are sampled or drawn from the population that are assumed normally distributed with mean mu and SD sigma.
 
 When we say $X$ follows some distribution, it means that
+
 :::
 
 
@@ -266,6 +282,8 @@ What are the differences between the sampling distribution of $\overline{X}$ and
 - [Sampling Distribution Applet](http://www.mscs.mu.edu/~mehdi/applets/sample_dist/index.html)
 :::
 
+
+
 ## Example: Sampling Distribution of the Sample Mean
 
 - Roll a fair die 3 times `r emo::ji('game_die')``r emo::ji('game_die')` `r emo::ji('game_die')` independently to obtain 3 values from the population $\{1, 2, 3, 4, 5, 6\}$.
@@ -284,6 +302,7 @@ abline(v = 3.5, col = "#FFCC00", lwd = 5)
 axis(1, 1:6, c("1", "2", "3", "4", "5", "6"), col.axis = "black")
 axis(2, c(0, 1/3, 1/6), c("0", "1/3", "1/6"), col.axis = "black", las = 2)
 ```
+
 :::
 
 ::: {.column width="50%"}
@@ -296,6 +315,7 @@ hist(sample_of_sample_mean, main = "Sampling distribution of sample mean",
 abline(v = 3.5, col = "#FFCC00", lwd = 5)
 legend("topright", c("population mean"), col = "#FFCC00", lwd = 5, bty = "n")
 ```
+
 :::
 
 :::::
@@ -318,7 +338,7 @@ legend("topright", c("population mean"), col = "#FFCC00", lwd = 5, bty = "n")
 
 - The mean of the sampling distribution of the sample mean, $\overline{X} = \frac{\sum_{i=1}^nX_i}{n}$, is <span style="color:blue"> $\mu_{\overline{X}} = \mu$ </span>.
 
-- The standard deviation of the sampling distribution of the sample mean $\overline{X}$ is <span style="color:blue"> $\sigma_{\overline{X}} = \frac{\sigma}{\sqrt{n}}$ </span>.
+- The standard deviation of the sampling distribution of the sample mean $\overline{X}$ is <span style="color:blue"> $\sigma_{\overline{X}} = \frac{\sigma}{\sqrt{n}}$ </span>, which is called **standard error**.
 <!-- - $\sigma_{\overline{X}}$ is also known as the **standard error** of $\overline{X}$. -->
 
 - If the population distribution is <span style="color:blue"> $N(\mu, \sigma^2)$ </span>, the sampling distribution of $\overline{X}$ is **exactly** <span style="color:blue"> $N\left(\mu, \frac{\sigma^2}{n} \right)$ </span>.
@@ -444,11 +464,13 @@ The **central limit theorem (CLT)** gives us the answer!
 As $n$ increases, the sampling distribution of $\overline{X}$ looks **more and more like $N(\mu, \sigma^2/n)$, regardless of the distribution from which we are sampling!**
 
 ::: tiny
+
 ```{r}
 #| fig-cap: "https://en.wikipedia.org/wiki/Central_limit_theorem#/media/File:IllustrationCentralTheorem.png"
 #| out-width: 67%
 knitr::include_graphics("./images/08-sampling-dist-clt/clt.png")
 ```
+
 :::
 
 
