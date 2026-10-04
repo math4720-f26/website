@@ -11,8 +11,6 @@ format:
 webr:
   cell-options:
     autorun: false
-  packages:
-    - tidyverse
 knitr:
   opts_chunk:
     out-width: 100%
@@ -72,7 +70,7 @@ options(digits = 4)
   
 - **Goal:** **Learning the unknown parameters** of the assumed population distribution.
 
-- Two approaches in parameter learning: **Estimation** and **Hypothesis testing**.
+- Two approaches: **Estimation** and **Hypothesis testing**.
 
 ::::: columns
 
@@ -181,7 +179,7 @@ The one single point used to estimate the unknown parameter is called a **point 
 
 . . .
 
-- A **point estimator** is any function of data $(X_1, X_2, \dots, X_n)$ *(Before actually being collected).*
+- A **point estimator** is any transformation of data $(X_1, X_2, \dots, X_n)$ *(Before actually being collected).*
   + **Any statistic is a point estimator**.
   
 - A **point estimate** is a value of a point estimator used to estimate a population parameter. *(A value calculated using the collected data).*
@@ -193,7 +191,7 @@ The one single point used to estimate the unknown parameter is called a **point 
 
 <!-- - We discuss estimation this week and testing next week.  -->
 <!-- - It's natural to seek a "good" estimator of a parameter. -->
-- A **point estimator** is any function of a sample $(X_1, X_2, \dots, X_n)$.
+- A **point estimator** is any transformation of a sample $(X_1, X_2, \dots, X_n)$.
   + **Any statistic is a point estimator**.
 - A **point estimate** is a value of a point estimator used to estimate a population parameter.
 - Sample mean $(\overline{X})$ is a statistic and a point estimator for the population mean $\mu$.
@@ -203,17 +201,17 @@ The one single point used to estimate the unknown parameter is called a **point 
 
 ## Sample Mean as an Point Estimator
 
-- Draw 5 values from the population that follows $N(3.2, 0.5)$ as sample data $(x_1, x_2, x_3, x_4, x_5)$.
+- Draw 4 values ($n=4$) from the population that follows $N(3.2, 0.5)$ as sample data $(x_1, x_2, x_3, x_4)$.
 
 ```{r}
 ## Generate sample data x1, x2, x3, x4, x5, each from population distribution N(2, 1)
-x_data_1 <- rnorm(n = 5, mean = 3.2, sd = sqrt(0.5))
+x_data_1 <- rnorm(n = 4, mean = 3.2, sd = sqrt(0.5))
 ```
 
 
 ```{r}
 x_vec <- c(x_data_1, mean(x_data_1))
-names(x_vec) <- c("x1", "x2", "x3", "x4", "x5", "sample mean")
+names(x_vec) <- c("x1", "x2", "x3", "x4", "sample mean")
 kable(t(x_vec), digits = 2, align = "c")
 ```
 
@@ -246,17 +244,17 @@ points(x_data_1, y = rep(0, length(x_data_1)), col = "red", pch = 16, cex = 2)
 
 ## Variability in Estimates
 
-- If another sample of size $5$ is drawn from the same population:
+- If another sample of size $4$ is drawn from the same population:
 
 ```{r}
 set.seed(1234)
-x_data_2 <- rnorm(5, mean = 3.2, sd = sqrt(0.5))
+x_data_2 <- rnorm(4, mean = 3.2, sd = sqrt(0.5))
 ```
 
 
 ```{r}
 x_vec <- c(x_data_2, mean(x_data_2))
-names(x_vec) <- c("x1", "x2", "x3", "x4", "x5", "sample mean")
+names(x_vec) <- c("x1", "x2", "x3", "x4", "sample mean")
 kable(t(x_vec), digits = 2, align = "c")
 ```
 
@@ -398,9 +396,9 @@ Do we know the variance of $\overline{X}$?
 - A confidence interval is **for a parameter, NOT a statistic.**
   + Use the sample mean to form a confidence interval for the population mean.
 
-- ❌ We [**never say**]{.red} *"The confidence interval for the sample mean $\overline{X}$ is ..."*
+- ❌ [**Never say**]{.red} *"The confidence interval for the sample mean $\overline{X}$ is ..."*
 
-- ✅ We **say** *"The confidence interval for the true population mean $\mu$ is ..."*
+- ✅  **Say** *"The confidence interval for the true population mean $\mu$ is ..."*
 
 . . .
 
@@ -521,9 +519,9 @@ How can we get best of both worlds -- high precision and high reliability/accura
 
 - $\alpha = 0.05$
 
-- Start with the sampling distribution of $\overline{X} \sim N\left(\mu, \frac{\sigma^2}{n}\right)$
+- Start with $\overline{X} \sim N\left(\mu, \frac{\sigma^2}{n}\right)$
 
-- $\overline{x}$ will be within 1.96 SDs of the population mean $\mu$ $95\%$ of the time.
+- $\overline{x}$ will be within 1.96 SDs of $\mu$ $95\%$ of the time.
 
 - The $z$-score of 1.96 is associated with 2.5% area *to the right*, and called a **critical value** denoted as **$z_{0.025}$**.
 
@@ -593,7 +591,7 @@ $$P\left(\mu-1.96\frac{\sigma}{\sqrt{n}} < \overline{X} < \mu + 1.96\frac{\sigma
 
 
 ::: question
-Is the interval $\left(\mu-1.96\frac{\sigma}{\sqrt{n}}, \mu+1.96\frac{\sigma}{\sqrt{n}} \right)$ our confidence interval?
+Is $\left(\mu-1.96\frac{\sigma}{\sqrt{n}}, \mu+1.96\frac{\sigma}{\sqrt{n}} \right)$ our confidence interval?
 :::
 
 ::: fragment
@@ -606,7 +604,7 @@ Do we know the value of $\mu$?
 
 ::: fragment
 
-`r emo::ji('x')` **No! We don't know $\mu$, the quantity we like to estimate!**
+`r emo::ji('x')` **No! We don't know $\mu$, the quantity we'd like to estimate!**
 
 But we're almost there!
 

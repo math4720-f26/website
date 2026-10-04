@@ -1,0 +1,32 @@
+---
+title: "Worksheet 3"
+subtitle: "Probability Distributions"
+categories: "Worksheet"
+format:
+  html:
+    html-math-method: mathjax
+editor: source
+execute: 
+  include: true
+---
+
+
+(@) **Pick the correct model.** Choose binomial, Poisson, or normal. Give one reason.
+(a) Number of heads in 20 coin flips.
+(b) Number of typos on a page of a long book.
+(c) Heights of adult women.
+
+
+```{r}
+#| include: false
+# 11a Binomial. 11b Poisson. 11c Normal.
+```
+
+(@) **Normal symmetry facts.** If $X \sim N(0, 1)$, decide without calculating:
+(a) $P(X>0)$ is 0.5, less than 0.5, or greater than 0.5?
+(b) Is $P(X>1)$ less than, equal to, or greater than $P(X<-1)$? Why?
+
+```{r}
+#| include: false
+# 15a 0.5. 15b equal by symmetry.
+```
