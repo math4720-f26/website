@@ -6,11 +6,11 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
 <link href="../site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.10.18">
 <meta name="author" content="Dr.&nbsp;Cheng-Han Yu   Department of Mathematical and Statistical Sciences   Marquette University">
 <title>MATH 4720 (MSSC 5720) - Fall 2026 – Statistical Inference: Point and Interval Estimation </title>
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -19,10 +19,16 @@
 <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
 <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
 <style>
-    code{white-space: pre-wrap;}
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -97,7 +103,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-<link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-b16913156a8fd57ac3b7f1f05d2e3c62.css">
+<link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-8de3b5972c77face5b4caa2a3f642b52.css">
 <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
 <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
 <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -207,7 +213,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <br> Marquette University 
+Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <br> Marquette University
 </div>
 </div>
 </div>
@@ -226,7 +232,7 @@ Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <
 </ul>
 </li>
 <li><p><strong>Goal:</strong> <strong>Learning the unknown parameters</strong> of the assumed population distribution.</p></li>
-<li><p>Two approaches in parameter learning: <strong>Estimation</strong> and <strong>Hypothesis testing</strong>.</p></li>
+<li><p>Two approaches: <strong>Estimation</strong> and <strong>Hypothesis testing</strong>.</p></li>
 </ul>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -280,7 +286,7 @@ Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <
 <div class="fragment">
 <ul>
 <li>
-<p>A <strong>point estimator</strong> is any function of data <span class="math inline">\((X_1, X_2, \dots, X_n)\)</span> <em>(Before actually being collected).</em></p>
+<p>A <strong>point estimator</strong> is any transformation of data <span class="math inline">\((X_1, X_2, \dots, X_n)\)</span> <em>(Before actually being collected).</em></p>
 <ul>
 <li>
 <strong>Any statistic is a point estimator</strong>.</li>
@@ -290,7 +296,7 @@ Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <
 <li><p>Sample mean <span class="math inline">\((\overline{X})\)</span> is a statistic and a point estimator for the population mean <span class="math inline">\(\mu\)</span>.</p></li>
 </ul>
 <aside class="notes"><!-- - We discuss estimation this week and testing next week.  --><!-- - It's natural to seek a "good" estimator of a parameter. --><ul>
-<li>A <strong>point estimator</strong> is any function of a sample <span class="math inline">\((X_1, X_2, \dots, X_n)\)</span>.
+<li>A <strong>point estimator</strong> is any transformation of a sample <span class="math inline">\((X_1, X_2, \dots, X_n)\)</span>.
 <ul>
 <li>
 <strong>Any statistic is a point estimator</strong>.</li>
@@ -312,7 +318,7 @@ Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <
 </div>
 </section><section id="sample-mean-as-an-point-estimator" class="slide level2"><h2>Sample Mean as an Point Estimator</h2>
 <ul>
-<li>Draw 5 values from the population that follows <span class="math inline">\(N(3.2, 0.5)\)</span> as sample data <span class="math inline">\((x_1, x_2, x_3, x_4, x_5)\)</span>.</li>
+<li>Draw 4 values (<span class="math inline">\(n=4\)</span>) from the population that follows <span class="math inline">\(N(3.2, 0.5)\)</span> as sample data <span class="math inline">\((x_1, x_2, x_3, x_4)\)</span>.</li>
 </ul>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
@@ -322,7 +328,6 @@ Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <
 <th style="text-align: center;">x2</th>
 <th style="text-align: center;">x3</th>
 <th style="text-align: center;">x4</th>
-<th style="text-align: center;">x5</th>
 <th style="text-align: center;">sample mean</th>
 </tr></thead>
 <tbody><tr class="odd">
@@ -330,15 +335,14 @@ Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <
 <td style="text-align: center;">2.94</td>
 <td style="text-align: center;">3.09</td>
 <td style="text-align: center;">2.66</td>
-<td style="text-align: center;">2.38</td>
-<td style="text-align: center;">2.79</td>
+<td style="text-align: center;">2.89</td>
 </tr></tbody>
 </table>
 </div>
 </div>
 <ul>
 <li>
-<span class="math inline">\(\mu = 3.2\)</span>, and we use the point estimate <span class="math inline">\(\overline{x}=\)</span> 2.79 to estimate it.</li>
+<span class="math inline">\(\mu = 3.2\)</span>, and we use the point estimate <span class="math inline">\(\overline{x}=\)</span> 2.89 to estimate it.</li>
 </ul>
 <div class="question">
 <p>Why <span class="math inline">\(\overline{x}\)</span> is not equal to <span class="math inline">\(\mu\)</span>?</p>
@@ -369,7 +373,7 @@ Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <
 </div>
 </section><section id="variability-in-estimates" class="slide level2"><h2>Variability in Estimates</h2>
 <ul>
-<li>If another sample of size <span class="math inline">\(5\)</span> is drawn from the same population:</li>
+<li>If another sample of size <span class="math inline">\(4\)</span> is drawn from the same population:</li>
 </ul>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
@@ -379,7 +383,6 @@ Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <
 <th style="text-align: center;">x2</th>
 <th style="text-align: center;">x3</th>
 <th style="text-align: center;">x4</th>
-<th style="text-align: center;">x5</th>
 <th style="text-align: center;">sample mean</th>
 </tr></thead>
 <tbody><tr class="odd">
@@ -387,14 +390,13 @@ Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <
 <td style="text-align: center;">3.4</td>
 <td style="text-align: center;">3.97</td>
 <td style="text-align: center;">1.54</td>
-<td style="text-align: center;">3.5</td>
-<td style="text-align: center;">2.95</td>
+<td style="text-align: center;">2.81</td>
 </tr></tbody>
 </table>
 </div>
 </div>
 <ul>
-<li>The second sample mean <span class="math inline">\(\overline{x} =\)</span> 2.95 is different from the first one.</li>
+<li>The second sample mean <span class="math inline">\(\overline{x} =\)</span> 2.81 is different from the first one.</li>
 </ul>
 <div class="question">
 <p>Why the first sample and the second sample give us different sample means?</p>
@@ -531,8 +533,8 @@ Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <
 <li>Use the sample mean to form a confidence interval for the population mean.</li>
 </ul>
 </li>
-<li><p>❌ We <span class="red"><strong>never say</strong></span> <em>“The confidence interval for the sample mean <span class="math inline">\(\overline{X}\)</span> is …”</em></p></li>
-<li><p>✅ We <strong>say</strong> <em>“The confidence interval for the true population mean <span class="math inline">\(\mu\)</span> is …”</em></p></li>
+<li><p>❌ <span class="red"><strong>Never say</strong></span> <em>“The confidence interval for the sample mean <span class="math inline">\(\overline{X}\)</span> is …”</em></p></li>
+<li><p>✅ <strong>Say</strong> <em>“The confidence interval for the true population mean <span class="math inline">\(\mu\)</span> is …”</em></p></li>
 </ul>
 <div class="fragment">
 <ul>
@@ -664,8 +666,8 @@ Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <
 <div class="column" style="width:35%;">
 <ul>
 <li><p><span class="math inline">\(\alpha = 0.05\)</span></p></li>
-<li><p>Start with the sampling distribution of <span class="math inline">\(\overline{X} \sim N\left(\mu, \frac{\sigma^2}{n}\right)\)</span></p></li>
-<li><p><span class="math inline">\(\overline{x}\)</span> will be within 1.96 SDs of the population mean <span class="math inline">\(\mu\)</span> <span class="math inline">\(95\%\)</span> of the time.</p></li>
+<li><p>Start with <span class="math inline">\(\overline{X} \sim N\left(\mu, \frac{\sigma^2}{n}\right)\)</span></p></li>
+<li><p><span class="math inline">\(\overline{x}\)</span> will be within 1.96 SDs of <span class="math inline">\(\mu\)</span> <span class="math inline">\(95\%\)</span> of the time.</p></li>
 <li><p>The <span class="math inline">\(z\)</span>-score of 1.96 is associated with 2.5% area <em>to the right</em>, and called a <strong>critical value</strong> denoted as <strong><span class="math inline">\(z_{0.025}\)</span></strong>.</p></li>
 </ul>
 </div><div class="column" style="width:65%;">
@@ -695,7 +697,7 @@ Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <
 <div class="columns">
 <div class="column" style="width:40%;">
 <div class="question">
-<p>Is the interval <span class="math inline">\(\left(\mu-1.96\frac{\sigma}{\sqrt{n}}, \mu+1.96\frac{\sigma}{\sqrt{n}} \right)\)</span> our confidence interval?</p>
+<p>Is <span class="math inline">\(\left(\mu-1.96\frac{\sigma}{\sqrt{n}}, \mu+1.96\frac{\sigma}{\sqrt{n}} \right)\)</span> our confidence interval?</p>
 </div>
 <div class="fragment">
 <div class="question">
@@ -703,7 +705,7 @@ Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <
 </div>
 </div>
 <div class="fragment">
-<p>❌ <strong>No! We don’t know <span class="math inline">\(\mu\)</span>, the quantity we like to estimate!</strong></p>
+<p>❌ <strong>No! We don’t know <span class="math inline">\(\mu\)</span>, the quantity we’d like to estimate!</strong></p>
 <p>But we’re almost there!</p>
 </div>
 </div><div class="column" style="width:60%;">
@@ -865,7 +867,7 @@ P\left( \boxed{\overline{X}-1.96\frac{\sigma}{\sqrt{n}} &lt; \mu &lt; \overline{
 </div>
 </section><section id="computation-in-r" class="slide level2"><h2>Computation in R</h2>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">## save all information we have</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">## save all information we have</span></span>
 <span><span class="va">alpha</span> <span class="op">&lt;-</span> <span class="fl">0.05</span></span>
 <span><span class="va">n</span> <span class="op">&lt;-</span> <span class="fl">16</span></span>
 <span><span class="va">x_bar</span> <span class="op">&lt;-</span> <span class="fl">121.5</span></span>
@@ -873,17 +875,17 @@ P\left( \boxed{\overline{X}-1.96\frac{\sigma}{\sqrt{n}} &lt; \mu &lt; \overline{
 <span></span>
 <span><span class="co">## 95% CI</span></span>
 <span><span class="co">## z-critical value</span></span>
-<span><span class="op">(</span><span class="va">cri_z</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">qnorm</a></span><span class="op">(</span>p <span class="op">=</span> <span class="va">alpha</span> <span class="op">/</span> <span class="fl">2</span>, lower.tail <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span><span class="op">)</span>  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span><span class="op">(</span><span class="va">cri_z</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">qnorm</a></span><span class="op">(</span>p <span class="op">=</span> <span class="va">alpha</span> <span class="op">/</span> <span class="fl">2</span>, lower.tail <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span><span class="op">)</span>  </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 1.96</code></pre>
 </div>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">## margin of error</span></span>
-<span><span class="op">(</span><span class="va">m_z</span> <span class="op">&lt;-</span> <span class="va">cri_z</span> <span class="op">*</span> <span class="op">(</span><span class="va">sig</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">sqrt</a></span><span class="op">(</span><span class="va">n</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">## margin of error</span></span>
+<span><span class="op">(</span><span class="va">m_z</span> <span class="op">&lt;-</span> <span class="va">cri_z</span> <span class="op">*</span> <span class="op">(</span><span class="va">sig</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">sqrt</a></span><span class="op">(</span><span class="va">n</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>  </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2.45</code></pre>
 </div>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">## 95% CI for mu when sigma is known</span></span>
-<span><span class="va">x_bar</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">1</span>, <span class="fl">1</span><span class="op">)</span> <span class="op">*</span> <span class="va">m_z</span>  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">## 95% CI for mu when sigma is known</span></span>
+<span><span class="va">x_bar</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">1</span>, <span class="fl">1</span><span class="op">)</span> <span class="op">*</span> <span class="va">m_z</span>  </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 119.1 123.9</code></pre>
 </div>
@@ -1082,23 +1084,23 @@ P\left( \boxed{\overline{X}-1.96\frac{\sigma}{\sqrt{n}} &lt; \mu &lt; \overline{
 <li><p>Estimate the mean SBP with a 95% confidence interval with <strong>unknown <span class="math inline">\(\sigma\)</span> and <span class="math inline">\(s = 5\)</span>.</strong></p></li>
 </ul>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">alpha</span> <span class="op">&lt;-</span> <span class="fl">0.05</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">alpha</span> <span class="op">&lt;-</span> <span class="fl">0.05</span></span>
 <span><span class="va">n</span> <span class="op">&lt;-</span> <span class="fl">16</span></span>
 <span><span class="va">x_bar</span> <span class="op">&lt;-</span> <span class="fl">121.5</span></span>
 <span><span class="va">s</span> <span class="op">&lt;-</span> <span class="fl">5</span>  <span class="co">## sigma is unknown and s = 5</span></span>
 <span></span>
 <span><span class="co">## t-critical value</span></span>
-<span><span class="op">(</span><span class="va">cri_t</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/TDist.html">qt</a></span><span class="op">(</span>p <span class="op">=</span> <span class="va">alpha</span> <span class="op">/</span> <span class="fl">2</span>, df <span class="op">=</span> <span class="va">n</span> <span class="op">-</span> <span class="fl">1</span>, lower.tail <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span><span class="op">)</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span><span class="op">(</span><span class="va">cri_t</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/TDist.html">qt</a></span><span class="op">(</span>p <span class="op">=</span> <span class="va">alpha</span> <span class="op">/</span> <span class="fl">2</span>, df <span class="op">=</span> <span class="va">n</span> <span class="op">-</span> <span class="fl">1</span>, lower.tail <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span><span class="op">)</span> </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2.131</code></pre>
 </div>
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">## margin of error</span></span>
-<span><span class="op">(</span><span class="va">m_t</span> <span class="op">&lt;-</span> <span class="va">cri_t</span> <span class="op">*</span> <span class="op">(</span><span class="va">s</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">sqrt</a></span><span class="op">(</span><span class="va">n</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">## margin of error</span></span>
+<span><span class="op">(</span><span class="va">m_t</span> <span class="op">&lt;-</span> <span class="va">cri_t</span> <span class="op">*</span> <span class="op">(</span><span class="va">s</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">sqrt</a></span><span class="op">(</span><span class="va">n</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>  </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2.664</code></pre>
 </div>
-<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">## 95% CI for mu when sigma is unknown</span></span>
-<span><span class="va">x_bar</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">1</span>, <span class="fl">1</span><span class="op">)</span> <span class="op">*</span> <span class="va">m_t</span>  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">## 95% CI for mu when sigma is unknown</span></span>
+<span><span class="va">x_bar</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">1</span>, <span class="fl">1</span><span class="op">)</span> <span class="op">*</span> <span class="va">m_t</span>  </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 118.8 124.2</code></pre>
 </div>
@@ -1453,13 +1455,14 @@ W10=
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy
