@@ -9,7 +9,7 @@ You will create your own confidence interval for estimating on average how much 
 
 ## Instructions
 
-(1) Form a group of **four** or **five**. (This is your sample size!)
+(1) Form a group of **four** or **five**. (This is your *sample size* $n$!)
 
 (2) Record how many hours of sleep each one of you got last night. No need to be integers. Sleeping 7.6 hours totally works! So please use decimal hours as your data. Don't know decimal hours for 7 hours 20 minutes? Use the app below for the answer!
 
@@ -22,18 +22,23 @@ You will create your own confidence interval for estimating on average how much 
 
 $$ \left[ \bar{x} - t_{0.025, n-1} \frac{s}{\sqrt{n}}, \, \bar{x} + t_{0.025, n-1} \frac{s}{\sqrt{n}} \right]$$
 
-where $\bar{x}$ is the sample mean, $s$ is the sample standard deviation, $n$ is the sample size, and $t_{0.025, n-1}$ is the $t$ critical value such that $P(T > t_{0.025, n-1}) = 2.5\%$.
+where
+
+  - $\bar{x}$ is the sample mean (you can use `mean()` in R)
+  - $s$ is the sample standard deviation (you can use `sd()` in R)
+  - $n$ is the sample size
+  - $t_{0.025, n-1}$ is the $t$ critical value such that $P(T > t_{0.025, n-1}) = 2.5\%$. (you can use `qt(p = 0.975, df = n - 1)` in R)
 
 
 <!-- (4) Let's create a larger sample by considering all of your sleeping hours. Construct its 95\% confidence interval. Note that you need to obtain new $\bar{x}$, $s$, $n$, and $t_{0.025, n-1}$. -->
 
-Go to <https://forms.office.com/r/XP8gyxNadf> to fill out your result!
+Go to <https://forms.cloud.microsoft/r/Zzm7T0wCqx> to fill out your result!
 
 ```{r}
 #| echo: false
 #| column: body
 #| out-width: 30%
-knitr::include_graphics("../images/QRCode_ci.png")
+knitr::include_graphics("../images/QRCode_ci_f26.png")
 ```
 
 ## Discussion

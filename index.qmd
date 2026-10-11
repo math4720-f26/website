@@ -42,7 +42,7 @@ format:
 | 6 | Tue, Oct 6 | Central Limit Theorem (CLT) | 👉[CLT](https://chenghanyustats-introstat-clt.share.connect.posit.cloud) | [IS Ch 13](https://chenghanyu-introstatsbook.netlify.app/prob-llnclt#central-limit-theorem) |  |  |  |  |  |
 |  | Thu, Oct 8 | Confidence Intervals | [🖥️ confidence interval](slides/09-ci-slides.html) <br> 👉[CI](ojs/infer-ci-ojs.html) | [IS Ch 14](https://chenghanyu-introstatsbook.netlify.app/infer-ci) | [`r fontawesome::fa("file-code")`](/code/13-infer-ci.R) (confidence interval) | ✍️ [HW 4 (due 10/16)](hw/hw04.html) | [Worksheet 4](/ws/ws4.html) |  |  |
 | 7 | Tue, Oct 13 | Confidence Intervals | 👉[Student-t](ojs/infer-ci-t-ojs.html) |  |  |  |  |  |  |
-|  | Thu, Oct 15 | Exam 1 Review **Activity:** **How Much Do Students Sleep?** |  |  |  |  | Worksheet 5 | ✅ Quiz 2 |  |
+|  | Thu, Oct 15 | Exam 1 Review [**Activity:** **How Much Do Students Sleep?**](/activity/act_ci.html) |  |  |  |  | [Worksheet 5](/ws/ws5.html) | ✅ Quiz 2 |  |
 | 8 | Tue, Oct 20 | **In-class Midterm Exam** |  |  |  |  |  |  | ✅ Take-home Midterm Exam |
 |  | Thu, Oct 22 | ***NO CLASS: Midterm break*** |  |  |  | ✍️ HW 5 (due 10/30) |  |  |  |
 | 9 | Tue, Oct 27 | Hypothesis Testing | 🖥️ testing<br> 👉testing | IS Ch 16 | `r fontawesome::fa("file-code")` (testing) |  |  |  |  |
