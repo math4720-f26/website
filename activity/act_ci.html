@@ -100,7 +100,7 @@ window.Quarto = {
 </script>
 <meta property="og:title" content="Activity: How Much Do Students Sleep? – MATH 4720 (MSSC 5720) - Fall 2026">
 <meta property="og:description" content="Homepage for MATH 4720 (MSSC 5720) - Statistical Methods at Marquette University, Fall 2026.">
-<meta property="og:image" content="https://math4720-f26.github.io/website/images/QRCode_ci.png">
+<meta property="og:image" content="https://math4720-f26.github.io/website/images/QRCode_ci_f26.png">
 <meta property="og:site_name" content="MATH 4720 (MSSC 5720) - Fall 2026">
 <meta property="og:image:height" content="1890">
 <meta property="og:image:width" content="1890">
@@ -379,7 +379,7 @@ window.Quarto = {
 <p>You will create your own confidence interval for estimating on average how much college students sleep.</p>
 </section><section id="instructions" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="instructions">Instructions</h2>
 <ol type="1">
-<li><p>Form a group of <strong>four</strong> or <strong>five</strong>. (This is your sample size!)</p></li>
+<li><p>Form a group of <strong>four</strong> or <strong>five</strong>. (This is your <em>sample size</em> <span class="math inline">\(n\)</span>!)</p></li>
 <li><p>Record how many hours of sleep each one of you got last night. No need to be integers. Sleeping 7.6 hours totally works! So please use decimal hours as your data. Don’t know decimal hours for 7 hours 20 minutes? Use the app below for the answer!</p></li>
 </ol>
 <iframe src="https://cheyu.shinyapps.io/hours/" width="100%" height="380" frameborder="0">
@@ -388,13 +388,22 @@ window.Quarto = {
 <li>Construct your 95% confidence interval for mean sleeping hours using the formula</li>
 </ol>
 <p><span class="math display">\[ \left[ \bar{x} - t_{0.025, n-1} \frac{s}{\sqrt{n}}, \, \bar{x} + t_{0.025, n-1} \frac{s}{\sqrt{n}} \right]\]</span></p>
-<p>where <span class="math inline">\(\bar{x}\)</span> is the sample mean, <span class="math inline">\(s\)</span> is the sample standard deviation, <span class="math inline">\(n\)</span> is the sample size, and <span class="math inline">\(t_{0.025, n-1}\)</span> is the <span class="math inline">\(t\)</span> critical value such that <span class="math inline">\(P(T &gt; t_{0.025, n-1}) = 2.5\%\)</span>.</p>
-<!-- (4) Let's create a larger sample by considering all of your sleeping hours. Construct its 95\% confidence interval. Note that you need to obtain new $\bar{x}$, $s$, $n$, and $t_{0.025, n-1}$. -->
-<p>Go to <a href="https://forms.office.com/r/XP8gyxNadf" class="uri">https://forms.office.com/r/XP8gyxNadf</a> to fill out your result!</p>
+<p>where</p>
+<ul>
+<li>
+<span class="math inline">\(\bar{x}\)</span> is the sample mean (you can use <code><a href="https://rdrr.io/r/base/mean.html">mean()</a></code> in R)</li>
+<li>
+<span class="math inline">\(s\)</span> is the sample standard deviation (you can use <code><a href="https://rdrr.io/r/stats/sd.html">sd()</a></code> in R)</li>
+<li>
+<span class="math inline">\(n\)</span> is the sample size</li>
+<li>
+<span class="math inline">\(t_{0.025, n-1}\)</span> is the <span class="math inline">\(t\)</span> critical value such that <span class="math inline">\(P(T &gt; t_{0.025, n-1}) = 2.5\%\)</span>. (you can use <code>qt(p = 0.975, df = n - 1)</code> in R)</li>
+</ul>
+<!-- (4) Let's create a larger sample by considering all of your sleeping hours. Construct its 95\% confidence interval. Note that you need to obtain new $\bar{x}$, $s$, $n$, and $t_{0.025, n-1}$. --><p>Go to <a href="https://forms.cloud.microsoft/r/Zzm7T0wCqx" class="uri">https://forms.cloud.microsoft/r/Zzm7T0wCqx</a> to fill out your result!</p>
 <div class="cell page-columns page-full">
 <div class="cell-output-display page-columns page-full">
 <div class="page-columns page-full">
-<figure class="figure page-columns page-full"><p class="page-columns page-full"><img src="../images/QRCode_ci.png" class="img-fluid figure-img column-body" style="width:30.0%"></p>
+<figure class="figure page-columns page-full"><p class="page-columns page-full"><img src="../images/QRCode_ci_f26.png" class="img-fluid figure-img column-body" style="width:30.0%"></p>
 </figure>
 </div>
 </div>
@@ -405,7 +414,7 @@ window.Quarto = {
 <li><p>Does the CI tell us about individual sleep hours or about the average student’s sleep?</p></li>
 <li><p>If we repeated this process with new samples, would every interval capture the true population mean?</p></li>
 </ol>
-<div id="timer_79753f9936a8dcf1dfe5f55429fc2346324870be" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_07e5027873c624beafb8f08b6bd8aa38129e14c9" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
