@@ -6779,7 +6779,7 @@
     "href": "ws.html",
     "title": "Worksheet",
     "section": "",
-    "text": "More worksheets to be added as the semester progresses.\n\n\n\n\n\n\n\n\n\n\nNo.\n\n\n\nTitle\n\n\n\n\n\n\n\n\nWorksheet 2\n\n\nProbability Fundamentals\n\n\n\n\n\n\nWorksheet 3\n\n\nProbability Distributions\n\n\n\n\n\n\nWorksheet 4\n\n\nSampling Distributions and Central Limit Theorem\n\n\n\n\n\n\nWorksheet-01\n\n\nSummarizing data\n\n\n\n\n\n\nNo matching items",
+    "text": "More worksheets to be added as the semester progresses.\n\n\n\n\n\n\n\n\n\n\nNo.\n\n\n\nTitle\n\n\n\n\n\n\n\n\nWorksheet 2\n\n\nProbability Fundamentals\n\n\n\n\n\n\nWorksheet 3\n\n\nProbability Distributions\n\n\n\n\n\n\nWorksheet 4\n\n\nSampling Distributions and Central Limit Theorem\n\n\n\n\n\n\nWorksheet 5\n\n\nConfidence Intervals\n\n\n\n\n\n\nWorksheet-01\n\n\nSummarizing data\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Worksheet"
     ]
@@ -6874,5 +6874,12 @@
     "title": "Worksheet 3",
     "section": "",
     "text": "Pick the correct model. Choose binomial, Poisson, or normal. Give one reason.\n\n\nNumber of heads in 20 coin flips.\nNumber of typos on a page of a long book.\nHeights of adult women.\n\n\n\nNormal symmetry facts. If \\(X \\sim N(0, 1)\\), decide without calculating:\n\n\n\n\\(P(X&gt;0)\\) is 0.5, less than 0.5, or greater than 0.5?\nIs \\(P(X&gt;1)\\) less than, equal to, or greater than \\(P(X&lt;-1)\\)? Why?"
+  },
+  {
+    "objectID": "ws/ws5.html",
+    "href": "ws/ws5.html",
+    "title": "Worksheet 5",
+    "section": "",
+    "text": "A student says, “My confidence interval for \\(\\mu\\) is \\(\\overline{x} \\pm 2s\\).” What is the main problem with this, conceptually?\nA sample mean is \\(\\overline{x} = 50\\). The standard error of \\(\\overline{x}\\) is \\(SE = 2\\). Give an approximate 95 percent confidence interval for \\(\\mu\\). Let’s assume the critical value is 2."
   }
 ]
