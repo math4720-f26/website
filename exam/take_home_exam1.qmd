@@ -1,5 +1,5 @@
 ---
-title: "Take-home Exam 1"
+title: "Take-home Midterm Exam"
 subtitle: "Take-home Exam for Week 1 to 7"
 categories: "Exam"
 format:
@@ -11,7 +11,7 @@ execute:
 ---
 
 ::: callout-important
-[Due **Friday, March 6, 11:59 PM**]{.red}
+[Due **Friday, October 23, 11:59 PM**]{.red}
 :::
 
 - Please submit your work in *one* **PDF** file to **D2L > Assessments > Dropbox**. Multiple files or a file that is not in pdf format is not allowed. 
@@ -80,7 +80,7 @@ execute:
 
 <!-- <br> -->
 
-(@) The following body masses (in grams) of 50 wintering birds were reported in the paper ``*Temperature and the Northern Distributions of Wintering Birds*,'' by Richard Repasky (1991). The data are provided in [exam1data.csv](./exam1data.csv). First download and upload the data to your Posit Cloud (RStudio). Then import the data using the command
+(@) The following body masses (in grams) of 50 wintering birds were reported in the paper ``*Temperature and the Northern Distributions of Wintering Birds*,'' by Richard Repasky (1991). The data are provided in [exam1data.csv](./exam1data.csv). First download and upload the data to your Posit Cloud. Then import the data using the command
 
 >  `data <- read.csv("./exam1data.csv")`
 
