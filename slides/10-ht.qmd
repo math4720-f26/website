@@ -321,11 +321,11 @@ knitr::include_graphics("./images/10-ht/blood_pressure.jpeg")
 
   + <span style="color:blue"> $\begin{align}&H_0: \mu \le 120 \\ &H_1: \mu > 120 \end{align}$ </span>
   
-- `r emo::ji('dollar')` The *mean* starting salary for Marquette graduates who didn't take MATH 4720 is **less than** $60,000.
+- `r emo::ji('dollar')` The *mean* starting salary for Marquette graduates who didn't take MATH 4720 is **less than** $80,000.
 
 . . .
 
-  + <span style="color:blue"> $\begin{align} &H_0: \mu \ge 60000 \\ &H_1: \mu < 60000 \end{align}$ </span>
+  + <span style="color:blue"> $\begin{align} &H_0: \mu \ge 80000 \\ &H_1: \mu < 80000 \end{align}$ </span>
   
 - `r emo::ji('tv')` The *mean* time between uses of a TV remote control by males during commercials **equals** 5 sec.
 
