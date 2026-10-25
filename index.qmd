@@ -44,7 +44,7 @@ format:
 | 7 | Tue, Oct 13 | Confidence Intervals | 👉[Student-t](ojs/infer-ci-t-ojs.html) |  |  |  |  |  |  |
 |  | Thu, Oct 15 | Exam 1 Review [**Activity:** **How Much Do Students Sleep?**](/activity/act_ci.html) |  |  |  |  | [Worksheet 5](/ws/ws5.html) | ✅ [Quiz 2](/documents/quiz2.pdf) |  |
 | 8 | Tue, Oct 20 | **In-class Midterm Exam** |  |  |  |  |  |  | ✅ [Take-home Midterm Exam](/exam/take_home_exam1.html) |
-|  | Thu, Oct 22 | ***NO CLASS: Midterm break*** |  |  |  | ✍️ HW 5 (due 10/30) |  |  |  |
+|  | Thu, Oct 22 | ***NO CLASS: Midterm break*** |  |  |  | ✍️ [HW 5 (due 10/30)](hw/hw05.html) |  |  |  |
 | 9 | Tue, Oct 27 | Hypothesis Testing | 🖥️ testing<br> 👉testing | IS Ch 16 | `r fontawesome::fa("file-code")` (testing) |  |  |  |  |
 |  | Thu, Oct 29 | Hypothesis Testing |  |  |  |  | Worksheet 6 |  |  |
 | 10 | Tue, Nov 3 | Two Population Means: Matched Pairs | 🖥️ two samples | IS Ch 17 | `r fontawesome::fa("file-code")` (two samples) |  |  |  |  |
