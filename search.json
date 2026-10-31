@@ -6252,14 +6252,14 @@
     "href": "slides/11-infer-two-means.html#example-contd",
     "title": "Comparing Two Population Means \n",
     "section": "Example Cont’d",
-    "text": "Example Cont’d\n\n\\(\\overline{d} = 13.5\\), \\(s_d= 12.48\\).\n\\(\\mu_1 =\\) Mean Before, \\(\\mu_2 =\\) Mean After, and \\(\\mu_d = \\mu_1 - \\mu_2\\).\n\n. . .\n\nStep 1:  \\(\\begin{align} &H_0: \\mu_1 = \\mu_2 \\iff \\mu_d = 0\\\\ &H_1: \\mu_1 &gt; \\mu_2 \\iff \\mu_d &gt; 0 \\end{align}\\) \n\n\n. . .\n\nStep 2:  \\(\\alpha = 0.05\\) \n\n\n. . .\n\nStep 3:  \\(t_{test} = \\frac{\\overline{d}}{s_d/\\sqrt{n}} = \\frac{13.5}{12.48/\\sqrt{10}} = 3.42\\) \n\n\n. . .\n\nStep 4-c:  \\(t_{\\alpha, n-1} = t_{0.05, 9} = 1.833\\).\n\n\n. . .\n\nStep 5-c:  Since \\(\\small t_{test} = 3.42 &gt; 1.833  = t_{\\alpha, n-1}\\), we reject \\(H_0\\).\n\n\n. . .\n\nStep 6:  There is sufficient evidence to support the claim that the drug is effective in reducing blood pressure. \n\n\n\nWe reject \\(H_0\\) if \\(\\small t_{test} &gt; t_{\\alpha, n-1}\\)."
+    "text": "Example Cont’d\n\n\\(\\overline{d} = 13.5\\), \\(s_d= 12.48\\).\n\\(\\mu_1 =\\) Mean Before, \\(\\mu_2 =\\) Mean After, and \\(\\mu_d = \\mu_1 - \\mu_2\\).\n\n. . .\n\nStep 1:  \\(\\begin{align} &H_0: \\mu_1 = \\mu_2 \\iff \\mu_d = 0\\\\ &H_1: \\mu_1 &gt; \\mu_2 \\iff \\mu_d &gt; 0 \\end{align}\\) \n\n\n. . .\n\nStep 2:  \\(\\alpha = 0.05\\) \n\n\n. . .\n\nStep 3:  \\(t_{test} = \\frac{\\overline{d}}{s_d/\\sqrt{n}} = \\frac{13.5}{12.48/\\sqrt{10}} = 3.42\\) \n\n\n. . .\n\nStep 4-c:  \\(t_{\\alpha, n-1} = t_{0.05, 9} = 1.83\\).\n\n\n. . .\n\nStep 5-c:  Since \\(\\small t_{test} = 3.42 &gt; 1.83  = t_{\\alpha, n-1}\\), we reject \\(H_0\\).\n\n\n. . .\n\nStep 6:  There is sufficient evidence to support the claim that the drug is effective in reducing blood pressure. \n\n\n\nWe reject \\(H_0\\) if \\(\\small t_{test} &gt; t_{\\alpha, n-1}\\)."
   },
   {
     "objectID": "slides/11-infer-two-means.html#example-contd-1",
     "href": "slides/11-infer-two-means.html#example-contd-1",
     "title": "Comparing Two Population Means \n",
     "section": "Example Cont’d",
-    "text": "Example Cont’d\n\nThe 95% CI for \\(\\mu_d = \\mu_1 - \\mu_2\\) is \\[\\begin{align}\\overline{d} \\pm t_{\\alpha/2, df} \\frac{s_d}{\\sqrt{n}} &= 13.5 \\pm t_{0.025, 9}\\frac{12.48}{\\sqrt{10}}\\\\ &= 13.5 \\pm 8.927 \\\\ &= (4.573, 22.427).\\end{align}\\]\n95% confident that the mean difference in blood pressure is between 4.57 and 22.43.\nSince the interval does NOT include 0, it leads to the same conclusion as rejection of \\(H_0\\)."
+    "text": "Example Cont’d\n\nThe 95% CI for \\(\\mu_d = \\mu_1 - \\mu_2\\) is \\[\\begin{align}\\overline{d} \\pm t_{\\alpha/2, df} \\frac{s_d}{\\sqrt{n}} &= 13.5 \\pm t_{0.025, 9}\\frac{12.48}{\\sqrt{10}}\\\\ &= 13.5 \\pm 8.93 \\\\ &= (4.57, 22.4).\\end{align}\\]\n95% confident that the mean difference in blood pressure is between 4.57 and 22.43.\nSince the interval does NOT include 0, it leads to the same conclusion as rejection of \\(H_0\\)."
   },
   {
     "objectID": "slides/11-infer-two-means.html#two-sample-paired-test-in-r",
@@ -6294,7 +6294,7 @@
     "href": "slides/11-infer-two-means.html#sampling-distribution-of-overlinex_1---overlinex_2",
     "title": "Comparing Two Population Means \n",
     "section": "Sampling Distribution of \\(\\overline{X}_1 - \\overline{X}_2\\)\n",
-    "text": "Sampling Distribution of \\(\\overline{X}_1 - \\overline{X}_2\\)\n\nIf the two samples are from independent normally distributed populations or \\(n_1 &gt; 30\\) and \\(n_2 &gt; 30\\), \\[\\small \\overline{X}_1 \\sim N\\left(\\mu_1, \\frac{\\sigma_1^2}{n_1} \\right), \\quad \\overline{X}_2 \\sim N\\left(\\mu_2,\n\\frac{\\sigma_2^2}{n_2} \\right)\\]\n. . .\n\\(\\overline{X}_1 - \\overline{X}_2\\) has the sampling distribution \\[\\small \\overline{X}_1 - \\overline{X}_2 \\sim N\\left(\\mu_1 - \\mu_2, \\frac{\\sigma_1^2}{n_1} {\\color{red}{+}} \\frac{\\sigma_2^2}{n_2} \\right) \\]\n. . .\n\\[\\small Z = \\frac{(\\overline{X}_1 - \\overline{X}_2) - (\\mu_1 - \\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1} + \\frac{\\sigma_2^2}{n_2}}} \\sim N(0, 1)\\]"
+    "text": "Sampling Distribution of \\(\\overline{X}_1 - \\overline{X}_2\\)\n\nIf the two samples are from independent normally distributed populations or \\(n_1 &gt; 30\\) and \\(n_2 &gt; 30\\), \\[\\small \\overline{X}_1 \\sim N\\left(\\mu_1, \\frac{\\sigma_1^2}{n_1} \\right), \\quad \\overline{X}_2 \\sim N\\left(\\mu_2,\n\\frac{\\sigma_2^2}{n_2} \\right)\\]\n. . .\n\\(\\overline{X}_1 - \\overline{X}_2\\) has the sampling distribution \\[\\small \\overline{X}_1 - \\overline{X}_2 \\sim N\\left(\\mu_1 - \\mu_2, \\frac{\\sigma_1^2}{n_1} {\\boldsymbol{\\color{red}{+}}} \\frac{\\sigma_2^2}{n_2} \\right) \\]\n. . .\n\\[\\small Z = \\frac{(\\overline{X}_1 - \\overline{X}_2) - (\\mu_1 - \\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1} + \\frac{\\sigma_2^2}{n_2}}} \\sim N(0, 1)\\]"
   },
   {
     "objectID": "slides/11-infer-two-means.html#test-statistic-for-independent-samples-sigma_1-ne-sigma_2",
@@ -6455,14 +6455,14 @@
     "href": "slides/11-infer-two-means-slides.html#example-contd",
     "title": "Comparing Two Population Means \n",
     "section": "Example Cont’d",
-    "text": "Example Cont’d\n\n\\(\\overline{d} = 13.5\\), \\(s_d= 12.48\\).\n\\(\\mu_1 =\\) Mean Before, \\(\\mu_2 =\\) Mean After, and \\(\\mu_d = \\mu_1 - \\mu_2\\).\n\n\n\nStep 1:  \\(\\begin{align} &H_0: \\mu_1 = \\mu_2 \\iff \\mu_d = 0\\\\ &H_1: \\mu_1 &gt; \\mu_2 \\iff \\mu_d &gt; 0 \\end{align}\\) \n\n\n\n\n\nStep 2:  \\(\\alpha = 0.05\\) \n\n\n\n\n\nStep 3:  \\(t_{test} = \\frac{\\overline{d}}{s_d/\\sqrt{n}} = \\frac{13.5}{12.48/\\sqrt{10}} = 3.42\\) \n\n\n\n\n\nStep 4-c:  \\(t_{\\alpha, n-1} = t_{0.05, 9} = 1.833\\).\n\n\n\n\n\nStep 5-c:  Since \\(\\small t_{test} = 3.42 &gt; 1.833  = t_{\\alpha, n-1}\\), we reject \\(H_0\\).\n\n\n\n\n\n\nStep 6:  There is sufficient evidence to support the claim that the drug is effective in reducing blood pressure. \n\n\nWe reject \\(H_0\\) if \\(\\small t_{test} &gt; t_{\\alpha, n-1}\\)."
+    "text": "Example Cont’d\n\n\\(\\overline{d} = 13.5\\), \\(s_d= 12.48\\).\n\\(\\mu_1 =\\) Mean Before, \\(\\mu_2 =\\) Mean After, and \\(\\mu_d = \\mu_1 - \\mu_2\\).\n\n\n\nStep 1:  \\(\\begin{align} &H_0: \\mu_1 = \\mu_2 \\iff \\mu_d = 0\\\\ &H_1: \\mu_1 &gt; \\mu_2 \\iff \\mu_d &gt; 0 \\end{align}\\) \n\n\n\n\n\nStep 2:  \\(\\alpha = 0.05\\) \n\n\n\n\n\nStep 3:  \\(t_{test} = \\frac{\\overline{d}}{s_d/\\sqrt{n}} = \\frac{13.5}{12.48/\\sqrt{10}} = 3.42\\) \n\n\n\n\n\nStep 4-c:  \\(t_{\\alpha, n-1} = t_{0.05, 9} = 1.83\\).\n\n\n\n\n\nStep 5-c:  Since \\(\\small t_{test} = 3.42 &gt; 1.83  = t_{\\alpha, n-1}\\), we reject \\(H_0\\).\n\n\n\n\n\n\nStep 6:  There is sufficient evidence to support the claim that the drug is effective in reducing blood pressure. \n\n\nWe reject \\(H_0\\) if \\(\\small t_{test} &gt; t_{\\alpha, n-1}\\)."
   },
   {
     "objectID": "slides/11-infer-two-means-slides.html#example-contd-1",
     "href": "slides/11-infer-two-means-slides.html#example-contd-1",
     "title": "Comparing Two Population Means \n",
     "section": "Example Cont’d",
-    "text": "Example Cont’d\n\nThe 95% CI for \\(\\mu_d = \\mu_1 - \\mu_2\\) is \\[\\begin{align}\\overline{d} \\pm t_{\\alpha/2, df} \\frac{s_d}{\\sqrt{n}} &= 13.5 \\pm t_{0.025, 9}\\frac{12.48}{\\sqrt{10}}\\\\ &= 13.5 \\pm 8.927 \\\\ &= (4.573, 22.427).\\end{align}\\]\n95% confident that the mean difference in blood pressure is between 4.57 and 22.43.\nSince the interval does NOT include 0, it leads to the same conclusion as rejection of \\(H_0\\)."
+    "text": "Example Cont’d\n\nThe 95% CI for \\(\\mu_d = \\mu_1 - \\mu_2\\) is \\[\\begin{align}\\overline{d} \\pm t_{\\alpha/2, df} \\frac{s_d}{\\sqrt{n}} &= 13.5 \\pm t_{0.025, 9}\\frac{12.48}{\\sqrt{10}}\\\\ &= 13.5 \\pm 8.93 \\\\ &= (4.57, 22.4).\\end{align}\\]\n95% confident that the mean difference in blood pressure is between 4.57 and 22.43.\nSince the interval does NOT include 0, it leads to the same conclusion as rejection of \\(H_0\\)."
   },
   {
     "objectID": "slides/11-infer-two-means-slides.html#two-sample-paired-test-in-r",
@@ -6497,7 +6497,7 @@
     "href": "slides/11-infer-two-means-slides.html#sampling-distribution-of-overlinex_1---overlinex_2",
     "title": "Comparing Two Population Means \n",
     "section": "Sampling Distribution of \\(\\overline{X}_1 - \\overline{X}_2\\)\n",
-    "text": "Sampling Distribution of \\(\\overline{X}_1 - \\overline{X}_2\\)\n\nIf the two samples are from independent normally distributed populations or \\(n_1 &gt; 30\\) and \\(n_2 &gt; 30\\), \\[\\small \\overline{X}_1 \\sim N\\left(\\mu_1, \\frac{\\sigma_1^2}{n_1} \\right), \\quad \\overline{X}_2 \\sim N\\left(\\mu_2,\n\\frac{\\sigma_2^2}{n_2} \\right)\\]\n\n\\(\\overline{X}_1 - \\overline{X}_2\\) has the sampling distribution \\[\\small \\overline{X}_1 - \\overline{X}_2 \\sim N\\left(\\mu_1 - \\mu_2, \\frac{\\sigma_1^2}{n_1} {\\color{red}{+}} \\frac{\\sigma_2^2}{n_2} \\right) \\]\n\n\n\\[\\small Z = \\frac{(\\overline{X}_1 - \\overline{X}_2) - (\\mu_1 - \\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1} + \\frac{\\sigma_2^2}{n_2}}} \\sim N(0, 1)\\]"
+    "text": "Sampling Distribution of \\(\\overline{X}_1 - \\overline{X}_2\\)\n\nIf the two samples are from independent normally distributed populations or \\(n_1 &gt; 30\\) and \\(n_2 &gt; 30\\), \\[\\small \\overline{X}_1 \\sim N\\left(\\mu_1, \\frac{\\sigma_1^2}{n_1} \\right), \\quad \\overline{X}_2 \\sim N\\left(\\mu_2,\n\\frac{\\sigma_2^2}{n_2} \\right)\\]\n\n\\(\\overline{X}_1 - \\overline{X}_2\\) has the sampling distribution \\[\\small \\overline{X}_1 - \\overline{X}_2 \\sim N\\left(\\mu_1 - \\mu_2, \\frac{\\sigma_1^2}{n_1} {\\boldsymbol{\\color{red}{+}}} \\frac{\\sigma_2^2}{n_2} \\right) \\]\n\n\n\\[\\small Z = \\frac{(\\overline{X}_1 - \\overline{X}_2) - (\\mu_1 - \\mu_2)}{\\sqrt{\\frac{\\sigma_1^2}{n_1} + \\frac{\\sigma_2^2}{n_2}}} \\sim N(0, 1)\\]"
   },
   {
     "objectID": "slides/11-infer-two-means-slides.html#test-statistic-for-independent-samples-sigma_1-ne-sigma_2",

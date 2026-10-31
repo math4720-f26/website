@@ -747,13 +747,13 @@ Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <
 </div>
 <div class="fragment">
 <ul>
-<li>Step 4-c: <span style="color:blue"> <span class="math inline">\(t_{\alpha, n-1} = t_{0.05, 9} = 1.833\)</span>.</span>
+<li>Step 4-c: <span style="color:blue"> <span class="math inline">\(t_{\alpha, n-1} = t_{0.05, 9} = 1.83\)</span>.</span>
 </li>
 </ul>
 </div>
 <div class="fragment">
 <ul>
-<li>Step 5-c: <span style="color:blue"> Since <span class="math inline">\(\small t_{test} = 3.42 &gt; 1.833  = t_{\alpha, n-1}\)</span>, we reject <span class="math inline">\(H_0\)</span>.</span>
+<li>Step 5-c: <span style="color:blue"> Since <span class="math inline">\(\small t_{test} = 3.42 &gt; 1.83  = t_{\alpha, n-1}\)</span>, we reject <span class="math inline">\(H_0\)</span>.</span>
 </li>
 </ul>
 <!-- > - Step 4-p:  <span style="color:blue"> The $p$-value is $P(T < t_{test}) \approx 0$ </span> --><!-- > - Step 5-p:  <span style="color:blue"> We reject $H_0$ if $p$-value < $\alpha$. Since $p$-value $\approx 0 < 0.05  = \alpha$, we reject $H_0$.</span> -->
@@ -780,7 +780,7 @@ Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <
 
 <img data-src="11-infer-two-means_files/figure-revealjs/unnamed-chunk-6-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section><section id="example-contd-1" class="slide level2"><h2>Example Cont’d</h2>
 <ul>
-<li><p>The 95% CI for <span class="math inline">\(\mu_d = \mu_1 - \mu_2\)</span> is <span class="math display">\[\begin{align}\overline{d} \pm t_{\alpha/2, df} \frac{s_d}{\sqrt{n}} &amp;= 13.5 \pm t_{0.025, 9}\frac{12.48}{\sqrt{10}}\\ &amp;= 13.5 \pm 8.927 \\ &amp;= (4.573, 22.427).\end{align}\]</span></p></li>
+<li><p>The 95% CI for <span class="math inline">\(\mu_d = \mu_1 - \mu_2\)</span> is <span class="math display">\[\begin{align}\overline{d} \pm t_{\alpha/2, df} \frac{s_d}{\sqrt{n}} &amp;= 13.5 \pm t_{0.025, 9}\frac{12.48}{\sqrt{10}}\\ &amp;= 13.5 \pm 8.93 \\ &amp;= (4.57, 22.4).\end{align}\]</span></p></li>
 <li><p>95% confident that the <em>mean difference</em> in blood pressure is between 4.57 and 22.43.</p></li>
 <li><p>Since the interval <em>does NOT include 0</em>, it leads to the same conclusion as rejection of <span class="math inline">\(H_0\)</span>.</p></li>
 </ul></section><section id="two-sample-paired-test-in-r" class="slide level2"><h2>Two-Sample Paired Test in R</h2>
@@ -960,7 +960,7 @@ mean difference
 <p>If the two samples are from <em>independent normally</em> distributed populations or <span class="math inline">\(n_1 &gt; 30\)</span> and <span class="math inline">\(n_2 &gt; 30\)</span>, <span class="math display">\[\small \overline{X}_1 \sim N\left(\mu_1, \frac{\sigma_1^2}{n_1} \right), \quad \overline{X}_2 \sim N\left(\mu_2,
 \frac{\sigma_2^2}{n_2} \right)\]</span></p>
 <div class="fragment">
-<p><span class="math inline">\(\overline{X}_1 - \overline{X}_2\)</span> has the sampling distribution <span class="math display">\[\small \overline{X}_1 - \overline{X}_2 \sim N\left(\mu_1 - \mu_2, \frac{\sigma_1^2}{n_1} {\color{red}{+}} \frac{\sigma_2^2}{n_2} \right) \]</span></p>
+<p><span class="math inline">\(\overline{X}_1 - \overline{X}_2\)</span> has the sampling distribution <span class="math display">\[\small \overline{X}_1 - \overline{X}_2 \sim N\left(\mu_1 - \mu_2, \frac{\sigma_1^2}{n_1} {\boldsymbol{\color{red}{+}}} \frac{\sigma_2^2}{n_2} \right) \]</span></p>
 </div>
 <div class="fragment">
 <p><span class="math display">\[\small Z = \frac{(\overline{X}_1 - \overline{X}_2) - (\mu_1 - \mu_2)}{\sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}} \sim N(0, 1)\]</span></p>
