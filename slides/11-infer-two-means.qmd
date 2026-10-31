@@ -394,11 +394,11 @@ knitr::include_graphics("./images/11-infer-two-means/drug.jpeg")
 
 . . .
 
-- Step 4-c:  <span style="color:blue"> $t_{\alpha, n-1} = t_{0.05, 9} = 1.833$.</span>
+- Step 4-c:  <span style="color:blue"> $t_{\alpha, n-1} = t_{0.05, 9} = 1.83$.</span>
 
 . . .
 
-- Step 5-c:  <span style="color:blue"> Since $\small t_{test} = 3.42 > 1.833  = t_{\alpha, n-1}$, we reject $H_0$.</span>
+- Step 5-c:  <span style="color:blue"> Since $\small t_{test} = 3.42 > 1.83  = t_{\alpha, n-1}$, we reject $H_0$.</span>
 
 <!-- > - Step 4-p:  <span style="color:blue"> The $p$-value is $P(T < t_{test}) \approx 0$ </span> -->
 
@@ -452,7 +452,7 @@ text(0,-0.02, 0,
 
 ## Example Cont'd
 
-- The 95% CI for $\mu_d = \mu_1 - \mu_2$ is $$\begin{align}\overline{d} \pm t_{\alpha/2, df} \frac{s_d}{\sqrt{n}} &= 13.5 \pm t_{0.025, 9}\frac{12.48}{\sqrt{10}}\\ &= 13.5 \pm 8.927 \\ &= (4.573, 22.427).\end{align}$$
+- The 95% CI for $\mu_d = \mu_1 - \mu_2$ is $$\begin{align}\overline{d} \pm t_{\alpha/2, df} \frac{s_d}{\sqrt{n}} &= 13.5 \pm t_{0.025, 9}\frac{12.48}{\sqrt{10}}\\ &= 13.5 \pm 8.93 \\ &= (4.57, 22.4).\end{align}$$
 
 - 95% confident that the *mean difference* in blood pressure is between 4.57 and 22.43. 
 
@@ -652,7 +652,7 @@ $$\small \overline{X}_1 \sim N\left(\mu_1, \frac{\sigma_1^2}{n_1} \right), \quad
 . . .
 
 $\overline{X}_1 - \overline{X}_2$ has the sampling distribution 
-$$\small \overline{X}_1 - \overline{X}_2 \sim N\left(\mu_1 - \mu_2, \frac{\sigma_1^2}{n_1} {\color{red}{+}} \frac{\sigma_2^2}{n_2} \right) $$
+$$\small \overline{X}_1 - \overline{X}_2 \sim N\left(\mu_1 - \mu_2, \frac{\sigma_1^2}{n_1} {\boldsymbol{\color{red}{+}}} \frac{\sigma_2^2}{n_2} \right) $$
 
 . . .
 
