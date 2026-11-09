@@ -46,10 +46,10 @@ format:
 | 8 | Tue, Oct 20 | **In-class Midterm Exam** |  |  |  |  |  |  | ✅ [Take-home Midterm Exam](/exam/take_home_exam1.html) |
 |  | Thu, Oct 22 | ***NO CLASS: Midterm break*** |  |  |  | ✍️ [HW 5 (due 10/30)](hw/hw05.html) |  |  |  |
 | 9 | Tue, Oct 27 | Hypothesis Testing | [🖥️ testing](slides/10-ht-slides.html)<br> 👉[testing](ojs/infer-ht-ojs.html) | [IS Ch 16](https://chenghanyu-introstatsbook.netlify.app/infer-ht) | [`r fontawesome::fa("file-code")`](/code/15-infer-ht.R) (testing) |  |  |  |  |
-|  | Thu, Oct 29 | Hypothesis Testing |  |  |  |  | Worksheet 6 |  |  |
+|  | Thu, Oct 29 | Hypothesis Testing |  |  |  |  | [Worksheet 6](/ws/ws6.html) |  |  |
 | 10 | Tue, Nov 3 | Two Population Means: Matched Pairs | [🖥️ two samples](slides/11-infer-two-means-slides.html) | [IS Ch 17](https://chenghanyu-introstatsbook.netlify.app/infer-twomean) | [`r fontawesome::fa("file-code")`](/code/16-infer-twomeans.R) (two samples) |  |  |  |  |
-|  | Thu, Nov 5 | Two Population Means: Independent Samples |  |  |  | ✍️ HW 6 (due 11/13) | Worksheet 7 |  |  |
-| 11 | Tue, Nov 10 | Inference for One Population Variance | 🖥️ variances <br> 👉chi-squared | IS Ch 18 | `r fontawesome::fa("file-code")` (variances) |  |  |  |  |
+|  | Thu, Nov 5 | Two Population Means: Independent Samples |  |  |  | ✍️ [HW 6 (due 11/13) Extended to **11/15**](hw/hw06.html) |  |  |  |
+| 11 | Tue, Nov 10 | Inference for One Population Variance | 🖥️ variances <br> 👉chi-squared | IS Ch 18 | `r fontawesome::fa("file-code")` (variances) |  | Worksheet 7 |  |  |
 |  | Thu, Nov 12 | Inference about Two Population Variances | 👉 f |  |  |  | Worksheet 8 |  |  |
 | 12 | Tue, Nov 17 | Analysis of Variance (ANOVA) Rationale | 🖥️ ANOVA | IS Ch 24 | `r fontawesome::fa("file-code")` (ANOVA data) |  |  |  |  |
 |  | Thu, Nov 19 | Analysis of Variance (ANOVA) Procedure |  |  |  | ✍️ HW 7 (due 12/4) | Worksheet 9 | ✅ Quiz 3 |  |
