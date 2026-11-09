@@ -432,7 +432,7 @@ window.Quarto = {
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="./images/12-infer-variance/models.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+<figure class="figure"><p><img src="./images/12-infer-variance/models.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
 </figure>
 </div>
 </div>
@@ -447,7 +447,7 @@ window.Quarto = {
 </ul>
 <p>. . .</p>
 <ul>
-<li>The <span class="math inline">\(95\%\)</span> CI for <span class="math inline">\(\sigma\)</span> is <span class="math inline">\(\small \left( \sqrt{\frac{(n-1)s^2}{\chi^2_{\frac{\alpha}{2}, \, n-1}}}, \sqrt{\frac{(n-1)s^2}{\chi^2_{1-\frac{\alpha}{2}, \, n-1}}} \right) = \left( \sqrt{\frac{(16-1)(3.4)}{27.49}}, \sqrt{\frac{(16-1)(3.4)}{6.26}}\right) = (1.36, 2.85)\)</span>
+<li>The <span class="math inline">\(95\%\)</span> CI for <span class="math inline">\(\sigma\)</span> is <span class="math inline">\(\small \left( \sqrt{\dfrac{(n-1)s^2}{\chi^2_{\frac{\alpha}{2}, \, n-1}}}, \sqrt{\dfrac{(n-1)s^2}{\chi^2_{1-\frac{\alpha}{2}, \, n-1}}} \right) = \left( \sqrt{\dfrac{(16-1)(3.4)}{27.49}}, \sqrt{\dfrac{(16-1)(3.4)}{6.26}}\right) = (1.36, 2.85)\)</span>
 </li>
 </ul></section><section id="example-computation-in-r" class="level2"><h2 class="anchored" data-anchor-id="example-computation-in-r">Example: Computation in R</h2>
 <div class="cell" data-layout-align="center">
@@ -489,25 +489,23 @@ window.Quarto = {
 </li>
 </ul>
 <p>. . .</p>
-<ul>
-<li>
-<strong>Step 3</strong>: Under <span class="math inline">\(H_0\)</span>, <span class="math inline">\(\chi_{test}^2 = \frac{(n-1)s^2}{\sigma_0^2} = \frac{(16-1)(3.4)}{7.5^2} = 0.91\)</span>, a statistic drawn from <span class="math inline">\(\chi^2_{n-1}\)</span>.</li>
-</ul>
-<p>. . .</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
 <li>
-<strong>Step 4-c</strong>: This is a left-tailed test. The critical value is <span class="math inline">\(\chi_{1-\alpha, df}^2 = \chi_{0.95, 15}^2 = 7.26\)</span>
-</li>
-<li>
-<strong>Step-5-c</strong>: Reject <span class="math inline">\(H_0\)</span> in favor of <span class="math inline">\(H_1\)</span> if <span class="math inline">\(\chi_{test}^2 &lt; \chi_{1-\alpha, df}^2\)</span>. Since <span class="math inline">\(0.91 &lt; 7.26\)</span>, we reject <span class="math inline">\(H_0\)</span>.</li>
+<strong>Step 3</strong>: Under <span class="math inline">\(H_0\)</span>, <span class="math inline">\(\chi_{test}^2 = \frac{(n-1)s^2}{\sigma_0^2} = \frac{(16-1)(3.4)}{7.5^2} = 0.91\)</span>, a statistic drawn from <span class="math inline">\(\chi^2_{n-1}\)</span>.</li>
 </ul>
+<div class="fragment">
+<ul>
+<li><p><strong>Step 4-c</strong>: This is a left-tailed test. The critical value is <span class="math inline">\(\chi_{1-\alpha, df}^2 = \chi_{0.95, 15}^2 = 7.26\)</span></p></li>
+<li><p><strong>Step-5-c</strong>: Reject <span class="math inline">\(H_0\)</span> in favor of <span class="math inline">\(H_1\)</span> if <span class="math inline">\(\chi_{test}^2 &lt; \chi_{1-\alpha, df}^2\)</span>. Since <span class="math inline">\(0.91 &lt; 7.26\)</span>, we reject <span class="math inline">\(H_0\)</span>.</p></li>
+</ul>
+</div>
 </div><div class="column" style="width:50%;">
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="12-infer-variance_files/figure-revealjs/unnamed-chunk-12-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%"></p>
+<figure class="figure"><p><img src="12-infer-variance_files/figure-revealjs/unnamed-chunk-12-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -519,20 +517,25 @@ window.Quarto = {
 <ul>
 <li><p><strong>Step 1</strong>: <span class="math inline">\(H_0: \sigma = \sigma_0\)</span> vs.&nbsp;<span class="math inline">\(H_1: \sigma &lt; \sigma_0\)</span>. Here <span class="math inline">\(\sigma_0 = 7.5\)</span> cm</p></li>
 <li><p><strong>Step 2</strong>: <span class="math inline">\(\alpha = 0.05\)</span></p></li>
-<li><p><strong>Step 3</strong>: Under <span class="math inline">\(H_0\)</span>, <span class="math inline">\(\chi_{test}^2 = \frac{(n-1)s^2}{\sigma_0^2} = \frac{(16-1)(3.4)}{7.5^2} = 0.91\)</span>, a statistic drawn from <span class="math inline">\(\chi^2_{n-1}\)</span>.</p></li>
 </ul>
-<div class="columns">
+<!-- - **Step 3**: Under $H_0$, $\chi_{test}^2 = \frac{(n-1)s^2}{\sigma_0^2} = \frac{(16-1)(3.4)}{7.5^2} = 0.91$, a statistic drawn from $\chi^2_{n-1}$. --><div class="columns">
 <div class="column" style="width:50%;">
 <ul>
 <li>
-<strong>Step 6</strong>: There is sufficient evidence to support the claim that supermodels have heights with a SD that is less than the SD for the population of women.</li>
+<strong>Step 3</strong>: Under <span class="math inline">\(H_0\)</span>, <span class="math inline">\(\chi_{test}^2 = \frac{(n-1)s^2}{\sigma_0^2} = \frac{(16-1)(3.4)}{7.5^2} = 0.91\)</span>, a statistic drawn from <span class="math inline">\(\chi^2_{n-1}\)</span>.</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>
+<strong>Step 6</strong>: There is sufficient evidence to support the claim that supermodels have heights with a SD less than the SD for the women population.</li>
 </ul>
 <p><em>Heights of supermodels vary less than heights of women in the general population.</em></p>
+</div>
 </div><div class="column" style="width:50%;">
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="12-infer-variance_files/figure-revealjs/unnamed-chunk-13-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%"></p>
+<figure class="figure"><p><img src="12-infer-variance_files/figure-revealjs/unnamed-chunk-13-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -739,12 +742,14 @@ window.Quarto = {
 </h2>
 <div class="columns">
 <div class="column" style="width:35%;">
+<!-- - $\small F_{\alpha/2, \, df_1, \, df_2} = F_{0.05/2, \, 10-1, \, 10-1} = 4.03$  -->
+<!-- - $\small F_{1-\alpha/2, \, df_1, \, df_2} = F_{1-0.05/2, \, 10-1, \, 10-1} = 0.25$ -->
+<!-- - $\small \frac{s_1^2}{s_2^2} = \frac{0.5^2}{0.7^2} = 0.51$ -->
 <ul>
 <li>The 95% CI for <span class="math inline">\(\sigma_1^2 / \sigma_2^2\)</span> is <span class="math display">\[\small \begin{align} &amp;\left( \frac{s_1^2/s_2^2}{F_{\alpha/2, \, df_1, \, df_2}}, \frac{s_1^2/s_2^2}{F_{1-\alpha/2, \, df_1, \, df_2}} \right) \\ &amp;= \left( \frac{0.51}{4.03}, \frac{0.51}{0.25} \right) = \left(0.13, 2.04\right)\end{align}\]</span>
 </li>
 <li>We are 95% confident that the ratio <span class="math inline">\(\sigma_1^2 / \sigma_2^2\)</span> is between 0.13 and 2.04.</li>
 </ul>
-<!-- - $\small F_{\alpha/2, \, df_1, \, df_2} = F_{0.05/2, \, 10-1, \, 10-1} = 4.03$  --><!-- - $\small F_{1-\alpha/2, \, df_1, \, df_2} = F_{1-0.05/2, \, 10-1, \, 10-1} = 0.25$ --><!-- - $\small \frac{s_1^2}{s_2^2} = \frac{0.5^2}{0.7^2} = 0.51$ -->
 </div><div class="column" style="width:65%;">
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
