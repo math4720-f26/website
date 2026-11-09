@@ -49,8 +49,8 @@ format:
 |  | Thu, Oct 29 | Hypothesis Testing |  |  |  |  | [Worksheet 6](/ws/ws6.html) |  |  |
 | 10 | Tue, Nov 3 | Two Population Means: Matched Pairs | [🖥️ two samples](slides/11-infer-two-means-slides.html) | [IS Ch 17](https://chenghanyu-introstatsbook.netlify.app/infer-twomean) | [`r fontawesome::fa("file-code")`](/code/16-infer-twomeans.R) (two samples) |  |  |  |  |
 |  | Thu, Nov 5 | Two Population Means: Independent Samples |  |  |  | ✍️ [HW 6 (due 11/13) Extended to **11/15**](hw/hw06.html) |  |  |  |
-| 11 | Tue, Nov 10 | Inference for One Population Variance | 🖥️ variances <br> 👉chi-squared | IS Ch 18 | `r fontawesome::fa("file-code")` (variances) |  | Worksheet 7 |  |  |
-|  | Thu, Nov 12 | Inference about Two Population Variances | 👉 f |  |  |  | Worksheet 8 |  |  |
+| 11 | Tue, Nov 10 | Inference for One Population Variance | [🖥️ variances](slides/12-infer-variance-slides.html) <br> 👉[chi-squared](ojs/infer-var-chisq-ojs.html) | [IS Ch 18](https://chenghanyu-introstatsbook.netlify.app/infer-var) | [`r fontawesome::fa("file-code")`](/code/16-infer-var.R) (variances) |  | Worksheet 7 |  |  |
+|  | Thu, Nov 12 | Inference about Two Population Variances | 👉 [f](ojs/infer-var-f-ojs.html) |  |  |  | Worksheet 8 |  |  |
 | 12 | Tue, Nov 17 | Analysis of Variance (ANOVA) Rationale | 🖥️ ANOVA | IS Ch 24 | `r fontawesome::fa("file-code")` (ANOVA data) |  |  |  |  |
 |  | Thu, Nov 19 | Analysis of Variance (ANOVA) Procedure |  |  |  | ✍️ HW 7 (due 12/4) | Worksheet 9 | ✅ Quiz 3 |  |
 | 13 | Tue, Nov 24 | Correlation; Overview of Regression | 🖥️ correlation <br> 🖥️ regression <br> 👉 regression fitting | IS Ch 27.1; IS Ch 27.2 | `r fontawesome::fa("file-code")` (correlation and regression) |  |  |  |  |
