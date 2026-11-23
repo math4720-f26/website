@@ -357,6 +357,26 @@ Dr.&nbsp;Cheng-Han Yu <br> Department of Mathematical and Statistical Sciences <
 <li><p><span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span> are model <strong>coefficients</strong>.</p></li>
 <li><p><span class="math inline">\(\beta_0\)</span>, <span class="math inline">\(\beta_1\)</span> and <span class="math inline">\(\sigma^2\)</span> are <strong>fixed unknown parameters</strong> to be estimated from the sample data once we collect them.</p></li>
 </ul>
+<table class="caption-top">
+<thead><tr class="header">
+<th>Piece</th>
+<th>Meaning</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\beta_0 + \beta_1 X_i\)</span></td>
+<td>systematic part</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\epsilon_i\)</span></td>
+<td>deviation from the pattern</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\sigma\)</span></td>
+<td>typical vertical scatter</td>
+</tr>
+</tbody>
+</table>
 <aside class="notes"><p>.question[ What is the distribution of <span class="math inline">\(Y_i\)</span> given a value of <span class="math inline">\(X = x\)</span>?</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -466,9 +486,11 @@ y_i = \beta_0 + \beta_1~x_{i} + \epsilon_i,
           overflow: hidden!important;
           display:block!important;
       }</style></aside><div class="fragment">
+<!-- - Use sample statistics $b_0$ and $b_1$ computed from our sample data to estimate $\beta_0$ and $\beta_1$. -->
+<!-- - $\hat{y}_{i} = b_0 + b_1~x_{i}$ is called **fitted value** of $y_i$, a point estimate of the mean $\mu_{y|x_i}$ and $y_i$ itself. -->
 <ul>
-<li><p>Use sample statistics <span class="math inline">\(b_0\)</span> and <span class="math inline">\(b_1\)</span> computed from our sample data to estimate <span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span>.</p></li>
-<li><p><span class="math inline">\(\hat{y}_{i} = b_0 + b_1~x_{i}\)</span> is called <strong>fitted value</strong> of <span class="math inline">\(y_i\)</span>, a point estimate of the mean <span class="math inline">\(\mu_{y|x_i}\)</span> and <span class="math inline">\(y_i\)</span> itself.</p></li>
+<li><p>Use sample statistics <span class="math inline">\(b_0\)</span> and <span class="math inline">\(b_1\)</span>, computed from the data, to estimate <span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span>.</p></li>
+<li><p><span class="math inline">\(\hat{y}_{i}=b_0+b_1x_i\)</span> is the <strong>fitted value</strong> at <span class="math inline">\(x_i\)</span>. It estimates the conditional mean <span class="math inline">\(\mu_{Y\mid X=x_i}\)</span> and also serves as the point prediction for an individual response at <span class="math inline">\(x_i\)</span>.</p></li>
 </ul>
 <aside class="notes"><ul>
 <li>
@@ -528,10 +550,15 @@ y_i = \beta_0 + \beta_1~x_{i} + \epsilon_i,
 <!-- is a point estimate of $\epsilon_i$. -->
 <!-- - The sample regression line minimizes $SS_{res} = e_1^2 + e_2^2 + \dots + e_n^2 = \sum_{i = 1}^n e_i^2$. -->
 <div class="fragment">
+<!-- - If $b_0$ and $b_1$ are the best estimators, -->
+<!-- $$\small{\begin{align} SS_{res} &= (y_1 - b_0 - b_1x_1)^2 + (y_2 - b_0 - b_1x_2)^2 + \dots + (y_n - b_0 - b_1x_n)^2\\ &= \sum_{i=1}^n(y_i - b_0 - b_1x_i)^2 \end{align}}$$ that is the smallest comparing to any other $SS_{res} = \sum_{i=1}^n(y_i - a_0 - a_1x_i)^2$ that uses another pair of values $(a_0, a_1) \ne (b_0, b_1)$. -->
 <ul>
-<li>If <span class="math inline">\(b_0\)</span> and <span class="math inline">\(b_1\)</span> are the best estimators,</li>
+<li>Substituting <span class="math inline">\(e_i=y_i-(b_0+b_1x_i)\)</span> into <span class="math inline">\(SS_{res}\)</span> gives</li>
 </ul>
-<p><span class="math display">\[\small{\begin{align} SS_{res} &amp;= (y_1 - b_0 - b_1x_1)^2 + (y_2 - b_0 - b_1x_2)^2 + \dots + (y_n - b_0 - b_1x_n)^2\\ &amp;= \sum_{i=1}^n(y_i - b_0 - b_1x_i)^2 \end{align}}\]</span> that is the smallest comparing to any other <span class="math inline">\(SS_{res} = \sum_{i=1}^n(y_i - a_0 - a_1x_i)^2\)</span> that uses another pair of values <span class="math inline">\((a_0, a_1) \ne (b_0, b_1)\)</span>.</p>
+<p><span class="math display">\[\begin{align} SS_{res}(b_0, b_1) &amp;= (y_1 - b_0 - b_1x_1)^2 + (y_2 - b_0 - b_1x_2)^2 + \dots + (y_n - b_0 - b_1x_n)^2\\ &amp;= \sum_{i=1}^n(y_i - b_0 - b_1x_i)^2 \end{align}\]</span></p>
+<ul>
+<li>The resulting value is no larger than <span class="math inline">\(\sum_{i=1}^n(y_i-a_0-a_1x_i)^2\)</span> for any other pair <span class="math inline">\((a_0,a_1)\ne(b_0,b_1)\)</span>.</li>
+</ul>
 <aside class="notes"><ul>
 <li>Now the question is How do we get <span class="math inline">\(b_0\)</span> and <span class="math inline">\(b_1\)</span> that well estimate <span class="math inline">\(\beta_0\)</span> and <span class="math inline">\(\beta_1\)</span>?</li>
 <li>We choose <span class="math inline">\(b_0\)</span> and <span class="math inline">\(b_1\)</span>, or regression line <span class="math inline">\(b_0 + b_1x\)</span> that minimizes the <strong>sum of squared residuals</strong>.</li>
@@ -549,59 +576,100 @@ y_i = \beta_0 + \beta_1~x_{i} + \epsilon_i,
           display:block!important;
       }</style></aside>
 </div>
-</section><section id="visualizing-residuals" class="slide level2"><h2>Visualizing Residuals</h2>
+</section><section id="visualizing-ols" class="slide level2"><h2>Visualizing OLS</h2>
 
-<img data-src="15-regression_files/figure-revealjs/unnamed-chunk-16-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><aside class="notes"><p>That’s see the idea of Ordinary Least Squares visually. Here just showed the data. - Later we will work on the data set together. <!-- - Do you see why some points are darker than some others? --> <!-- - A darker point means that there are several identical (x, y) pairs, or replicates in the data set. --></p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside></section><section id="visualizing-residuals-cont." class="slide level2"><h2>Visualizing Residuals (cont.)</h2>
-
-<img data-src="15-regression_files/figure-revealjs/unnamed-chunk-17-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><aside class="notes"><ul>
-<li>All right, with the data, this figure also shows the least squares regression line, and the fitted value of <span class="math inline">\(y\)</span> for each <span class="math inline">\(x\)</span> in the training data, which are those red points.</li>
-<li>The fitted values of y are right on the regression line.</li>
-<li>Now the question is, how do we find this line?</li>
-<li>Given a line, we can have predicted values of y, right?</li>
-<li>Then what is residual on the plot? The residual will be the difference between the true observation y and the fitted value of y given any value of x.</li>
-<li>So a residual in the plot will be a vertical bar at the value of x with two ends of the bar <span class="math inline">\(y\)</span> and <span class="math inline">\(\hat{y}\)</span>, right?</li>
-<li>(Show on board)</li>
-<li>(add <span class="math inline">\(y_i = b_0+b_1x_i\)</span> and residual line)</li>
-</ul><style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside></section><section id="visualizing-residuals-cont.-1" class="slide level2"><h2>Visualizing Residuals (cont.)</h2>
-
-<img data-src="15-regression_files/figure-revealjs/unnamed-chunk-18-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><aside class="notes"><ul>
-<li>Here shows all the residuals in vertical bars.</li>
-<li>least squares line is the line such that the sum of all the squared residuals is minimized.</li>
-<li>Why we square the residuals?</li>
-<li>It’s mathematically more convenient.</li>
-<li>Squaring emphasizes larger differences</li>
-</ul><style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside></section><section id="least-squares-estimates-lse" class="slide level2"><h2>Least Squares Estimates (LSE)</h2>
+<img data-src="15-regression_files/figure-revealjs/unnamed-chunk-16-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section><section id="visualizing-ols-1" class="slide level2"><h2>Visualizing OLS</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>The Least-Squares (Best) Line</strong></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure><p><img data-src="15-regression_files/figure-revealjs/unnamed-chunk-18-1.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<p><strong>A Non-optimal Line</strong></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure><p><img data-src="15-regression_files/figure-revealjs/unnamed-chunk-19-1.png" class="quarto-figure quarto-figure-center" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+<!-- ## Visualizing Residuals -->
+<!-- ```{r} -->
+<!-- mpg_data <- mpg -->
+<!-- # mpg_data$displ <- mpg_data$displ + rnorm(length(mpg$displ), 0, 1) -->
+<!-- # mpg_data$hwy <- mpg_data$hwy -->
+<!-- reg_fit <- linear_reg() |>  -->
+<!--     set_engine("lm") |>  -->
+<!--     fit(hwy ~ displ, data = mpg_data) -->
+<!-- reg_fit_tidy <- tidy(reg_fit$fit) -->
+<!-- reg_fit_aug  <- augment(reg_fit$fit) %>% -->
+<!--     mutate(res_cat = ifelse(.resid > 0, TRUE, FALSE)) -->
+<!-- p <- ggplot(data = reg_fit_aug, -->
+<!--             aes(x = displ, y = hwy)) + -->
+<!--      geom_point(alpha = 0.3) + -->
+<!--      labs(title = "Highway MPG vs. Engine Displacement", -->
+<!--           x = "Displacement (litres)", -->
+<!--           y = "Highway miles per gallon") + -->
+<!--       # coord_cartesian(xlim = c(0, 250), ylim = c(0, 200)) + -->
+<!--      theme_bw() -->
+<!-- p + theme(plot.subtitle = element_text(colour = "red", -->
+<!--                                        face = "bold", -->
+<!--                                        size = rel(1.5))) + -->
+<!--     labs(subtitle = "Just the data") -->
+<!-- ``` -->
+<!-- ::: notes -->
+<!-- That's see the idea of Ordinary Least Squares visually. Here just showed the data. -->
+<!-- - Later we will work on the data set together. -->
+<!-- <!-- - Do you see why some points are darker than some others? -->
+<p>–&gt; <!-- <!-- - A darker point means that there are several identical (x, y) pairs, or replicates in the data set. --> –&gt;</p>
+<!-- ::: -->
+<!-- ## Visualizing Residuals (cont.) -->
+<!-- ```{r} -->
+<!-- #| message: false -->
+<!-- p + geom_smooth(method = "lm", color = "#003366", se = FALSE) + -->
+<!--     geom_point(mapping = aes(y = .fitted), color = "red", size = 1) + -->
+<!--     theme(plot.subtitle = element_text(colour = "red", -->
+<!--                                        face = "bold", -->
+<!--                                        size = rel(1.5))) + -->
+<!--     labs(subtitle = "Data + least squares line + fitted value") -->
+<!-- ``` -->
+<!-- ::: notes -->
+<!-- - All right, with the data, this figure also shows the least squares regression line, and the fitted value of $y$ for each $x$ in the training data, which are those red points. -->
+<!-- - The fitted values of y are right on the regression line. -->
+<!-- - Now the question is, how do we find this line? -->
+<!-- - Given a line, we can have predicted values of y, right? -->
+<!-- - Then what is residual on the plot? The residual will be the difference between the true observation y and the fitted value of y given any value of x. -->
+<!-- - So a residual in the plot will be a vertical bar at the value of x with two ends of the bar $y$ and $\hat{y}$, right? -->
+<!-- - (Show on board) -->
+<!-- - (add $y_i = b_0+b_1x_i$ and residual line) -->
+<!-- ::: -->
+<!-- ## Visualizing Residuals (cont.) -->
+<!-- ```{r} -->
+<!-- #| message: false -->
+<!-- p + geom_segment(mapping = aes(xend = displ, yend = .fitted), -->
+<!--                  color = "red", alpha = 0.4) + -->
+<!--   geom_smooth(method = "lm", color = "#003366", se = FALSE) + -->
+<!--   theme(plot.subtitle = element_text(colour = "red", -->
+<!--                                        face = "bold", -->
+<!--                                        size = rel(1.5))) + -->
+<!--   labs(subtitle = "Data + least squares line + residuals") -->
+<!-- ``` -->
+<!-- ::: notes -->
+<!-- - Here shows all the residuals in vertical bars. -->
+<!-- - least squares line is the line such that the sum of all the squared residuals is minimized. -->
+<!-- - Why we square the residuals? -->
+<!-- - It's mathematically more convenient. -->
+<!-- - Squaring emphasizes larger differences -->
+<!-- ::: -->
+</section><section id="least-squares-estimates-lse" class="slide level2"><h2>Least Squares Estimates (LSE)</h2>
 <ul>
 <li>The least squares approach choose <span class="math inline">\(b_0\)</span> and <span class="math inline">\(b_1\)</span> to minimize the <span class="math inline">\(SS_{res}\)</span>, i.e.,</li>
 </ul>
@@ -664,7 +732,7 @@ y_i = \beta_0 + \beta_1~x_{i} + \epsilon_i,
 <span>     main <span class="op">=</span> <span class="st">"Highway MPG vs. Engine Displacement (litres)"</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 </div>
-<img data-src="15-regression_files/figure-revealjs/unnamed-chunk-20-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><aside class="notes"><ul>
+<img data-src="15-regression_files/figure-revealjs/unnamed-chunk-21-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><aside class="notes"><ul>
 <li>Usually, when we get data, the first thing is plotting your data, doing some exploratory data analysis, and see if there is useful information out there that may help us build an appropriate model.</li>
 <li>To make a scatter plot, we can simply use the plot() function, and put displ in x axis and hwy in the y axis.</li>
 <li>To grab a variable or a column of a data frame, we can use the dollar sign, the same way as a list extracting an element.</li>
@@ -779,7 +847,7 @@ Coefficients:
 <span><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html">abline</a></span><span class="op">(</span><span class="va">reg_fit</span>, col <span class="op">=</span> <span class="st">"#FFCC00"</span>, lwd <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 </div>
-<img data-src="15-regression_files/figure-revealjs/unnamed-chunk-24-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section><section id="estimation-for-sigma2" class="slide level2"><h2>Estimation for <span class="math inline">\(\sigma^2\)</span>
+<img data-src="15-regression_files/figure-revealjs/unnamed-chunk-25-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section><section id="estimation-for-sigma2" class="slide level2"><h2>Estimation for <span class="math inline">\(\sigma^2\)</span>
 </h2>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -982,7 +1050,7 @@ displ          -3.53      0.195   -18.2  2.04e-46</code></pre>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure><p><img data-src="15-regression_files/figure-revealjs/unnamed-chunk-30-1.png" class="quarto-figure quarto-figure-center" style="width:60.0%"></p>
+<figure><p><img data-src="15-regression_files/figure-revealjs/unnamed-chunk-31-1.png" class="quarto-figure quarto-figure-center" style="width:60.0%"></p>
 </figure>
 </div>
 </div>
@@ -1030,7 +1098,7 @@ displ          -3.53      0.195   -18.2  2.04e-46</code></pre>
 </li>
 </ul>
 
-<img data-src="15-regression_files/figure-revealjs/unnamed-chunk-31-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:56.0%"><aside class="notes"><ul>
+<img data-src="15-regression_files/figure-revealjs/unnamed-chunk-32-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:56.0%"><aside class="notes"><ul>
 <li>
 <em>Rejecting <span class="math inline">\(H_0: \beta_1 = 0\)</span></em> could mean
 <ul>
@@ -1385,7 +1453,7 @@ displ          -3.53      0.195   -18.2  2.04e-46</code></pre>
 </div>
 </div>
 
-<img data-src="15-regression_files/figure-revealjs/unnamed-chunk-42-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section><section id="predicting-new-observations" class="slide level2"><h2>Predicting New Observations</h2>
+<img data-src="15-regression_files/figure-revealjs/unnamed-chunk-43-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section><section id="predicting-new-observations" class="slide level2"><h2>Predicting New Observations</h2>
 <ul>
 <li>Predict the value of a <em>new observation <span class="math inline">\(y_0\)</span></em> with <span class="math inline">\(x = x_0\)</span>.
 <ul>
@@ -1453,7 +1521,7 @@ displ          -3.53      0.195   -18.2  2.04e-46</code></pre>
 </div>
 </div>
 
-<img data-src="15-regression_files/figure-revealjs/unnamed-chunk-44-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><aside class="notes"><ul>
+<img data-src="15-regression_files/figure-revealjs/unnamed-chunk-45-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><aside class="notes"><ul>
 <li>If I can only use one point or value to predict <span class="math inline">\(y_0\)</span>, the best guess is the predicted value on the regression line.</li>
 <li>After all, values around the lines would more likely to be drawn based on our model.</li>
 <li>Here you can understand why uncertainty quantification is important.</li>
@@ -1471,7 +1539,7 @@ displ          -3.53      0.195   -18.2  2.04e-46</code></pre>
           display:block!important;
       }</style></aside></section><section id="section-5" class="slide level2"><h2></h2>
 
-<img data-src="15-regression_files/figure-revealjs/unnamed-chunk-45-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><aside class="notes"><ul>
+<img data-src="15-regression_files/figure-revealjs/unnamed-chunk-46-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><aside class="notes"><ul>
 <li>CI is the shortest when <span class="math inline">\(x = \bar{x}\)</span>. (Also PI)</li>
 <li>PI length looks the same along with <span class="math inline">\(x\)</span> because the <span class="math inline">\(\sigma^2\)</span> dominates the uncertainty, comparing to the uncertainty about <span class="math inline">\(b_0\)</span> and <span class="math inline">\(b_1\)</span>.</li>
 </ul><style type="text/css">
