@@ -55,9 +55,24 @@ library(tidyverse)
 library(tidymodels)
 options(digits = 3)
 set.seed(1234)
+
+theme_set(
+  theme_classic(base_size = 18) +
+    theme(
+      panel.grid.minor = element_blank(),
+      plot.title = element_text(face = "bold"),
+      plot.subtitle = element_text(size = 16),
+      strip.text = element_text(face = "bold"),
+      legend.position = "bottom"
+    )
+)
+
 ```
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
 knitr::opts_knit$set(global.par = TRUE)
 # options(reindent.spaces = 4)
 ```
@@ -257,6 +272,14 @@ $$Y_i = \beta_0 + \beta_1X_i + \epsilon_i$$
 
 - $\beta_0$, $\beta_1$ and $\sigma^2$ are **fixed unknown parameters** to be estimated from the sample data once we collect them.
 
+
+| Piece | Meaning |
+|---|---|
+| $\beta_0 + \beta_1 X_i$ | systematic part |
+| $\epsilon_i$ | deviation from the pattern |
+| $\sigma$ | typical vertical scatter |
+
+
 ::: notes
 
 .question[
@@ -395,9 +418,13 @@ y_i = \beta_0 + \beta_1~x_{i} + \epsilon_i,
 
 . . .
 
-- Use sample statistics $b_0$ and $b_1$ computed from our sample data to estimate $\beta_0$ and $\beta_1$.
+<!-- - Use sample statistics $b_0$ and $b_1$ computed from our sample data to estimate $\beta_0$ and $\beta_1$. -->
 
-- $\hat{y}_{i} = b_0 + b_1~x_{i}$ is called **fitted value** of $y_i$, a point estimate of the mean $\mu_{y|x_i}$ and $y_i$ itself.
+<!-- - $\hat{y}_{i} = b_0 + b_1~x_{i}$ is called **fitted value** of $y_i$, a point estimate of the mean $\mu_{y|x_i}$ and $y_i$ itself. -->
+
+- Use sample statistics $b_0$ and $b_1$, computed from the data, to estimate $\beta_0$ and $\beta_1$.
+
+- $\hat{y}_{i}=b_0+b_1x_i$ is the **fitted value** at $x_i$. It estimates the conditional mean $\mu_{Y\mid X=x_i}$ and also serves as the point prediction for an individual response at $x_i$.
 
 
 ::: notes
@@ -471,9 +498,17 @@ $$SS_{res} = e_1^2 + e_2^2 + \dots + e_n^2 = \sum_{i = 1}^n e_i^2,$$ where the *
 
 . . .
 
-- If $b_0$ and $b_1$ are the best estimators,
- 
-$$\small{\begin{align} SS_{res} &= (y_1 - b_0 - b_1x_1)^2 + (y_2 - b_0 - b_1x_2)^2 + \dots + (y_n - b_0 - b_1x_n)^2\\ &= \sum_{i=1}^n(y_i - b_0 - b_1x_i)^2 \end{align}}$$ that is the smallest comparing to any other $SS_{res} = \sum_{i=1}^n(y_i - a_0 - a_1x_i)^2$ that uses another pair of values $(a_0, a_1) \ne (b_0, b_1)$.
+<!-- - If $b_0$ and $b_1$ are the best estimators, -->
+
+<!-- $$\small{\begin{align} SS_{res} &= (y_1 - b_0 - b_1x_1)^2 + (y_2 - b_0 - b_1x_2)^2 + \dots + (y_n - b_0 - b_1x_n)^2\\ &= \sum_{i=1}^n(y_i - b_0 - b_1x_i)^2 \end{align}}$$ that is the smallest comparing to any other $SS_{res} = \sum_{i=1}^n(y_i - a_0 - a_1x_i)^2$ that uses another pair of values $(a_0, a_1) \ne (b_0, b_1)$. -->
+
+
+- Substituting $e_i=y_i-(b_0+b_1x_i)$ into $SS_{res}$ gives
+
+$$\begin{align} SS_{res}(b_0, b_1) &= (y_1 - b_0 - b_1x_1)^2 + (y_2 - b_0 - b_1x_2)^2 + \dots + (y_n - b_0 - b_1x_n)^2\\ &= \sum_{i=1}^n(y_i - b_0 - b_1x_i)^2 \end{align}$$ 
+
+
+- The resulting value is no larger than $\sum_{i=1}^n(y_i-a_0-a_1x_i)^2$ for any other pair $(a_0,a_1)\ne(b_0,b_1)$.
 
 
 ::: notes
@@ -485,8 +520,7 @@ $$\small{\begin{align} SS_{res} &= (y_1 - b_0 - b_1x_1)^2 + (y_2 - b_0 - b_1x_2)
 
 :::
 
-
-## Visualizing Residuals
+## Visualizing OLS
 
 ```{r}
 mpg_data <- mpg
@@ -515,65 +549,240 @@ p + theme(plot.subtitle = element_text(colour = "red",
 ```
 
 
-::: notes
-That's see the idea of Ordinary Least Squares visually. Here just showed the data.
-- Later we will work on the data set together.
-<!-- - Do you see why some points are darker than some others? -->
-<!-- - A darker point means that there are several identical (x, y) pairs, or replicates in the data set. -->
 
-:::
-
-
-
-## Visualizing Residuals (cont.)
+## Visualizing OLS
 
 ```{r}
-#| message: false
-p + geom_smooth(method = "lm", color = "#003366", se = FALSE) +
-    geom_point(mapping = aes(y = .fitted), color = "red", size = 1) +
-    theme(plot.subtitle = element_text(colour = "red",
-                                       face = "bold",
-                                       size = rel(1.5))) +
-    labs(subtitle = "Data + least squares line + fitted value")
+#| eval: true
+library(tidyverse)
+library(tidymodels)
+library(broom)
+library(patchwork)
+mpg_data <- mpg
+reg_fit <- lm(hwy ~ displ, data = mpg_data)
+ols_intercept <- coef(reg_fit)[["(Intercept)"]]
+ols_slope <- coef(reg_fit)[["displ"]]
+
+# augment.lm creates .fitted and .resid
+reg_fit_aug <- augment(reg_fit, data = mpg_data) %>%
+  mutate(
+    ols_fitted = .fitted,
+    ols_resid = .resid
+  )
+
+# OLS residual sum of squares
+ols_rss <- sum(reg_fit_aug$ols_resid^2)
+
+
+# ------------------------------------------------------------
+# 2. Construct a deliberately non-optimal line
+# ------------------------------------------------------------
+
+# Use only 60% of the OLS slope
+bad_slope <- 0.10 * ols_slope
+
+# Make the line pass through (mean x, mean y)
+bad_intercept <- mean(mpg_data$hwy) -
+  bad_slope * mean(mpg_data$displ)
+
+reg_fit_aug <- reg_fit_aug %>%
+  mutate(
+    bad_fitted = bad_intercept + bad_slope * displ,
+    bad_resid = hwy - bad_fitted
+  )
+
+# RSS for the non-optimal line
+bad_rss <- sum(reg_fit_aug$bad_resid^2)
+
+# Numerical comparison
+rss_comparison <- tibble(
+  line = c("OLS line", "Non-optimal line"),
+  intercept = c(ols_intercept, bad_intercept),
+  slope = c(ols_slope, bad_slope),
+  RSS = c(ols_rss, bad_rss)
+)
 ```
 
-::: notes
 
-- All right, with the data, this figure also shows the least squares regression line, and the fitted value of $y$ for each $x$ in the training data, which are those red points.
-- The fitted values of y are right on the regression line.
-- Now the question is, how do we find this line?
-- Given a line, we can have predicted values of y, right?
-- Then what is residual on the plot? The residual will be the difference between the true observation y and the fitted value of y given any value of x.
-- So a residual in the plot will be a vertical bar at the value of x with two ends of the bar $y$ and $\hat{y}$, right?
-- (Show on board)
-- (add $y_i = b_0+b_1x_i$ and residual line)
+:::: {.columns}
 
-:::
+::: {.column width="50%"}
 
-
-
-## Visualizing Residuals (cont.)
+**The Least-Squares (Best) Line**
 
 ```{r}
-#| message: false
-p + geom_segment(mapping = aes(xend = displ, yend = .fitted),
-                 color = "red", alpha = 0.4) +
-  geom_smooth(method = "lm", color = "#003366", se = FALSE) +
-  theme(plot.subtitle = element_text(colour = "red",
-                                       face = "bold",
-                                       size = rel(1.5))) +
-  labs(subtitle = "Data + least squares line + residuals")
+#| out-width: 100%
+#| fig-asp: 1
+p_ols <- ggplot(reg_fit_aug, aes(x = displ, y = hwy)) +
+  geom_segment(
+    aes(xend = displ, yend = ols_fitted),
+    color = "red",
+    alpha = 0.4,
+    linewidth = 1
+  ) +
+  geom_point(alpha = 0.85) +
+  geom_abline(
+    intercept = ols_intercept,
+    slope = ols_slope,
+    color = "blue",
+    linewidth = 2
+  ) +
+  labs(
+    title = "Highway MPG vs. Engine Displacement",
+    subtitle = paste0(
+      "Least-squares line: RSS = ",
+      round(ols_rss, 1)
+    ),
+    x = "Displacement (litres)",
+    y = "Highway miles per gallon"
+  ) +
+  theme(
+    plot.subtitle = element_text(
+      colour = "red",
+      face = "bold",
+      size = rel(1.2)
+    )
+  )
+
+p_ols
 ```
 
-::: notes
+:::
 
-- Here shows all the residuals in vertical bars.
-- least squares line is the line such that the sum of all the squared residuals is minimized.
-- Why we square the residuals?
-- It's mathematically more convenient.
-- Squaring emphasizes larger differences
+::: {.column width="50%"}
+
+**A Non-optimal Line**
+
+```{r}
+#| out-width: 100%
+#| fig-asp: 1
+p_bad <- ggplot(reg_fit_aug, aes(x = displ, y = hwy)) +
+  geom_segment(
+    aes(xend = displ, yend = bad_fitted),
+    color = "red",
+    alpha = 0.4,
+    linewidth = 1
+  ) +
+  geom_point(alpha = 0.85) +
+  geom_abline(
+    intercept = bad_intercept,
+    slope = bad_slope,
+    color = "darkgreen",
+    linewidth = 2
+  ) +
+  labs(
+    title = "Highway MPG vs. Engine Displacement",
+    subtitle = paste0(
+      "Non-optimal line: RSS = ",
+      round(bad_rss, 1)
+    ),
+    x = "Displacement (litres)",
+    y = "Highway miles per gallon"
+  ) +
+  theme(
+    plot.subtitle = element_text(
+      colour = "red",
+      face = "bold",
+      size = rel(1.2)
+    )
+  )
+
+p_bad
+```
 
 :::
+
+::::
+
+
+<!-- ## Visualizing Residuals -->
+
+<!-- ```{r} -->
+<!-- mpg_data <- mpg -->
+<!-- # mpg_data$displ <- mpg_data$displ + rnorm(length(mpg$displ), 0, 1) -->
+<!-- # mpg_data$hwy <- mpg_data$hwy -->
+<!-- reg_fit <- linear_reg() |>  -->
+<!--     set_engine("lm") |>  -->
+<!--     fit(hwy ~ displ, data = mpg_data) -->
+
+<!-- reg_fit_tidy <- tidy(reg_fit$fit) -->
+<!-- reg_fit_aug  <- augment(reg_fit$fit) %>% -->
+<!--     mutate(res_cat = ifelse(.resid > 0, TRUE, FALSE)) -->
+
+<!-- p <- ggplot(data = reg_fit_aug, -->
+<!--             aes(x = displ, y = hwy)) + -->
+<!--      geom_point(alpha = 0.3) + -->
+<!--      labs(title = "Highway MPG vs. Engine Displacement", -->
+<!--           x = "Displacement (litres)", -->
+<!--           y = "Highway miles per gallon") + -->
+<!--       # coord_cartesian(xlim = c(0, 250), ylim = c(0, 200)) + -->
+<!--      theme_bw() -->
+<!-- p + theme(plot.subtitle = element_text(colour = "red", -->
+<!--                                        face = "bold", -->
+<!--                                        size = rel(1.5))) + -->
+<!--     labs(subtitle = "Just the data") -->
+<!-- ``` -->
+
+
+<!-- ::: notes -->
+<!-- That's see the idea of Ordinary Least Squares visually. Here just showed the data. -->
+<!-- - Later we will work on the data set together. -->
+<!-- <!-- - Do you see why some points are darker than some others? --> -->
+<!-- <!-- - A darker point means that there are several identical (x, y) pairs, or replicates in the data set. --> -->
+
+<!-- ::: -->
+
+
+
+<!-- ## Visualizing Residuals (cont.) -->
+
+<!-- ```{r} -->
+<!-- #| message: false -->
+<!-- p + geom_smooth(method = "lm", color = "#003366", se = FALSE) + -->
+<!--     geom_point(mapping = aes(y = .fitted), color = "red", size = 1) + -->
+<!--     theme(plot.subtitle = element_text(colour = "red", -->
+<!--                                        face = "bold", -->
+<!--                                        size = rel(1.5))) + -->
+<!--     labs(subtitle = "Data + least squares line + fitted value") -->
+<!-- ``` -->
+
+<!-- ::: notes -->
+
+<!-- - All right, with the data, this figure also shows the least squares regression line, and the fitted value of $y$ for each $x$ in the training data, which are those red points. -->
+<!-- - The fitted values of y are right on the regression line. -->
+<!-- - Now the question is, how do we find this line? -->
+<!-- - Given a line, we can have predicted values of y, right? -->
+<!-- - Then what is residual on the plot? The residual will be the difference between the true observation y and the fitted value of y given any value of x. -->
+<!-- - So a residual in the plot will be a vertical bar at the value of x with two ends of the bar $y$ and $\hat{y}$, right? -->
+<!-- - (Show on board) -->
+<!-- - (add $y_i = b_0+b_1x_i$ and residual line) -->
+
+<!-- ::: -->
+
+
+
+<!-- ## Visualizing Residuals (cont.) -->
+
+<!-- ```{r} -->
+<!-- #| message: false -->
+<!-- p + geom_segment(mapping = aes(xend = displ, yend = .fitted), -->
+<!--                  color = "red", alpha = 0.4) + -->
+<!--   geom_smooth(method = "lm", color = "#003366", se = FALSE) + -->
+<!--   theme(plot.subtitle = element_text(colour = "red", -->
+<!--                                        face = "bold", -->
+<!--                                        size = rel(1.5))) + -->
+<!--   labs(subtitle = "Data + least squares line + residuals") -->
+<!-- ``` -->
+
+<!-- ::: notes -->
+
+<!-- - Here shows all the residuals in vertical bars. -->
+<!-- - least squares line is the line such that the sum of all the squared residuals is minimized. -->
+<!-- - Why we square the residuals? -->
+<!-- - It's mathematically more convenient. -->
+<!-- - Squaring emphasizes larger differences -->
+
+<!-- ::: -->
 
 
 ## Least Squares Estimates (LSE)

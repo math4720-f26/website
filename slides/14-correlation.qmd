@@ -53,7 +53,10 @@ options(digits = 2)
 set.seed(1234)
 ```
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
 knitr::opts_knit$set(global.par = TRUE)
 # options(reindent.spaces = 4)
 ```
@@ -249,10 +252,12 @@ abline(h = 0, col = 2, lty = 2)
 - It is possible that there is a strong relationship between two variables but still $r = 0$.
 
 ::: tiny
+
 ```{r}
 #| fig-cap: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Correlation_examples2.svg"
 knitr::include_graphics("./images/14-correlation/corr_ex.svg")
 ```
+
 :::
 
 
