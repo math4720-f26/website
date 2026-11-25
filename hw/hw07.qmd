@@ -1,6 +1,6 @@
 ---
 title: "Homework 7"
-subtitle: "Inference about Variances"
+subtitle: "Inference about Variances and ANOVA"
 categories: "Homework"
 format:
   html:
@@ -12,7 +12,7 @@ execute:
 ---
 
 ::: callout-important
-[Due **Friday, Apr 17, 11:59 PM**]{.red}
+[Due **Friday, Dec 4, 11:59 PM**]{.red}
 :::
 
 <!-- - Homework 6 covers Week 9 and 10. -->
